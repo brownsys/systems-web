@@ -20,7 +20,17 @@ from the repository root.
 If you run into issues, please document your experiences here, or
 create a Github issue.
 
-TODO
+To build the repository, you can run:  
+```
+bundle exec jekyll serve
+```
+
+Note:  the publications list seems a bit finicky to update.  If it
+does not update for you, run `bundle exec jekyll clean` before
+building to ensure it updates its state.  Also try a hard refresh.
+
+# TODO
+
  - [ ]Add fancy show/hide links to bibliography
  - [ ] List generation for people page
  - [ ] Structure for sysread page
