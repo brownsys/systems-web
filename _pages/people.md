@@ -8,7 +8,7 @@ permalink: /people/
  - [Rodrigo Fonseca](https://cs.brown.edu/~rfonseca)
  - [Theo Benson](https://cs.brown.edu/~tab)
  - [Malte Schwarzkopf](https://cs.brown.edu/~malte)
- - [Shriram Krishnamurthy](https://cs.brown.edu/~sk)
+ - [Shriram Krishnamurthi](https://cs.brown.edu/~sk)
 
 ## Current Students
 ### PhD
