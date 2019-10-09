@@ -36,15 +36,15 @@ seminar_courses:
 ---
 
 Faculty in our group are teach several courses in various areas of
-systems and networking.  
+systems and networking.
 
 Are you a student interested in systems?  Great!  We recommend you
 check out the following courses, often taught by faculty in our
-group.  
+group.
 
 For information on specific course offerings per semester, see the
-[department website](http://cs.brown.edu/courses).  
- 
+[department website](http://cs.brown.edu/courses).
+
 ## Core courses
 <ul>
 {% for item in page.core_courses %}
