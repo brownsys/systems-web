@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<!-- <div class="header-bar"> -->
+<!--   <h1>{{ site.blog_name }}</h1> -->
+<!--   <h2>{{ site.blog_description }}</h2> -->
+<!-- </div> -->
+
+{% assign today = 'now' | date: '%s' %}
+{% assign sorted = site.sysread | reverse %}
+
+<h3>Upcoming talks</h3>
+
+<ul>
+  {% for post in site.sysread %}
+  {% assign this_date = post.date | date: '%s' %}
+  {% if this_date > today %}
+    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}:  {{ post.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+<h3>Past Talks</h3>
+
+<ul>
+  {% for post in sorted %}
+  {% assign this_date = post.date | date: '%s' %}
+  {% if this_date <= today %}
+    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}:  {{ post.title }}</a></li>
+  {% endif %}
+  {% endfor %}
+</ul>
+
+
+<!-- {% include pagination.html %} -->
