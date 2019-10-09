@@ -12,8 +12,16 @@ core_courses:
  - csci1380:
    title: "CSCI1380:  Distributed Systems"
    link: https://cs.brown.edu/courses/csci1380
+ - csci1310:
+   title: "CSCI1310:  Fundamentals of Computer Systems"
+   link: https://cs.brown.edu/courses/csci1310
 
 seminar_courses:
+ - csci2390f19:
+   term: Fall 2019
+   title: "CSCI2390:   Privacy-Conscious Computer Systems"
+   link: https://cs.brown.edu/courses/csci2390
+   instructor: Malte Schwarzkopf
  - csci2950us18:
    term: Spring 2018
    title: "CSCI2950u:  Cloud 3.0 Infrastructure"
