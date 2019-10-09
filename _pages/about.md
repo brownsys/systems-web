@@ -15,6 +15,7 @@ profile:
 
 news: true
 social: false
+order: 1
 ---
 
 The Brown Systems research group investigates questions in computer

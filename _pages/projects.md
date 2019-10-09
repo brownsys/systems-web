@@ -3,6 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 description: Our projects
+order: 3
 ---
 
 <ul class="post-list">

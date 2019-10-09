@@ -1,8 +1,9 @@
 ---
 layout: page
-permalink: /teaching/
-title: Teaching
-description: Materials for courses you taught. Replace this text with your description.
+permalink: /courses/
+title: Courses
+description: Current and previous offered systems courses
+order: 5
 
 core_courses:
  - csci1680:
