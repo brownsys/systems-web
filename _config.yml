@@ -18,27 +18,148 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Systems@Brown
+# title: Systems@Brown
+# email: systems@cs.brown.edu
+# description: "Brown University Systems Group"
+
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: brownsystems
+# github_username:  brownsys
+
+# # Build settings
+# theme: minima
+# plugins:
+#   - jekyll-feed
+#   - jekyll-scholar
+
+
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
+name: Systems@Brown
 email: systems@cs.brown.edu
 description: "Brown University Systems Group"
+footer_text: >
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+url:  # the base hostname & protocol for your site
+baseurl:  # the subpath of your site, e.g. /blog/
+last_updated: # leave blank if you don't want to display last updated
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+github_username: brownsys
 twitter_username: brownsystems
-github_username:  brownsys
+linkedin_username: # your LinkedIn user name
+scholar_userid: # your Google Scholar ID
+orcid_id: # your ORCID ID
+medium_username: # your Medium username
+quora_username: # your Quora username
+
+contact_note: 
+
+google_analytics: UA-XXXXXXXXX # out your google-analytics code
+
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
+blog_name: Systems@Brown
+blog_description: Brown University Systems Group
+
+# Pagination
+paginate: 4
+permalink: /blog/:year/:title/
+paginate_path: /blog/page:num/
+
+text:
+  pagination:
+    newer: 'Newer'
+    older: 'Older'
+
+# Comments
+disqus_shortname:
+
+# Optional features
+show_social_icons:  false
+enable_anchorjs:    false
+enable_katex:       true
+
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+news_limit: 5
+
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
 
 # Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-scholar
+markdown: kramdown
+highlighter: pygments
 
+# Includes & excludes
+include: ['_pages']
+#exclude: [vendor]
+
+# Plug-ins
+plugins:
+    - jekyll-email-protect
+    - jekyll-paginate
+    - jekyll/scholar
+    - jemoji
+
+# Jekyll-Scholar
 scholar:
-  sort_by: year, month
+
+  last_name: Einstein
+
+  style: apa
+  locale: en
+
+  sort_by: year
   order: descending
-  style: ieee
-  repository: /papers
+
+  source: /_bibliography/
+  bibliography: papers.bib
   bibliography_template: bib
+  repository: /papers
+
+  replace_strings: true
+  join_strings: true
+
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
+
+  query: "@*"
+
+## Old scholar config
+# scholar:
+#   sort_by: year, month
+#   order: descending
+#   style: ieee
+#   repository: /papers
+#   bibliography_template: bib
+
+
+  
+# -----------------------------------------------------------------------------
+# Other settings
+# -----------------------------------------------------------------------------
+jquery_version: "1.12.4"
+katex_version: "0.9.0"
+anchorjs_version: "3.2.2"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -59,3 +180,5 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.md
+  - theme/
+  - prev/

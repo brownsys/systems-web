@@ -1,0 +1,20 @@
+---
+---
+{{ reference }}
+
+<!-- TODO:  Add show/hide box for abstract -->
+{% if entry.abstract %}
+<p>{{ entry.abstract }}</p>
+{% endif %}
+
+{% if links.pdf %}
+[<a href="{{ links.pdf }}">PDF</a>]
+{% endif %}
+
+{% if links['slides.pdf'] %}
+[<a href="{{ links['slides.pdf'] }}">PDF</a>]
+{% endif %}
+
+<!-- TODO:  Add show/hide box for citation -->
+<pre>{{ entry.bibtex }}</pre>
+
