@@ -81,7 +81,7 @@ text:
 disqus_shortname:
 
 # Optional features
-show_social_icons:  true
+show_social_icons:  false
 enable_anchorjs:    false
 enable_katex:       true
 
@@ -89,6 +89,11 @@ enable_katex:       true
 # Collections
 # -----------------------------------------------------------------------------
 collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
   projects:
     output: true
     permalink: /projects/:path/
