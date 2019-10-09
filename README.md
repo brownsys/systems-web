@@ -31,7 +31,9 @@ building to ensure it updates its state.  Also try a hard refresh.
 
 # TODO
 
- - [ ]Add fancy show/hide links to bibliography
+ - [ ] Make sysread page show posts of category sysread
+ - [ ] Make home News section only show posts of category news
+ - [ ] Add fancy show/hide links to bibliography
  - [ ] List generation for people page
  - [ ] Structure for sysread page
  - [ ] Structure for projects page
