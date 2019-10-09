@@ -29,6 +29,16 @@ Note:  the publications list seems a bit finicky to update.  If it
 does not update for you, run `bundle exec jekyll clean` before
 building to ensure it updates its state.  Also try a hard refresh.
 
+# Directory structure
+
+Posts and pages are located in the following directories:
+ - `_pages`:  Main pages (about, people, publications, etc.)
+ - `_sysread`: Markdown for sysread talk pages
+ - `_news`:  "News" topics (ie, short posts to display on main page)
+ - `_posts`:  Longer posts for the blog
+ - `_bibliography`:  `.bib` files for publication lists
+ - `papers`:  PDFs of papers and slides, indexed by bibtex key
+
 # TODO
  - 
  - [X] Make sysread page show posts of category sysread
