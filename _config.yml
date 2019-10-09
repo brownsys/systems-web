@@ -72,6 +72,10 @@ paginate: 4
 permalink: /blog/:year/:title/
 paginate_path: /blog/page:num/
 
+# Publish future-dated posts
+# (This is important for publishing upcoming sysread talks.)
+future: true
+
 text:
   pagination:
     newer: 'Newer'
@@ -97,6 +101,12 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  sysread:
+    defaults:
+      layout: post
+    output: true
+    permalink: /sysread/:path/
+
 
 news_limit: 5
 

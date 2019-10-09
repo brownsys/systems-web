@@ -1,9 +1,25 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: Our projects
 ---
+
+<ul class="post-list">
+{% for project in site.projects %}
+<li>
+<h2><a class="post-title" href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">{{ project.title }}</a></h2>
+<p>{{ project.description }}</p>
+</li>
+{% endfor %}
+</ul>
+
+
+
+
+
+
+{% comment %}
 
 {% for project in site.projects %}
 
@@ -46,3 +62,4 @@ description: Our projects
 {% endif %}
 
 {% endfor %}
+{% endcomment %}

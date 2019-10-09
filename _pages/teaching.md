@@ -1,10 +1,54 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Materials for courses you taught. Replace this text with your description.
+
+core_courses:
+ - csci1680:
+   title: "CSCI1680:  Computer Networks"
+   link: https://cs.brown.edu/courses/csci1680
+ - csci1380:
+   title: "CSCI1380:  Distributed Systems"
+   link: https://cs.brown.edu/courses/csci1380
+
+seminar_courses:
+ - csci2950us18:
+   term: Spring 2018
+   title: "CSCI2950u:  Cloud 3.0 Infrastructure"
+   link: https://cs.brown.edu/courses/csci2950-u/s18
+   instructor: Rodrigo Fonseca
+ - csci2950us17:
+   title: "CSCI2950u:  Advanced Networking"
+   term: Spring 2017
+   link: https://cs.brown.edu/courses/csci2950-u/s17
+   instructor: Rodrigo Fonseca
+
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+Faculty in our group are teach several courses in various areas of
+systems and networking.  
 
-Organize your courses by years, topics, or universities, however you like!
+Are you a student interested in systems?  Great!  We recommend you
+check out the following courses, often taught by faculty in our
+group.  
+
+For information on specific course offerings per semester, see the
+[department website](http://cs.brown.edu/courses).  
+ 
+## Core courses
+<ul>
+{% for item in page.core_courses %}
+<li markdown="span">[{{item.title}}]({{item.link}})</li>
+{% endfor %}
+</ul>
+
+## Seminar courses
+
+These courses are offered less-frequently, and cover specific research
+areas:
+<ul>
+{% for item in page.seminar_courses %}
+<li markdown="span">[{{item.title}}]({{item.link}}), {{item.term}}, {{ item.instructor }}</li>
+{% endfor %}
+</ul>
