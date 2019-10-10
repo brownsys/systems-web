@@ -64,11 +64,11 @@
         }
         .hidden.open {
             max-height: 100em;
-            -webkit-transition: 0.15s ease;
-            -moz-transition: 0.15s ease;
-            -ms-transition: 0.15s ease;
-            -o-transition: 0.15s ease;
-            transition: all 0.15s ease;
+            -webkit-transition: 0.5s ease;
+            -moz-transition: 0.5s ease;
+            -ms-transition: 0.5s ease;
+            -o-transition: 0.5s ease;
+            transition: all 0.5s ease;
         }
         span.abstract.hidden {
             border: dashed 1px $background-color;
@@ -76,6 +76,14 @@
         span.abstract.hidden.open {
             border-color: $grey-color;
         }
+        span.bibtex.hidden {
+            border: dashed 1px $background-color;
+        }
+        span.bibtex.hidden.open {
+            border-color: $grey-color;
+        }
+
+
     }
     abbr {
         position: absolute;

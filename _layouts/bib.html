@@ -85,6 +85,7 @@
   {% if entry.code %}
     [<a href="{{ entry.code }}" target="_blank">Code</a>]
   {% endif %}
+    [<a class="bibtex">Bibtex</a>]
   </span>
 
   <!-- Hidden abstract block -->
@@ -93,4 +94,7 @@
     <p>{{ entry.abstract }}</p>
   </span>
   {% endif %}
+  <span class="bibtex hidden">
+    <pre>{{ entry.bibtex }}</pre>
+  </span>
 </div>

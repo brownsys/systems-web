@@ -5,7 +5,7 @@ permalink: /people/
 order: 2
 ---
 
-## Faculty
+### Faculty
 [//]: # In alphabetical order
  - [Theo Benson](https://cs.brown.edu/~tab)
  - [Rodrigo Fonseca](https://cs.brown.edu/~rfonseca)
@@ -13,15 +13,15 @@ order: 2
  - [Tim Nelson](https://cs.brown.edu/~tn)
  - [Malte Schwarzkopf](https://cs.brown.edu/~malte)
 
-## Current Students
-### PhD
+### Current Students
+#### PhD
 
 [//]: # In seniority order
  - Michael Markovitch
  - Nicholas DeMarinis
-### Masters
-### Undergraduate
+#### Masters
+#### Undergraduate
 
-## Alumni
+### Alumni
 
 
