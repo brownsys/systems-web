@@ -21,6 +21,7 @@ order: 2
  - Michael Markovitch
  - [Nick DeMarinis](https://cs.brown.edu/~ndemarin)
  - [Usama Naseer](https://cs.brown.edu/~unaseer)
+ - Yuchen Yang
  
  
 #### Masters
