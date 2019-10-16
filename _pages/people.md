@@ -22,13 +22,20 @@ order: 2
  - [Nick DeMarinis](https://cs.brown.edu/~ndemarin)
  - [Usama Naseer](https://cs.brown.edu/~unaseer)
  - Yuchen Yang
- 
- 
+
+
 #### Masters
 
 
 #### Undergraduate
 
+
 ### Alumni
-
-
+ - [Jonathan Mace](https://people.mpi-sws.org/~jcmace) (PhD 2018) → MPI-SWS
+ - [Jeff Rasley](http://cs.brown.edu/~jeffra/) (PhD 2018) → Microsoft
+ - [Marcelo Martins](http://cs.brown.edu/people/martins/) (PhD 2016) → Apple
+ - [Da Yu](http://cs.brown.edu/~dyu/) (PhD 2016?) → ???
+ - Ryan Roelke (MSc 2016) → HP Vertica
+ - [Timothy Hoff](https://www.linkedin.com/in/timothy-hoff-3b023041) (BSc 2016)
+ - [George Hongkai Sun](https://www.monkeyhouse.info/) (MSc 2015)
+ - [Andrew Ferguson](http://cs.brown.edu/~adf/) (PhD 2014) → Google
