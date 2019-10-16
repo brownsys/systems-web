@@ -15,11 +15,16 @@ order: 2
 
 ### Current Students
 #### PhD
-
+{% comment %}
 [//]: # In seniority order
+{% endcomment %}
  - Michael Markovitch
- - Nicholas DeMarinis
+ - [Nick DeMarinis](https://cs.brown.edu/~ndemarin)
+ 
+ 
 #### Masters
+
+
 #### Undergraduate
 
 ### Alumni
