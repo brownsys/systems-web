@@ -25,7 +25,7 @@ order: 2
 
 
 #### Masters
-
+ - [Changhao Wu](https://gordonwucn.github.io)
 
 #### Undergraduate
 
