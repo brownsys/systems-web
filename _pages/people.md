@@ -20,6 +20,7 @@ order: 2
 {% endcomment %}
  - Michael Markovitch
  - [Nick DeMarinis](https://cs.brown.edu/~ndemarin)
+ - [Usama Naseer](https://cs.brown.edu/~unaseer)
  
  
 #### Masters
