@@ -36,6 +36,13 @@ $viewport-small: 32em;
 $viewport-medium: 48em;
 $viewport-large: 64em;
 
+// Official Brown University Colors
+$brown-red:         #ed1c24;
+$brown-brown:       #4e3629;
+$brown-gold:        #ffc72c;
+$brown-grey:        #98a4ae;
+
+
 // Colors
 $red:               #FF3636 !default;
 $red-1:             #f95020 !default;
@@ -70,7 +77,7 @@ $darken-2:          rgba(#000,.125) !default;
 $darken-3:          rgba(#000,.25) !default;
 $darken-4:          rgba(#000,.5) !default;
 
-$theme-color:       $purple;
+$theme-color:       $brown-red;
 $code-color:        $dark-gray;
 $text-color:        $mid-gray;
 $background-color:  white;
