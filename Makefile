@@ -9,3 +9,6 @@ build:
 
 serve:
 	${BUNDLE} exec jekyll serve
+
+clean:
+	${BUNDLE} exec jekyll clean
