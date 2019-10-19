@@ -6,7 +6,7 @@ description: Brown University Systems Research Group
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: logo.png
   address: >
     <p>120 Waterman St</p>
     <p>Providence, RI, 02912</p>

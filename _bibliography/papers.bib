@@ -7,17 +7,6 @@
 
 %% Saved with string encoding Unicode (UTF-8) 
 
-@inproceedings{demarinis2019scanning,
-  author = {DeMarinis, Nicholas and Tellex, Stefanie and Kemerlis, Vasileios P. and Konidaris, George and Fonseca, Rodrigo},
-  booktitle = {2019 {International Conference} on {Robotics} and {Automation} ({ICRA})},
-  file = {files/185/DeMarinis et al. - 2019 - Scanning the internet for ros A view of security .pdf},
-  pages = {8514--8521},
-  publisher = {IEEE},
-  shorttitle = {Scanning the Internet for Ros},
-  title = {Scanning the Internet for Ros: {A} View of Security in Robotics Research},
-  year = {2019},
-  abstract = {Some abstract}
-}
 
 
 @inproceedings{galakatos19fitting,
@@ -57,20 +46,86 @@
 	Title = "Weighted Sampling of Execution Traces: Capturing More Needles and Less Hay",
 	Year = "2018"}
 
-@inproceedings{demarinis2017usablea,
+
+@inproceedings{demarinis2019scanning,
+  author = {DeMarinis, Nicholas and Tellex, Stefanie and Kemerlis, Vasileios P. and Konidaris, George and Fonseca, Rodrigo},
+  booktitle = {2019 {International Conference} on {Robotics} and {Automation} ({ICRA})},
+  file = {files/185/DeMarinis et al. - 2019 - Scanning the internet for ros A view of security .pdf},
+  pages = {8514--8521},
+  publisher = {IEEE},
+  shorttitle = {Scanning the Internet for Ros},
+  title = {Scanning the Internet for Ros: {A} View of Security in Robotics Research},
+  year = {2019},
+  abstract = {Security is particularly important in robotics, as robots can
+  directly perceive and affect the physical world.  We describe the
+  results of a scan of the entire IPv4 address space of the Internet
+  for instances of the Robot Operating System (ROS), a widely used
+  robotics software platform.  We identified a number of hosts
+  supporting ROS that are exposed to the public Internet, thereby
+  allowing anyone to access robotic sensors and actuators. As a proof
+  of concept, and with the consent of the relevant researchers, we
+  were able to read image sensor information from and actuate a
+  physical robot present in a research lab in an American
+  university. This paper gives an overview of our findings, including
+  our methodology, the geographic distribution of publicly-accessible
+  platforms, the sorts of sensor and actuator data that is available,
+  and the different kinds of robots and sensors that our scan
+  uncovered.  Additionally, we offer recommendations on best practices
+  to mitigate these security issues in the future.}
+}
+
+
+@inproceedings{demarinis2017usable,
 	Address = "Dallas, TX, USA",
 	Author = "Nicholas DeMarinis and Rodrigo Fonseca",
 	Booktitle = "Proceedings of the 1st ACM CCS International Workshop on Internet of Things Security and Privacy (IoT S&P'17)",
 	Month = "November",
-	Title = "Toward Usable Network Tra ic Policies for IoT Devices in Consumer Networks",
-	Year = "2017"}
+	Title = "Toward Usable Network Traffic Policies for IoT Devices in Consumer Networks",
+	Year = "2017",
+	abstract={The Internet of Things (IoT) revolution has brought
+millions of small, low-cost, connected devices into our homes, cities,
+infrastructure, and more.  However, these devices are often plagued by
+security vulnerabilities that pose threats to user privacy or can
+threaten the Internet architecture as a whole.  Home networks can be
+particularly vulnerable to these threats as they typically have no
+network administrator and often contain unpatched or otherwise
+vulnerable devices.
+
+In this paper, we argue that the unique security challenges of home
+networks require a new network-layer architecture to both protect
+against external threats and mitigate attacks from compromised
+devices.  We present initial findings based on traffic analysis from a
+small-scale IoT testbed toward identifying predictable patterns in IoT
+traffic that may allow construction of a policy-based framework to
+restrict malicious traffic.  Based on our observations, we discuss key
+features for the design of this architecture to promote future
+developments in network-layer security in smart home networks.}
+	}
 
 @inproceedings{nelson2016switches,
 	Author = "Tim Nelson and Nicholas DeMarinis and Timothy Adam Hoff and Rodrigo Fonseca and Shriram Krishnamurthi",
 	Booktitle = " {Proceedings of the Fifteenth ACM Workshop on Hot Topis in Networks (HotNets)}",
 	Month = "November",
 	Title = "Switches are Monitors Too! Stateful Property Monitoring as a Switch Design Criterion",
-	Year = "2016"}
+	Year = "2016",
+	abstract={Testing and debugging networks in situ is
+                  notoriously difficult.  Many vital correctness
+                  properties involve histories over multiple packets
+                  (e.g., prior established connections). Checking such
+                  properties requires cross-packet state, which cannot
+                  be fully captured on stateless switch hardware.
+                  Recent SDN work is enabling limited switch
+                  operations on persistent state.  We present runtime
+                  checking of cross-packet correctness properties as a
+                  unique and instructive use case for developing
+                  stateful switch primitives.  In this paper, we
+                  examine a set of cross-packet properties and distill
+                  from them switch features needed to monitor their
+                  correctness.  We then contrast these against
+                  features provided by current approaches to switch
+                  state in SDNs and identify semantic gaps with an eye
+                  toward informing future switch instruction sets.  }
+		  }
 
 @inproceedings{sambasivan16tracing,
 	Address = "New York, NY, USA",
@@ -329,3 +384,28 @@
 	Month = "April",
 	Title = "Experiences with Tracing Causality in Networked Services",
 	Year = "2010"}
+
+@inproceedings{naseer2018inspectorgadget,
+  title={InspectorGadget: Inferring Network Protocol Configuration for Web Services.},
+  author={Naseer, Usama and Benson, Theophilus},
+  booktitle={2018 IEEE 38th International Conference on Distributed Computing Systems (ICDCS)},
+  pages={1624--1629},
+  year={2018},
+  organization={IEEE} 
+}
+
+@inproceedings{naseer2017configtron,
+  title={Configtron: Tackling network diversity with heterogeneous configurations.},
+  author={Naseer, Usama and Benson, Theophilus},
+  booktitle={9th $\{$USENIX$\}$ Workshop on Hot Topics in Cloud Computing (HotCloud 17)},
+  year={2017} 
+}
+
+@inproceedings{gao2018dcqcn+,
+  title={DCQCN+: Taming Large-scale Incast Congestion in RDMA over Ethernet Networks},
+  author={Gao, Yixiao and Yang, Yuchen and Chen, Tian and Zheng, Jiaqi and Mao, Bing and Chen, Guihai},
+  booktitle={2018 IEEE 26th International Conference on Network Protocols (ICNP)},
+  pages={110--120},
+  year={2018},
+  organization={IEEE}
+}

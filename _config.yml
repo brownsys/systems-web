@@ -141,7 +141,8 @@ scholar:
   order: descending
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: "/bibliography/*.bib"
+  bibliography: "papers.bib"
   bibliography_template: bib
   repository: /papers
 
