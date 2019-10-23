@@ -18,7 +18,7 @@ order: 2
 {% comment %}
 [//]: # In seniority order
 {% endcomment %}
- - Michael Markovitch
+ - [Michael Markovitch](https://cs.brown.edu/people/mmarkovi/)
  - [Nick DeMarinis](https://cs.brown.edu/~ndemarin)
  - [Linnan Wang](https://linnanwang.github.io/)
  - [Usama Naseer](https://cs.brown.edu/~unaseer)
