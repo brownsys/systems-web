@@ -145,6 +145,9 @@ scholar:
   bibliography: "papers.bib"
   bibliography_template: bib
   repository: /papers
+  bibtex_skip_fields:
+    - file
+    - abstract
 
   replace_strings: true
   join_strings: true
