@@ -55,3 +55,73 @@
         }
     }
 }
+
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+
+.project-main-image {
+  display: block;
+  margin-left: 1em;
+  margin-right: auto;
+  float: right;
+  border: black 1px solid;
+}
+
+.project-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border-collapse: collapse;
+
+    > li {
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: $space-3;
+        padding-top: $space-3;
+    }
+    .project-title {
+	font-size: 1.5em;
+	line-height: 1em;
+    }
+
+}
+
+
+
+.project-item {
+    overflow: hidden;
+
+    > tr {
+    }
+
+    td > td {
+	border: 0;
+    }
+
+    > td {
+	border-top: 1px solid $dark-gray;
+    }
+    .project-image {
+	overflow: hidden;
+    }
+
+    > li {
+        border-bottom: 1px solid $light-gray;
+        padding-bottom: $space-3;
+        padding-top: $space-3;
+    }
+
+    .thumbnail {
+	overflow: hidden;
+	margin-left: auto;
+	float: left;
+	width: 250px;
+	height: 100%;
+
+	img {
+	}
+    }
+}
