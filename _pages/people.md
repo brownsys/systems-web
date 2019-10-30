@@ -12,6 +12,7 @@ order: 2
  - [Shriram Krishnamurthi](https://cs.brown.edu/~sk)
  - [Tim Nelson](https://cs.brown.edu/~tn)
  - [Malte Schwarzkopf](https://cs.brown.edu/~malte)
+ - [Doug Woos](http://www.dougwoos.com/)
 
 ### Current Students
 #### PhD
