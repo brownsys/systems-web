@@ -21,6 +21,10 @@
     margin-top: 20px;
     list-style-type: circle;
 
+    a {
+	color: $theme-color;
+    }
+
     li {
         margin: 10px 0;
         position: relative;

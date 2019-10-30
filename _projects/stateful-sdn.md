@@ -2,9 +2,11 @@
 layout: project-page
 title: Dynamic Monitoring of Correctness for Stateful Network Behavior
 description: "Runtime-checking for correctness properties in stateful software-defined networks"
-status: past
+ongoing: false
 img: /assets/project_images/stateful-sdn.png
 main_image: /assets/project_images/stateful-sdn.png
+people: [ tn, rfonseca ]
+papers: [ demarinis2019scanning, nelson2016switches ]
 ---
 
 Testing and debugging networks is notoriously

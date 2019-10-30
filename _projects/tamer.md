@@ -2,7 +2,7 @@
 layout: project-page
 title: Energy Management for Mobile Devices
 description: "Millisecond-scale Monitoring and Control for Commodity Networks"
-status: past
+ongoing: false
 img: /assets/project_images/tamer.png
 main_image: /assets/project_images/tamer.png
 ---

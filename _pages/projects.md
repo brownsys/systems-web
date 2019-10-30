@@ -23,14 +23,17 @@ order: 3
 </div>
 {% endcomment %}
 
+{% assign current_projects = site.projects | where: "ongoing", "true" %}
+{% assign earlier_projects = site.projects | where: "ongoing", "false" %}
 
+### Current Projects
 <table class="project-list">
 <colgroup>
 <col width="35%" />
 <col width="65%" />
 </colgroup>
 	<tbody>
-	{% for project in site.projects %}
+	{% for project in current_projects %}
 	<tr class="project-item">
 		{% if project.img %}
 			<td class="project-image">
@@ -49,7 +52,31 @@ order: 3
 </table>
 
 
+### Earlier Projects
 
+<table class="project-list">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+	<tbody>
+	{% for project in earlier_projects %}
+	<tr class="project-item">
+		{% if project.img %}
+			<td class="project-image">
+			<img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
+			</td>
+			<td>
+		{% else %}
+			<td colspan="2">
+		{% endif %}
+   	<h2 class="project-title"><a href="{{ project.url | prepend: site.baseurl | prepend: site.url }}">{{ project.title }}</a></h2>
+	<p>{{ project.description }}</p>
+	</td>
+	</tr>
+	{% endfor %}
+	</tbody>
+</table>
 
 
 

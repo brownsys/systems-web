@@ -15,12 +15,16 @@ layout: default
     {{ content }}
   </article>
 
-  {% if page.news %}
-    {% include news.html %}
+  {% if page.people %}
+  <h3>People</h3>
+  {% capture pl %}{{ page.people }}{% endcapture %}
+  {% include somepeoplelist.html target=pl %}
   {% endif %}
 
-  {% if page.social %}
-    {% include social.html %}
+  {% if page.papers %}
+  <h3>Publications</h3>
+  {% for paper in page.papers %}
+  {% bibliography -q @*[key= {{ paper }}]* %}
+  {% endfor %}
   {% endif %}
-
 </div>

@@ -2,7 +2,7 @@
 layout: project-page
 title: Planck
 description: "Millisecond-scale Monitoring and Control for Commodity Networks"
-status: past
+ongoing: false
 img: /assets/project_images/planck.png
 main_image: /assets/project_images/planck.png
 ---
