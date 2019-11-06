@@ -8,7 +8,7 @@ profile:
   align: right
   image: logo.png
   address: >
-    <p>120 Waterman St</p>
+    <p>115 Waterman St</p>
     <p>Providence, RI, 02912</p>
     <p><a href="https://github.com/brownsys">Github</a></p>
     <p><a href="https://twitter.com/brownsystems">Twitter</a></p>

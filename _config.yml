@@ -196,3 +196,4 @@ exclude:
   - README.md
   - theme/
   - prev/
+  - blog/
