@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -57,7 +57,7 @@ orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 
-contact_note: 
+contact_note:
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
@@ -167,7 +167,7 @@ scholar:
 #   bibliography_template: bib
 
 
-  
+
 # -----------------------------------------------------------------------------
 # Other settings
 # -----------------------------------------------------------------------------
