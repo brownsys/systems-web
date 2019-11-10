@@ -27,12 +27,14 @@ order: 2
  - Saim Salman
  - Ghulam Murtaza
 
-
 #### Masters
+ - Zeling Feng
  - [Changhao Wu](https://gordonwucn.github.io)
 
 #### Undergraduate
-
+ - [Raghu Nimmagadda](https://github.com/KaushikRaghuNimmagadda)
+ - Will Riley
+ - Jusung Lee
 
 ### Alumni
  - [Da Yu](http://cs.brown.edu/~dyu/) (PhD 2019) → Microsoft
