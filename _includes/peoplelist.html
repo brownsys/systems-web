@@ -1,0 +1,3 @@
+{% capture type %}{{ include.type }}{% endcapture %}
+{% capture list %}{{ site.data.people.people }}{% endcapture %}
+{% include peoplefilter.html list=site.data.people.people type=include.type %}

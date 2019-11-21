@@ -1,0 +1,8 @@
+{% assign people_filtered = "" | split: "" %}
+{% for p in site.data.people.people %}
+{% if include.target contains p.key %}
+  {% assign people_filtered = people_filtered | push: p %}
+{% endif %}
+{% endfor %}
+{% capture list %}{{ people_filtered }}{% endcapture %}
+{% include peoplefilter.html list=people_filtered type="all" %}

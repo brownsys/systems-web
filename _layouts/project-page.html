@@ -17,7 +17,8 @@ layout: default
 
   {% if page.people %}
   <h3>People</h3>
-  TODO
+  {% capture target %}{{ page.people }}{% endcapture %}
+  {% include somepeoplelist.html target=page.people %}
   {% endif %}
 
   {% if page.papers %}

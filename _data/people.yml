@@ -1,0 +1,23 @@
+people:
+  - key: tab
+    name: "Theo Benson"
+    site: "https://cs.brown.edu/~tab"
+    type: faculty
+  - key: rfonseca
+    name: "Rodrigo Fonseca"
+    site: "https://cs.brown.edu/~rfonseca"
+    type: faculty
+  - key: sk
+    name: "Shriram Krishnamurthi"
+    site: "https://cs.brown.edu/~sk"
+    type: faculty
+  - key: tn
+    name: "Tim Nelson"
+    site: "https://cs.brown.edu/~tn"
+    type: faculty
+  - key: malte
+    name: "Malte Schwarzkopf"
+    site: "https://cs.brown.edu/~malte"
+    type: faculty
+
+  
