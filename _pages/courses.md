@@ -6,15 +6,21 @@ description: Current and previous offered systems courses
 order: 5
 
 core_courses:
- - csci1680:
-   title: "CSCI1680:  Computer Networks"
-   link: https://cs.brown.edu/courses/csci1680
- - csci1380:
-   title: "CSCI1380:  Distributed Systems"
-   link: https://cs.brown.edu/courses/csci1380
+ - csci0330:
+   title: "CSCI0330:  Introduction to Computer Systems"
+   link: https://cs.brown.edu/courses/csci0330/
+ - csci0320:
+   title: "CSCI0320:  Introduction to Software Engineering"
+   link: https://cs.brown.edu/courses/csci0320/
  - csci1310:
    title: "CSCI1310:  Fundamentals of Computer Systems"
    link: https://cs.brown.edu/courses/csci1310
+ - csci1380:
+   title: "CSCI1380:  Distributed Systems"
+   link: https://cs.brown.edu/courses/csci1380
+ - csci1680:
+   title: "CSCI1680:  Computer Networks"
+   link: https://cs.brown.edu/courses/csci1680
 
 seminar_courses:
  - csci2390f19:
