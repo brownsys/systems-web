@@ -11,7 +11,7 @@ Noria serves millions of requests per second on a single server by integrating
 an in-memory cache and a SQL database in a single dataflow computation that
 incrementally maintains materialized views for application queries.
 
-A new dataflow model,_partially-stateful dataflow_, helps Noria achieve
+A new dataflow model, _partially-stateful dataflow_, helps Noria achieve
 this performance with bounded memory and computation cost. Unlike prior
 streaming dataflow systems, which store and update full state in each stateful
 operator (\eg joins, aggregations, and materialized views), Noria stores
