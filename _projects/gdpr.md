@@ -5,6 +5,8 @@ description: "Making GDPR compliance easier through new system designs."
 ongoing: true
 img: /assets/project_images/gdpr.png
 main_image: /assets/project_images/gdpr.png
+people: [ malte ]
+papers: [ schwarzkopf2019gdprcbyc ]
 ---
 
 Web services today store and process ever-increasing amounts of our personal data on remote
@@ -19,9 +21,3 @@ Our research seeks to understand this problem space -- what widely-used abstract
 developers, and efficiently implemented, but hinder compliance? We are designing new, fundamentally
 privacy-centric computer systems abstractions that seek to achieve compliance with GDPR-like legislation
 by default.
-
-### Related publications
-
-* [GDPR Compliance by Construction](https://cs.brown.edu/people/malte/pub/papers/2019-poly-gdpr.pdf).
-  Malte Schwarzkopf, Eddie Kohler, M. Frans Kaashoek, Robert Morris.
-  _Poly 2019 workshop at VLDB 2019_.
