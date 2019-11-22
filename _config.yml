@@ -134,10 +134,10 @@ scholar:
 
   last_name: Einstein
 
-  style: apa
+  style: association-for-computing-machinery
   locale: en
 
-  sort_by: year
+  sort_by: year, month
   order: descending
 
   source: /_bibliography/
