@@ -42,10 +42,8 @@
         &:not(:first-child) {
             margin-left: 10px;
         }
-
-
-
     }
+
     // added for hamburger
     @include media-query($on-palm) {
         position: absolute;

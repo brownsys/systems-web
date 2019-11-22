@@ -1,16 +1,12 @@
 <ul>
   {% for p in include.list %}
-  {% if "all" == "all" %}
-  {% assign ok = true %}
+  {% if p.type == include.type %}
+    {% assign ok = true %}
   {% else %}
-  {% if include.type == p.type %}
-  {% assign ok = true %}
-  {% else %}
-  {% assign ok = false %}
+    {% assign ok = false %}
   {% endif %}
-  {% endif %}
-  {% if ok %}
 
+  {% if ok %}
   <li>
     {% if p.site %}
     <a href="{{ p.site }}">{{ p.name }}</a>
@@ -18,10 +14,7 @@
     {{ p.name }}
     {% endif %}
     {% if p.note %}
-    ({{ p.note }})
-    {% endif %}
-    {% if p.dest %}
-    → {{ p.dest }}
+    {{ p.note }})
     {% endif %}
   </li>
   {% endif %}

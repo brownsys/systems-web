@@ -19,5 +19,87 @@ people:
     name: "Malte Schwarzkopf"
     site: "https://cs.brown.edu/~malte"
     type: faculty
+  - key: dwoos
+    name: "Doug Woos"
+    site: "http://www.dougwoos.com"
+    type: faculty
+  - key: mmarkovi
+    name: "Michael Markovitch"
+    site: "https://cs.brown.edu/~mmarkovi"
+    type: phd
+  - key: ndemarin
+    name: "Nick DeMarinis"
+    site: "https://cs.brown.edu/~ndemarin"
+    type: phd
+  - key: lwang53
+    name: "Linnan Wang"
+    site: "https://linnanwang.github.io"
+    type: phd
+  - key: unaseer
+    name: "Usama Naseer"
+    site: "https://cs.brown.edu/~unaseer"
+    type: phd
+  - key: yyan125
+    name: "Yucheng Yang"
+    type: phd
+  - key: ssalman1
+    name: "Saim Salman"
+    type: phd
+  - key: zfeng
+    name: "Zeling Feng"
+    type: masters
+  - key: cwu55
+    name: "Changhao Wu"
+    site: "https://gordonwucn.github.io"
+    type: masters
+  - key: rnimmagadda
+    name: "Raghu Nimmagadda"
+    site: "https://github.com/KaushikRaghuNimmagadda"
+    type: ugrad
+  - key: wriley
+    name: "Will Riley"
+    type: ugrad
+  - key: jlee
+    name: "Jusung Lee"
+    type: ugrad
+  - key: dyu
+    name: "Da Yu"
+    site: "https://cs.brown.edu/~dyu"
+    type: alum
+    note: "(PhD 2019) → Microsoft"
+  - key: jeffra
+    name: "Jeff Rasley"
+    site: "https://cs.brown.edu/~jeffra"
+    type: alum
+    note: "(PhD 2019) → Microsoft"
+  - key: jcmace
+    name: "Jonathan Mace"
+    site: "https://people.mpi-sws.org/~jcmace"
+    type: alum
+    note: "(PhD 2018) → MPI-SWS"
+  - key: mmartins
+    name: "Marcelo Martins"
+    site: "http://cs.brown.edu/people/martins/"
+    type: alum
+    note: "(PhD 2016) → Apple"
+  - key: rroelke
+    name: "Ryan Roelke"
+    type: alum
+    note: "(MSc 2016) → HP Vertica"
+  - key: tahoff
+    name: "Timothy Hoff"
+    site: "https://www.linkedin.com/in/timothy-hoff-3b023041"
+    type: alum
+    note: "(BSc 2016)"
+  - key: gsun
+    name: "George Hongkai Sun"
+    site: "https://www.monkeyhouse.info/"
+    type: alum
+    note: "(MSc 2015)"
+  - key: adf
+    name: "Andrew Ferguson"
+    site: "https://cs.brown.edu/~adf/"
+    type: alum
+    note: "(PhD 2014) → Google"
 
   
