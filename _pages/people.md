@@ -2,6 +2,7 @@
 layout: page
 title: People
 permalink: /people/
+description: The humans of Systems@Brown.
 order: 2
 ---
 
