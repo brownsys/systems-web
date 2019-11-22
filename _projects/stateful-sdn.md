@@ -5,7 +5,7 @@ description: "Runtime-checking for correctness properties in stateful software-d
 ongoing: false
 img: /assets/project_images/stateful-sdn.png
 main_image: /assets/project_images/stateful-sdn.png
-people: [ tn, rfonseca ]
+people: [ tn, ndemarin, rfonseca ]
 papers: [ demarinis2019scanning, nelson2016switches ]
 ---
 

@@ -1,9 +1,13 @@
 <ul>
   {% for p in include.list %}
-  {% if p.type == include.type %}
+  {% if include.type == "all" %}
     {% assign ok = true %}
   {% else %}
-    {% assign ok = false %}
+    {% if p.type == include.type %}
+      {% assign ok = true %}
+    {% else %}
+       {% assign ok = false %}
+    {% endif %}
   {% endif %}
 
   {% if ok %}
