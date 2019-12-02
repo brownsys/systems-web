@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "October 13th - Ariel Rabkin"

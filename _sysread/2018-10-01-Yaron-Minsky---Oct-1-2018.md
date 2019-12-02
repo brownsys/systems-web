@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Yaron Minsky - Oct 1 2018"

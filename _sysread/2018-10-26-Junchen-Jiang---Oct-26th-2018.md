@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Junchen Jiang - Oct 26th 2018"

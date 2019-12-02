@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "September 29 - Minlan Yu"

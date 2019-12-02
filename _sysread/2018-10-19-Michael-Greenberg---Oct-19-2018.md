@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Michael Greenberg - Oct 19 2018"

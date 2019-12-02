@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Keith Winstein - May 4th"

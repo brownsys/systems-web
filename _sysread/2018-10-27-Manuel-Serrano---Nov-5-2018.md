@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Manuel Serrano - Nov 5 2018"

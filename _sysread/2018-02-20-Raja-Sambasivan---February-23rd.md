@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Raja Sambasivan - February 23rd"

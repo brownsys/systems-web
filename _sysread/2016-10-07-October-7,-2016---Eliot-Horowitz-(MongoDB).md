@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "October 7, 2016 - Eliot Horowitz (MongoDB)"

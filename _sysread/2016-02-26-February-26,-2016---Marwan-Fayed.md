@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "February 26, 2016 - Marwan Fayed"

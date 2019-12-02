@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Behnaz Arzani - Nov 19 2018"

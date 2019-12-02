@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Joint meeting with Theory Lunch (2)"

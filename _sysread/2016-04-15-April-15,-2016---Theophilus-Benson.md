@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "April 15, 2016 - Theophilus Benson"

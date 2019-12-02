@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Fahad Dogar - April 27th"

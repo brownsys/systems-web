@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "March 30, 2017 - Marco Canini"

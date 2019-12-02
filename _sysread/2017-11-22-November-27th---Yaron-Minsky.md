@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "November 27th - Yaron Minsky"

@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Andrew Ferguson - November 30th"

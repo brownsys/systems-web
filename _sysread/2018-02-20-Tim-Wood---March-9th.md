@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Tim Wood - March 9th"

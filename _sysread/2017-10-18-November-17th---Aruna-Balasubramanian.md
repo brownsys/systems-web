@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "November 17th - Aruna Balasubramanian"

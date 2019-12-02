@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Marco Canini -- May 1st 2019"

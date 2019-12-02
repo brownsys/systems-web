@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "November 18, 2016 - Christos Dimoulas"

@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "October 30, 2015 - Arjun Guha"

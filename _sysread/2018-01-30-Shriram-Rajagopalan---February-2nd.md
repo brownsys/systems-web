@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Shriram Rajagopalan - February 2nd"

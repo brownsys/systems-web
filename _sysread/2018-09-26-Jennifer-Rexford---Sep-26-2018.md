@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Jennifer Rexford - Sep 26 2018"

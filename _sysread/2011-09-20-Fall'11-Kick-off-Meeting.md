@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Fall'11 Kick-off Meeting"

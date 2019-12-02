@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "October 20th - Jeff Rasley"

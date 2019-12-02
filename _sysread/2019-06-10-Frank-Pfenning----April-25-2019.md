@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Frank Pfenning -- April 25 2019"

@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Hillel Wayne -- April 5 2019"

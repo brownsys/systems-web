@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "December 4, 2015 - Stephen Chong"

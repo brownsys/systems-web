@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "March 17, 2017 - Yaron Minsky"

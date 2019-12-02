@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "Bernd Fischer - Nov 2 2018"
