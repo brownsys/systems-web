@@ -17,6 +17,8 @@ order: 3
 </colgroup>
 	<tbody>
 	{% for project in current_projects %}
+	{% if project.ignore %}
+	{% else %}
 	<tr class="project-item">
 		{% if project.img %}
 			<td class="project-image">
@@ -30,6 +32,7 @@ order: 3
 	<p>{{ project.description }}</p>
 	</td>
 	</tr>
+	{% endif %}
 	{% endfor %}
 	</tbody>
 </table>
@@ -44,6 +47,8 @@ order: 3
 </colgroup>
 	<tbody>
 	{% for project in earlier_projects %}
+	{% if project.ignore %}
+	{% else %}
 	<tr class="project-item">
 		{% if project.img %}
 			<td class="project-image">
@@ -57,6 +62,7 @@ order: 3
 	<p>{{ project.description }}</p>
 	</td>
 	</tr>
+	{% endif %}
 	{% endfor %}
 	</tbody>
 </table>
