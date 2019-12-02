@@ -1,0 +1,15 @@
+
+---
+layout: post
+title: "Tim Wood - March 9th"
+date: 2018-02-20
+categories: sysread
+---
+
+Title: From Pipes to Processors: Building High Performance Network Middleware
+
+Abstract: Communication networks are no longer just pipes that move data from place to place.  They are becoming powerful, software-based infrastructures capable of transforming and inspecting data as it moves between hosts. Two trends reflect this: the use of Software Defined Networks (SDN) to dynamically manage the network control plane, and Network Function Virtualization (NFV) to provide a high-performance network data plane.  NFV promises to enable a vast array of in-network software functions running efficiently in virtualized environments. This opens a range of possibilities for in-network services that will affect cloud data centers, new edge computing platforms, and IoT data aggregation and analysis.
+
+This talk will explore the potential of NFV-based services, and the operating and distributed systems challenges that must be overcome to realize their deployment. To accelerate research and development of network middleware, we have developed OpenNetVM, an open-source software infrastructure for high speed packet processing. I will discuss how we have leveraged this platform to provide powerful, intelligent data plane functions such as a high speed, automated key-value store load balancer that is 100 times faster than Twitter’s twemproxy and scalable per-flow customizable network processing for edge cloud systems.
+
+Bio: Timothy Wood is an associate professor in the Department of Computer Science at George Washington University. Before joining GW, he received a doctoral degree in computer science from the University of Massachusetts Amherst and a bachelor’s degree in electrical and computer engineering from Rutgers University. His research studies how new virtualization technologies can provide application agnostic tools that improve performance, efficiency, and reliability in cloud computing data centers and software-based networks. His PhD thesis received the UMass CS Outstanding Dissertation Award, his students have voted him CS Professor of the Year, and he has won three best paper awards, a Google Faculty Research Award, and an NSF Career award.
