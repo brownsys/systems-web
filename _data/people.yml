@@ -45,6 +45,9 @@ people:
   - key: ssalman1
     name: "Saim Salman"
     type: phd
+  - key: gmurtaza
+    name: "Ghulam Murtaza"
+    type: phd
   - key: zfeng
     name: "Zeling Feng"
     type: masters
