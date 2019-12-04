@@ -52,12 +52,12 @@ check out the following courses, often taught by faculty in our
 group.
 
 For information on specific course offerings per semester, see the
-[department website](http://cs.brown.edu/courses).
+<a href="http://cs.brown.edu/courses" target="_blank">department website</a>.
 
 ## Core courses
 <ul>
 {% for item in page.core_courses %}
-<li markdown="span">[{{item.title}}]({{item.link}})</li>
+<li markdown="span"><a href="{{item.link}}" target="_blank">{{item.title}}</a></li>
 {% endfor %}
 </ul>
 
@@ -67,6 +67,6 @@ These courses are offered less-frequently, and cover specific research
 areas:
 <ul>
 {% for item in page.seminar_courses %}
-<li markdown="span">[{{item.title}}]({{item.link}}), {{item.term}}, {{ item.instructor }}</li>
+<li markdown="span"><a href="{{item.link}}" target="_blank">{{item.title}}</a>, {{item.term}}, {{ item.instructor }}</li>
 {% endfor %}
 </ul>

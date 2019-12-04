@@ -13,12 +13,12 @@
   {% if ok %}
   <li>
     {% if p.site %}
-    <a href="{{ p.site }}">{{ p.name }}</a>
+    <a href="{{ p.site }}" target="_blank">{{ p.name }}</a>
     {% else %}
     {{ p.name }}
     {% endif %}
     {% if p.note %}
-    {{ p.note }})
+    {{ p.note }}
     {% endif %}
   </li>
   {% endif %}

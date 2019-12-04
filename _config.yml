@@ -197,3 +197,4 @@ exclude:
   - theme/
   - prev/
   - blog/
+  - publish.sh

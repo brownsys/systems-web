@@ -4,7 +4,7 @@ title: "Noria: fast and efficient websites"
 description: "Dynamic, high-performance incrementally materialized views via streaming dataflow."
 ongoing: true
 img: /assets/project_images/noria.png
-people: [ malte, zeling ]
+people: [ malte, zfeng ]
 ---
 
 Noria serves millions of requests per second on a single server by integrating
