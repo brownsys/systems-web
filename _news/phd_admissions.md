@@ -20,4 +20,7 @@ Applications to the Brown CS doctoral program go through the Brown Graduate Scho
 department website has [detailed instructions](https://cs.brown.edu/degrees/doctoral/applications/)
 on how to apply. If you have questions, please shoot any one of us an email!
 
+***The application deadline is December 15, 2019. Note: starting this year, no GRE scores are
+needed to apply to the Brown CS PhD program.***
+
 We look forward to your application and hope to have you join the Brown Systems family soon :-)
