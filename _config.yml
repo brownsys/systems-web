@@ -120,7 +120,6 @@ highlighter: pygments
 
 # Includes & excludes
 include: ['_pages']
-#exclude: [vendor]
 
 # Plug-ins
 plugins:
@@ -189,10 +188,8 @@ exclude:
   - gemfiles/
   - Gemfile
   - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor/
+  - scripts/
   - README.md
   - theme/
   - prev/
