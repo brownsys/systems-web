@@ -30,13 +30,6 @@ improves tail (p95) web performance by 32-67% across diverse
 websites and networks.
 
 
-#### Publications
-
- * Configtron: Tackling network diversity with heterogeneous configurations.<br />
-   Usama Naseer and Theophilus Benson<br />
-   9th {USENIX} Workshop on Hot Topics in Cloud Computing (HotCloud 17)<br />
-
-
 #### Acknowledgements
 
 We are indebted to the Janusz Jezowicz from [SpeedChecker](https://probeapi.speedchecker.com/) for granting us access to their globally distibuted Internet and web measurements platform.
