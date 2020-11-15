@@ -4,4 +4,4 @@ date: 2020-11-15 02:19:00-0400
 inline: true
 ---
 
-4 posters accepted at CoNEXT student workshop! Congratulations to Akshat, Ghulam, Gordon and Theo!
+3 posters accepted at CoNEXT student workshop! Congratulations to Akshat, Ghulam, Gordon and Theo!
