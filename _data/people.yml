@@ -3,6 +3,10 @@ people:
     name: "Theo Benson"
     site: "https://cs.brown.edu/~tab"
     type: faculty
+  - key: rbahar
+    name: "R. Iris Bahar"
+    site: "https://vivo.brown.edu/display/rbahar"
+    type: faculty
   - key: rfonseca
     name: "Rodrigo Fonseca"
     site: "https://cs.brown.edu/~rfonseca"
@@ -31,6 +35,10 @@ people:
     name: "Nick DeMarinis"
     site: "https://cs.brown.edu/~ndemarin"
     type: phd
+  - key: jiwonchoe
+    name: "Jiwon Choe"
+    type: phd
+    site: "https://jiwon-choe.github.io/"
   - key: lwang53
     name: "Linnan Wang"
     site: "https://linnanwang.github.io"
@@ -49,19 +57,18 @@ people:
   - key: gmurtaza
     name: "Ghulam Murtaza"
     type: phd
-  - key: zfeng
-    name: "Zeling Feng"
-    type: masters
+  - key: samthomas
+    name: "Samuel Thomas"
+    type: phd
   - key: cwu55
     name: "Changhao Wu"
     site: "https://gordonwucn.github.io"
     type: masters
-  - key: rnimmagadda
-    name: "Raghu Nimmagadda"
-    site: "https://github.com/KaushikRaghuNimmagadda"
+  - key: ekiziv
+    name: "Eleonora Kiziv"
     type: ugrad
-  - key: wriley
-    name: "Will Riley"
+  - key: andersonaddo
+    name: "Anderson Addo"
     type: ugrad
   - key: jlee
     name: "Jusung Lee"

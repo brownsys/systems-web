@@ -12,8 +12,11 @@ core_courses:
  - csci0320:
    title: "CSCI0320:  Introduction to Software Engineering"
    link: https://cs.brown.edu/courses/csci0320/
+ - csci0300:
+   title: "CSCI0300:  Fundamentals of Computer Systems"
+   link: https://cs.brown.edu/courses/csci0300
  - csci1310:
-   title: "CSCI1310:  Fundamentals of Computer Systems"
+   title: "CSCI1310:  Fundamentals of Computer Systems (Masters)"
    link: https://cs.brown.edu/courses/csci1310
  - csci1380:
    title: "CSCI1380:  Distributed Systems"

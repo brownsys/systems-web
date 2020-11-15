@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Luke Nelson: Applying formal methods to BPF just-in-time compilers in the Linux kernel"
+date: 2020-11-12
+categories: sysread
+---
+
+<p><b>Abstract:</b><br />
+This talk will present our experience applying formal methods to a critical component in the Linux kernel, the just-in-time compilers ("JITs") for the Berkeley Packet Filter (BPF) virtual machine. We verify these JITs using Jitterbug, the first framework to provide a precise specification of JIT correctness that is capable of ruling out real-world bugs, and an automated proof strategy that scales to practical implementations. Using Jitterbug, we have designed, implemented, and verified a new BPF JIT for 32-bit RISC-V, found and fixed 16 previously unknown bugs in five other deployed JITs, and developed new JIT optimizations; all of these changes have been upstreamed to the Linux kernel. The results show that it is possible to build a verified component within a large, unverified system with careful design of specification and proof strategy.
+</p>

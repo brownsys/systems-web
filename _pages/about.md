@@ -10,7 +10,7 @@ profile:
   address: >
     <p>115 Waterman St</p>
     <p>Providence, RI, 02912</p>
-    <p><a href="https://github.com/brownsys">Github</a> | <a href="https://twitter.com/systemsatbrown">Twitter</a></p>
+    <p><a href="https://github.com/brownsys">Github</a> | <a href="https://twitter.com/systemsatbrown">Twitter</a> | <a href="https://www.youtube.com/channel/UC33M2YIhrxJZBFiMXDESl9Q">YouTube</a></p>
 
 news: true
 social: false
