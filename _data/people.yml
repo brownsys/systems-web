@@ -64,6 +64,10 @@ people:
     name: "Changhao Wu"
     site: "https://gordonwucn.github.io"
     type: masters
+  - key: ykim
+    name: "Yongjeong Kim"
+    site: "https://cseyj.github.io/"
+    type: masters
   - key: ekiziv
     name: "Eleonora Kiziv"
     type: ugrad
