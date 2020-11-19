@@ -3,3 +3,8 @@
 set -euo pipefail
 
 bundle exec jekyll build
+
+mkdir -pv __release
+pushd _site
+tar -czvf ../__release/systems-web-$(git log --format=%h -1).tar.gz .
+popd
