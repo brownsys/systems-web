@@ -27,8 +27,7 @@ cache: bundler # caching bundler gem packages will speed up build
 
 deploy:
   provider: releases
-  api_key:
-    secure: $GITHUB_API_TOKEN
+  token: $GITHUB_API_TOKEN
   file_glob: true
   file: __release/*
   skip_cleanup: true
