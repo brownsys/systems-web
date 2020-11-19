@@ -6,7 +6,7 @@ ongoing: true
 img: /assets/project_images/deepconfig.png
 main_image: /assets/project_images/deepconfig.png
 people: [ ssalman1, tab ]
-papers: [ deepconfig:netai18 ]
+papers: [ "deepconfig:netai18" ]
 ---
 
 In recent years, many techniques have been developed to improve the performance and efficiency of data center networks. While these techniques provide high accuracy, they are often designed using heuristics that leverage domain-specific properties of the workload or hardware.
