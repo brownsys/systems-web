@@ -6,7 +6,7 @@ ongoing: true
 img: /assets/project_images/Foxhound.png
 main_image: /assets/project_images/Foxhound.png
 people: [ lucas, tab ]
-papers: [  ]
+papers: [ lucas19p4intel ]
 ---
 
 There is a growing move to offload functionality, e.g., TCP or key-value stores, into the network - either on SmartNICs or programmable data planes.  While offloading promises significant performance boosts, these programmable devices often provide little visibility into their performance. Moreover, many existing tools for analyzing and debugging performance problems, e.g., distributed tracing, do not extend into these devices.
