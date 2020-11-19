@@ -68,6 +68,9 @@ people:
     name: "Yongjeong Kim"
     site: "https://cseyj.github.io/"
     type: masters
+  - key: lucas
+    name: "Lucas Castanheira"
+    type: masters
   - key: ekiziv
     name: "Eleonora Kiziv"
     type: ugrad
