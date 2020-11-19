@@ -68,6 +68,10 @@ people:
     name: "Yongjeong Kim"
     site: "https://cseyj.github.io/"
     type: masters
+  - key: amahaja5
+    name: "Akshat Mahajan"
+    type: masters
+    site: "https://akshatm.github.io/site/"
   - key: lucas
     name: "Lucas Castanheira"
     type: masters
