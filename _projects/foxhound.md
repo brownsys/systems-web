@@ -3,7 +3,7 @@ layout: project-page
 title: Foxhound
 description: "Server-Grade Observability for Network Augmented Applications"
 ongoing: true
-img: /assets/project_images/Foxhound.png
+img: /assets/project_images/foxhound-resize.png
 main_image: /assets/project_images/Foxhound.png
 people: [ lucas, tab ]
 papers: [ lucas19p4intel ]

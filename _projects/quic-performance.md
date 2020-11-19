@@ -3,7 +3,7 @@ layout: project-page
 title: Dissecting Performance of Production QUIC
 description: "Benchmarking and analyzing production QUIC and TCP endpoints from Google, Facebook, and Cloudflare"
 ongoing: true
-img: /assets/project_images/quic-logo.png
+img: /assets/project_images/quic-logo-resize.png
 main_image: /assets/project_images/quic-testbed.png
 people: [ ayu9, tab ]
 ---

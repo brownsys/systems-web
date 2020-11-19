@@ -3,7 +3,7 @@ layout: project-page
 title: WebMedic
 description: "WebMedic: Mobile Web Performance for the Next Billion Devices."
 ongoing: true
-img: /assets/project_images/web-medic.png
+img: /assets/project_images/web-medic-resize.png
 main_image: /assets/project_images/web-medic.png
 people: [ unaseer, tab ]
 ---
