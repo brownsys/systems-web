@@ -39,14 +39,3 @@ Posts and pages are located in the following directories:
  - `_bibliography`:  `.bib` files for publication lists
  - `papers`:  PDFs of papers and slides, indexed by bibtex key
 
-# TODO
- - 
- - [X] Make sysread page show posts of category sysread
- - [X] Make home News section only show posts of category news
- - [X] Add fancy show/hide links to bibliography
- - [ ] List generation for people page
- - [X] Structure for sysread page
- - [ ] Structure for projects page
- - [X] Pick/Make a template
- - [ ] Actually add some content
- 
