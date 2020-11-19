@@ -25,14 +25,10 @@ addons:
 
 cache: bundler # caching bundler gem packages will speed up build
 
-# Disable email notifications
-notifications:
-  email: false
-
 deploy:
   provider: releases
   api_key:
-    secure: GITHUB_API_TOKEN
+    secure: $GITHUB_API_TOKEN
   file_glob: true
   file: __release/*
   skip_cleanup: true
