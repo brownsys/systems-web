@@ -3,8 +3,8 @@ layout: project-page
 title: Suture
 description: "Dynamic Permissions for Kubernetes Operators"
 ongoing: true
-img: /assets/project_images/suture.svg
-main_image: /assets/project_images/suture.svg
+img: /assets/project_images/suture.png
+main_image: /assets/project_images/suture.png
 people: [ amahaja5, tab ]
 ---
 
