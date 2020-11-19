@@ -3,8 +3,8 @@ layout: project-page
 title: DeepConfig
 description: "DeepConfig: Automating Data Center Network Topologies Management with Machine Learning."
 ongoing: true
-img: /assets/project_images/deepconfig.png
-main_image: /assets/project_images/deepconfig.png
+#img: /assets/project_images/deepconfig.png
+#main_image: /assets/project_images/deepconfig.png
 people: [ ssalman1, tab ]
 papers: [ "deepconfig:netai18" ]
 ---
