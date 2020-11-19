@@ -2,9 +2,14 @@
 
 set -euo pipefail
 
+# Build the site
 bundle exec jekyll build
 
+# Check HTML compliance
+bundle exec htmlproofer ./_site --disable-external
+
+# Package generated HTML for release
 mkdir -pv __release
 pushd _site
-tar -czvf ../__release/systems-web-$(git log --format=%h -1).tar.gz .
+tar -czvf ../__release/systems-web-$(git log --format=%H -1).tar.gz .
 popd
