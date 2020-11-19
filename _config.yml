@@ -67,11 +67,6 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 blog_name: Systems@Brown
 blog_description: Brown University Systems Group
 
-# Pagination
-paginate: 4
-permalink: /blog/:year/:title/
-paginate_path: /blog/page:num/
-
 # Publish future-dated posts
 # (This is important for publishing upcoming sysread talks.)
 future: true

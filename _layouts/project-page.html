@@ -9,7 +9,7 @@ layout: default
   </header>
 
   {% if page.main_image %}
-  <div><img class="project-main-image" src="{{ page.main_image | prepend: site.baseurl | prepend: site.url }}" /></div>
+  <div><img class="project-main-image" src="{{ page.main_image | prepend: site.baseurl | prepend: site.url }}" alt="{{ project.title }} Logo" /></div>
   {% endif %}
   <article class="post-content {{page.title}} clearfix">
     {{ content }}

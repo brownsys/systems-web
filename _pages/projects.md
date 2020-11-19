@@ -22,7 +22,7 @@ order: 3
 	<tr class="project-item">
 		{% if project.img %}
 			<td class="project-image">
-			<img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
+			<img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}" alt="{{ project.title }}"/>
 			</td>
 			<td>
 		{% else %}
@@ -52,7 +52,7 @@ order: 3
 	<tr class="project-item">
 		{% if project.img %}
 			<td class="project-image">
-			<img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}"/>
+			<img class="thumbnail" src="{{ project.img | prepend: site.baseurl | prepend: site.url }}" alt="{{ project.title }}"/>
 			</td>
 			<td>
 		{% else %}
