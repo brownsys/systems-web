@@ -3,8 +3,8 @@ layout: project-page
 title: AutoMesh
 description: "AutoMesh: Too Many Knobs!"
 ongoing: true
-#img: /assets/project_images/automesh.png
-#main_image: /assets/project_images/automesh.png
+img: /assets/project_images/automesh.png
+main_image: /assets/project_images/automesh.png
 people: [ ssalman1, tab ]
 papers: [ ]
 ---
