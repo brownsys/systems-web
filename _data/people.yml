@@ -123,5 +123,6 @@ people:
     site: "https://cs.brown.edu/~adf/"
     type: alum
     note: "(PhD 2014) → Google"
-
-  
+  - key: ayu9
+    name: "Alexander Yu"
+    type: ugrad
