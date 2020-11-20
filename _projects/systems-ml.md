@@ -6,7 +6,7 @@ ongoing: true
 img: /assets/project_images/superneurons.png
 main_image: /assets/project_images/superneurons.png
 people: [ lwang53 ]
-papers: [wang2018superneurons]
+papers: [ wang2018superneurons ][ linnanfft ]
 ---
 
 Here is what we have achieved so far:
