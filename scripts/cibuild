@@ -3,7 +3,7 @@
 set -euo pipefail
 
 # Build the site
-bundle exec jekyll build
+bundle exec jekyll build --strict_front_matter
 
 # Check HTML compliance
 bundle exec htmlproofer ./_site --disable-external

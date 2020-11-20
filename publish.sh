@@ -32,7 +32,7 @@ set -euo pipefail
 BUNDLE=/usr/bin/bundle
 
 ${BUNDLE} exec jekyll clean
-${BUNDLE} exec jekyll build
+${BUNDLE} exec jekyll build --strict_front_matter
 
 rsync -avz --update --delete --chmod=D775,F774 --progress _site/* systems-v3:/vol/web/html/systems
 

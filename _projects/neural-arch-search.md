@@ -6,7 +6,7 @@ ongoing: true
 img: /assets/project_images/latent-actions-teaser.jpg
 main_image: /assets/project_images/latent-actions-teaser.jpg
 people: [ lwang53 ]
-papers: [ wang20nas ] [ linnanlamcts ]
+papers: [ wang20nas, linnanlamcts ]
 
 ---
 
