@@ -40,3 +40,9 @@ deploy:
   file_glob: true
   file: __release/*
   skip_cleanup: true
+
+notifications:
+  webhooks:
+    urls:
+      - https://systems.cs.brown.edu/web-deploy
+    on_success: always
