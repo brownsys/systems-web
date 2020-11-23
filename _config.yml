@@ -190,3 +190,4 @@ exclude:
   - prev/
   - blog/
   - publish.sh
+  - Makefile
