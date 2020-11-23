@@ -30,7 +30,7 @@ before_deploy:
   - git config --local user.name "Travis CI"
   - git config --local user.email "noreply@brown.systems"
   - git remote add deploy "https://ndemarinis:$GITHUB_API_TOKEN@github.com/brownsys/systems-web.git"
-  - export TRAVIS_TAG="$(git log --format %H -1)"
+  - export TRAVIS_TAG="$(git log --format=%H -1)"
   - git tag $TRAVIS_TAG
   - git push deploy --tags
 
