@@ -6,7 +6,7 @@ ongoing: false
 img: /assets/project_images/stateful-sdn.png
 main_image: /assets/project_images/stateful-sdn.png
 people: [ tn, ndemarin, rfonseca ]
-papers: [ demarinis2019scanning, nelson2016switches ]
+papers: [ nelson2016switches ]
 ---
 
 Testing and debugging networks is notoriously
