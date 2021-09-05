@@ -13,6 +13,10 @@ We host speakers on a range of topics that are of interest to the group.
 
 This semester, sysread takes place at <b>12 noon on Fridays</b> <s>in <b>CIT 368</b></s> on Zoom.
 
+New talks and changes to the schedule are announced on the mailing list
+which you can subscribe to
+[here](https://lists.cs.brown.edu/sympa/info/sysread).
+
 {% assign today = 'now' | date: '%s' %}
 {% assign sorted = site.sysread | reverse %}
 
