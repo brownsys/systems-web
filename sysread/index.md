@@ -11,7 +11,7 @@ layout: default
 Sysread is our weekly seminar on computer systems research and industry practice.
 We host speakers on a range of topics that are of interest to the group.
 
-This semester, sysread takes place at <b>12 noon on Fridays</b> <s>in <b>CIT 368</b></s> on Zoom.
+This semester, sysread takes place at <b>12 noon on Fridays</b> in <b>CIT 368</b> and on Zoom.
 
 New talks and changes to the schedule are announced on the mailing list
 which you can subscribe to
