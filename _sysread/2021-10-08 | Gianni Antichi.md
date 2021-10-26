@@ -20,3 +20,8 @@ future, programmable switches shall support new applications.
 
 Gianni is a Senior Lecturer (Associate Professor) at Queen Mary University of
 London. More information can be found on this website: [https://gianniantichi.github.io/](https://gianniantichi.github.io/)
+
+
+### Video
+
+The recording of the talk is [available on YouTube](https://www.youtube.com/watch?v=IksN5dMy80M)
