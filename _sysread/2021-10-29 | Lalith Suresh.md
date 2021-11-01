@@ -23,3 +23,6 @@ the context of some real-world systems like Kubernetes.
 
 You can check out the DCM project here:
 [https://github.com/vmware/declarative-cluster-management/](https://github.com/vmware/declarative-cluster-management/)
+
+
+A video of the talk is available [on YouTube](https://www.youtube.com/watch?v=pZtf6I5c3Mc).
