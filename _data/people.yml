@@ -23,10 +23,6 @@ people:
     name: "Malte Schwarzkopf"
     site: "https://cs.brown.edu/~malte"
     type: faculty
-  - key: dwoos
-    name: "Doug Woos"
-    site: "http://www.dougwoos.com"
-    type: faculty
   - key: mmarkovi
     name: "Michael Markovitch"
     site: "https://cs.brown.edu/~mmarkovi"
@@ -42,13 +38,10 @@ people:
   - key: lwang53
     name: "Linnan Wang"
     site: "https://linnanwang.github.io"
-    type: phd
+    type: alum
   - key: unaseer
     name: "Usama Naseer"
     site: "https://usama6naseer.github.io/"
-    type: phd
-  - key: yyan125
-    name: "Yuchen Yang"
     type: phd
   - key: ssalman1
     name: "Saim Salman"
@@ -60,6 +53,16 @@ people:
   - key: samthomas
     name: "Samuel Thomas"
     type: phd
+  - key: kdakalba
+    name: "Kinan Dak Albab"
+    type: phd
+  - key: jadam2
+    name: "Justus Adam"
+    type: phd
+  - key: lspiegel
+    name: "Leonhard Spiegelberg"
+    type: phd
+    site: "https://cs.brown.edu/~lspiegel"
   - key: cwu55
     name: "Changhao Wu"
     site: "https://gordonwucn.github.io"
@@ -70,14 +73,16 @@ people:
     type: masters
   - key: amahaja5
     name: "Akshat Mahajan"
-    type: masters
+    type: alum
     site: "https://akshatm.github.io/site/"
+    note: "(MSc 2021) → Cloudflare"
   - key: lucas
     name: "Lucas Castanheira"
     type: masters
   - key: ekiziv
     name: "Eleonora Kiziv"
-    type: ugrad
+    type: alum
+    note: "(BSc 2020) → Google"
   - key: andersonaddo
     name: "Anderson Addo"
     type: ugrad
