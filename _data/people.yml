@@ -30,10 +30,10 @@ people:
   - key: ndemarin
     name: "Nick DeMarinis"
     site: "https://cs.brown.edu/~ndemarin"
-    type: phd
+    type: faculty
   - key: jiwonchoe
     name: "Jiwon Choe"
-    type: phd
+    type: alum
     site: "https://jiwon-choe.github.io/"
   - key: lwang53
     name: "Linnan Wang"
@@ -66,11 +66,12 @@ people:
   - key: cwu55
     name: "Changhao Wu"
     site: "https://gordonwucn.github.io"
-    type: masters
+    type: alum
   - key: ykim
     name: "Yongjeong Kim"
     site: "https://cseyj.github.io/"
-    type: masters
+    note: "(MSc 2022) → Nvidia P4 team"
+    type: alum
   - key: amahaja5
     name: "Akshat Mahajan"
     type: alum
@@ -84,11 +85,9 @@ people:
     type: alum
     note: "(BSc 2020) → Google"
   - key: andersonaddo
-    name: "Anderson Addo"
-    type: ugrad
-  - key: jlee
-    name: "Jusung Lee"
-    type: ugrad
+    name: "Ben Givertz"
+    type: alum
+    note: "(BSc 2022) → Twitch"
   - key: dyu
     name: "Da Yu"
     site: "https://cs.brown.edu/~dyu"
@@ -130,4 +129,4 @@ people:
     note: "(PhD 2014) → Google"
   - key: ayu9
     name: "Alexander Yu"
-    type: ugrad
+    type: alum
