@@ -59,6 +59,7 @@ people:
   - key: jadam2
     name: "Justus Adam"
     type: phd
+    site: "https://justus.science"
   - key: lspiegel
     name: "Leonhard Spiegelberg"
     type: phd
