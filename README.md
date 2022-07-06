@@ -39,3 +39,10 @@ Posts and pages are located in the following directories:
  - `_bibliography`:  `.bib` files for publication lists
  - `papers`:  PDFs of papers and slides, indexed by bibtex key
 
+
+# Guidelines
+
+Here are a few guidelines to ensure consistency across authors when adding content:
+
+* Keep news items (short and) in [present tense](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
+* Use bibtex entries from [ACM digital library](https://dl.acm.org/).

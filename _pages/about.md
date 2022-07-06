@@ -18,6 +18,6 @@ order: 1
 ---
 
 The Brown Systems research group investigates questions in computer
-systems, particularly distributed systems, operating systems,
-networking, and systems security. We build practical systems with high
-performance.
+systems—particularly distributed systems, operating systems,
+networking, and security. We build practical systems that 
+combine performance, correctness, automation, and other desirable properties.

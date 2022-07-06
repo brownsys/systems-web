@@ -1,4 +1,8 @@
 people:
+  - key: nv
+    name: "Nikos Vasilakis"
+    site: "https://nikos.vasilak.is"
+    type: faculty
   - key: tab
     name: "Theo Benson"
     site: "https://cs.brown.edu/~tab"
