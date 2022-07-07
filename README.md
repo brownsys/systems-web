@@ -46,3 +46,4 @@ Here are a few guidelines to ensure consistency across authors when adding conte
 
 * Keep news items (short and) in [present tense](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 * Use bibtex entries from [ACM digital library](https://dl.acm.org/).
+
