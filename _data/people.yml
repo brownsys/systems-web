@@ -1,19 +1,19 @@
 people:
-  - key: nv
-    name: "Nikos Vasilakis"
-    site: "https://nikos.vasilak.is"
-    type: faculty
   - key: tab
     name: "Theo Benson"
     site: "https://cs.brown.edu/~tab"
     type: faculty
-  - key: rbahar
-    name: "R. Iris Bahar"
-    site: "https://vivo.brown.edu/display/rbahar"
+  - key: ndemarin
+    name: "Nick DeMarinis"
+    site: "https://cs.brown.edu/~ndemarin"
     type: faculty
   - key: rfonseca
     name: "Rodrigo Fonseca"
     site: "https://cs.brown.edu/~rfonseca"
+    type: friends
+  - key: rbahar
+    name: "R. Iris Bahar"
+    site: "https://vivo.brown.edu/display/rbahar"
     type: faculty
   - key: sk
     name: "Shriram Krishnamurthi"
@@ -27,14 +27,42 @@ people:
     name: "Malte Schwarzkopf"
     site: "https://cs.brown.edu/~malte"
     type: faculty
+  - key: nikos
+    name: "Nikos Vasilakis"
+    site: "https://nikos.vasilak.is"
+    type: faculty
+  - key: jadam2
+    name: "Justus Adam"
+    type: phd
+    site: "https://justus.science"
+  - key: kdakalba
+    name: "Kinan Dak Albab"
+    type: phd
+  - key: gmurtaza
+    name: "Ghulam Murtaza"
+    type: phd
+  - key: unaseer
+    name: "Usama Naseer"
+    site: "https://usama6naseer.github.io/"
+    type: phd
+  - key: ssalman1
+    name: "Saim Salman"
+    site: "https://saimsalman36.github.io/webpage/"
+    type: phd
+  - key: lspiegel
+    name: "Leonhard Spiegelberg"
+    type: phd
+    site: "https://cs.brown.edu/~lspiegel"
+  - key: samthomas
+    name: "Samuel Thomas"
+    type: phd
   - key: mmarkovi
     name: "Michael Markovitch"
     site: "https://cs.brown.edu/~mmarkovi"
     type: phd
-  - key: ndemarin
-    name: "Nick DeMarinis"
-    site: "https://cs.brown.edu/~ndemarin"
-    type: faculty
+  - key: lucas
+    name: "Lucas Castanheira"
+    type: masters
   - key: jiwonchoe
     name: "Jiwon Choe"
     type: alum
@@ -47,27 +75,6 @@ people:
     name: "Usama Naseer"
     site: "https://usama6naseer.github.io/"
     type: phd
-  - key: ssalman1
-    name: "Saim Salman"
-    site: "https://saimsalman36.github.io/webpage/"
-    type: phd
-  - key: gmurtaza
-    name: "Ghulam Murtaza"
-    type: phd
-  - key: samthomas
-    name: "Samuel Thomas"
-    type: phd
-  - key: kdakalba
-    name: "Kinan Dak Albab"
-    type: phd
-  - key: jadam2
-    name: "Justus Adam"
-    type: phd
-    site: "https://justus.science"
-  - key: lspiegel
-    name: "Leonhard Spiegelberg"
-    type: phd
-    site: "https://cs.brown.edu/~lspiegel"
   - key: cwu55
     name: "Changhao Wu"
     site: "https://gordonwucn.github.io"
@@ -82,9 +89,6 @@ people:
     type: alum
     site: "https://akshatm.github.io/site/"
     note: "(MSc 2021) → Cloudflare"
-  - key: lucas
-    name: "Lucas Castanheira"
-    type: masters
   - key: ekiziv
     name: "Eleonora Kiziv"
     type: alum

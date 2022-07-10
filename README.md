@@ -46,3 +46,9 @@ Here are a few guidelines to ensure consistency across authors when adding conte
 
 * Keep news items (short and) in [present tense](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).
 * Use bibtex entries from [ACM digital library](https://dl.acm.org/).
+* Sort names in "people" lists by last name (any ordering it OK, just make sure it's consistent).
+
+## How to add content
+
+* If you're a new member, [add your name to _data/people.yml](./_data/people.yml).
+* If you just published a new paper, fetch your bibtex entry from the ACM digital library](https://dl.acm.org/) into [_bibliography/papers.bib](./_bibliography/papers.bib) with a key of the form `<nameDateFirstword>` or `<system:conference:date>`. Then add a PDF with that key as a name into [papers](./papers).
