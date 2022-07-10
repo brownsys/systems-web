@@ -1,12 +1,21 @@
-
 @inproceedings{linnanfft,
-  title = {SuperNeurons: FFT-based Gradient Sparsification in the Distributed Training of Deep Neural Networks},
-  author = {Linnan Wang, Wei Wu, Junyu Zhang, Hang Liu, George Bosilca, Maurice Herlihy, Rodrigo Fonseca},
-  booktitle = {ACM Symposium on High-Performance Parallel and Distributed Computing (HPDC)},
-  year = {2020},
-  month = June,
-  location = {online}
+author = {Wang, Linnan and Wu, Wei and Zhang, Junyu and Liu, Hang and Bosilca, George and Herlihy, Maurice and Fonseca, Rodrigo},
+title = {FFT-Based Gradient Sparsification for the Distributed Training of Deep Neural Networks},
+year = {2020},
+isbn = {9781450370523},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3369583.3392681},
+doi = {10.1145/3369583.3392681},
+abstract = {The performance and efficiency of distributed training of Deep Neural Networks (DNN) highly depend on the performance of gradient averaging among participating processes, a step bound by communication costs. There are two major approaches to reduce communication overhead: overlap communications with computations (lossless), or reduce communications (lossy). The lossless solution works well for linear neural architectures, e.g. VGG, AlexNet, but more recent networks such as ResNet and Inception limit the opportunity for such overlapping. Therefore, approaches that reduce the amount of data (lossy) become more suitable. In this paper, we present a novel, explainable lossy method that sparsifies gradients in the frequency domain, in addition to a new range-based float point representation to quantize and further compress gradients. These dynamic techniques strike a balance between compression ratio, accuracy, and computational overhead, and are optimized to maximize performance in heterogeneous environments.Unlike existing works that strive for a higher compression ratio, we stress the robustness of our methods, and provide guidance to recover accuracy from failures. To achieve this, we prove how the FFT sparsification affects the convergence and accuracy, and show that our method is guaranteed to converge using a diminishing θ in training. Reducing θ can also be used to recover accuracy from the failure. Compared to STOA lossy methods, e.g., QSGD, TernGrad, and Top-k sparsification, our approach incurs less approximation error, thereby better in both the wall-time and accuracy. On an 8 GPUs, InfiniBand interconnected cluster, our techniques effectively accelerate AlexNet training up to 2.26x to the baseline of no compression, and 1.31x to QSGD, 1.25x to Terngrad and 1.47x to Top-K sparsification.},
+booktitle = {Proceedings of the 29th International Symposium on High-Performance Parallel and Distributed Computing},
+pages = {113–124},
+numpages = {12},
+keywords = {FFT, gradient compression, neural networks, loosy gradients, machine learning},
+location = {Stockholm, Sweden},
+series = {HPDC '20}
 }
+
 
 @inproceedings{linnanlamcts,
   title = {Learning Search Space Partition for Black-box Optimization using Monte Carlo Tree Search},
@@ -26,21 +35,44 @@
   location = {Banff, Alberta, Canada}
 }
 
+
 @inproceedings{naseer2020zero,
-  title={Zero Downtime Release: Disruption-free Load Balancing of a Multi-Billion User Website},
-  author={Naseer, Usama and Niccolini, Luca and Pant, Udip and Frindell, Alan and Dasineni, Ranjeeth and Benson, Theophilus A},
-  booktitle={Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication},
-  pages={529--541},
-  year={2020}
+author = {Naseer, Usama and Niccolini, Luca and Pant, Udip and Frindell, Alan and Dasineni, Ranjeeth and Benson, Theophilus A.},
+title = {Zero Downtime Release: Disruption-Free Load Balancing of a Multi-Billion User Website},
+year = {2020},
+isbn = {9781450379557},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3387514.3405885},
+doi = {10.1145/3387514.3405885},
+abstract = {Modern network infrastructure has evolved into a complex organism to satisfy the performance and availability requirements for the billions of users. Frequent releases such as code upgrades, bug fixes and security updates have become a norm. Millions of globally distributed infrastructure components including servers and load-balancers are restarted frequently from multiple times per-day to per-week. However, every release brings possibilities of disruptions as it can result in reduced cluster capacity, disturb intricate interaction of the components operating at large scales and disrupt the end-users by terminating their connections. The challenge is further complicated by the scale and heterogeneity of supported services and protocols.In this paper, we leverage different components of the end-to-end networking infrastructure to prevent or mask any disruptions in face of releases. Zero Downtime Release is a collection of mechanisms used at Facebook to shield the end-users from any disruptions, preserve the cluster capacity and robustness of the infrastructure when updates are released globally. Our evaluation shows that these mechanisms prevent any significant cluster capacity degradation when a considerable number of productions servers and proxies are restarted and minimizes the disruption for different services (notably TCP, HTTP and publish/subscribe).},
+booktitle = {Proceedings of the Annual Conference of the ACM Special Interest Group on Data Communication on the Applications, Technologies, Architectures, and Protocols for Computer Communication},
+pages = {529–541},
+numpages = {13},
+keywords = {Update releases, Load-balancing, Reliable networks},
+location = {Virtual Event, USA},
+series = {SIGCOMM '20}
 }
 
+
 @inproceedings{ye2020accuracy,
-  title={Accuracy, Scalability, Coverage: A Practical Configuration Verifier on a Global WAN},
-  author={Ye, Fangdan and Yu, Da and Zhai, Ennan and Liu, Hongqiang Harry and Tian, Bingchuan and Ye, Qiaobo and Wang, Chunsheng and Wu, Xin and Guo, Tianchen and Jin, Cheng and others},
-  booktitle={Proceedings of the Annual conference of the ACM Special Interest Group on Data Communication on the applications, technologies, architectures, and protocols for computer communication},
-  pages={599--614},
-  year={2020}
+author = {Ye, Fangdan and Yu, Da and Zhai, Ennan and Liu, Hongqiang Harry and Tian, Bingchuan and Ye, Qiaobo and Wang, Chunsheng and Wu, Xin and Guo, Tianchen and Jin, Cheng and She, Duncheng and Ma, Qing and Cheng, Biao and Xu, Hui and Zhang, Ming and Wang, Zhiliang and Fonseca, Rodrigo},
+title = {Accuracy, Scalability, Coverage: A Practical Configuration Verifier on a Global WAN},
+year = {2020},
+isbn = {9781450379557},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3387514.3406217},
+doi = {10.1145/3387514.3406217},
+abstract = {This paper presents Hoyan-- the first reported large scale deployment of configuration verification in a global-scale wide area network (WAN). Hoyan has been running in production for more than two years and is currently used for all critical configuration auditing and updates on the WAN. We highlight our innovative designs and real-life experience to make Hoyan accurate and scalable in practice. For accuracy under the inconsistencies of devices' vendor-specific behaviors (VSBs), Hoyan continuously discovers the flaws in device behavior models, thus aiding the operators in fixing the models. For scalability to verify our global WAN, Hoyan introduces a "global-simulation &amp; local formal-modeling" strategy to model uncertainties in small scales and perform aggressive pruning of possibilities during the protocol simulations. Hoyan achieves near-100% verification accuracy after it detected and fixed O(10) VSBs on our WAN. Hoyan has prevented many potential service failures resulting from misconfiguration and reduced the failure rate of updates of our WAN by more than half in 2019.},
+booktitle = {Proceedings of the Annual Conference of the ACM Special Interest Group on Data Communication on the Applications, Technologies, Architectures, and Protocols for Computer Communication},
+pages = {599–614},
+numpages = {16},
+keywords = {Network Verification, Network Configurations, Reliability},
+location = {Virtual Event, USA},
+series = {SIGCOMM '20}
 }
+
 
 @article{mcsherry2020shared,
   title={Shared Arrangements: practical inter-query sharing for streaming dataflows},
@@ -65,15 +97,24 @@
   year={2020}
 }
 
+
 @inproceedings{galakatos19fitting,
-	Address = "New York, NY, USA",
-	Author = "Galakatos, Alex and Markovitch, Michael and Binnig, Carsten and Fonseca, Rodrigo and Kraska, Tim",
-	Booktitle = "Proceedings of the 2019 International Conference on Management of Data",
-	Pages = "1189--1206",
-	Publisher = "ACM",
-	Series = "SIGMOD '19",
-	Title = "FITing-Tree: A Data-aware Index Structure",
-	Year = "2019"}
+author = {Galakatos, Alex and Markovitch, Michael and Binnig, Carsten and Fonseca, Rodrigo and Kraska, Tim},
+title = {FITing-Tree: A Data-Aware Index Structure},
+year = {2019},
+isbn = {9781450356435},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3299869.3319860},
+doi = {10.1145/3299869.3319860},
+abstract = {Index structures are one of the most important tools that DBAs leverage to improve the performance of analytics and transactional workloads. However, building several indexes over large datasets can often become prohibitive and consume valuable system resources. In fact, a recent study showed that indexes created as part of the TPC-C benchmark can account for 55% of the total memory available in a modern DBMS. This overhead consumes valuable and expensive main memory, and limits the amount of space available to store new data or process existing data. In this paper, we present a novel data-aware index structure called FITing-Tree which approximates an index using piece-wise linear functions with a bounded error specified at construction time. This error knob provides a tunable parameter that allows a DBA to FIT an index to a dataset and workload by being able to balance lookup performance and space consumption. To navigate this tradeoff, we provide a cost model that helps determine an appropriate error parameter given either (1) a lookup latency requirement (e.g., 500ns) or (2) a storage budget (e.g., 100MB). Using a variety of real-world datasets, we show that our index is able to provide performance that is comparable to full index structures while reducing the storage footprint by orders of magnitude.},
+booktitle = {Proceedings of the 2019 International Conference on Management of Data},
+pages = {1189–1206},
+numpages = {18},
+location = {Amsterdam, Netherlands},
+series = {SIGMOD '19}
+}
+
 
 @inproceedings{yu19dshark,
 	Address = "Boston, MA",
@@ -84,40 +125,82 @@
 	Title = "dShark: A General, Easy to Program and Scalable Framework for Analyzing In-network Packet Traces",
 	Year = "2019"}
 
+
 @inproceedings{lucas19p4intel,
-	author = {Castanheira, Lucas and Schaeffer-Filho, Alberto and Benson, Theophilus A.},
-	title = {P4-InTel: Bridging the Gap between ICF Diagnosis and Functionality},
-	year = {2019},
-	isbn = {9781450370004},
-	publisher = {Association for Computing Machinery},
-	address = {New York, NY, USA},
-	url = {https://doi.org/10.1145/3359993.3366648},
-	doi = {10.1145/3359993.3366648},
-	booktitle = {Proceedings of the 1st ACM CoNEXT Workshop on Emerging In-Network Computing Paradigms},
-	pages = {21–26},
-	numpages = {6},
-	keywords = {Telemetry, Debugging, In-Network Compute},
-	location = {Orlando, FL, USA},
-	series = {ENCP '19}
+author = {Castanheira, Lucas and Schaeffer-Filho, Alberto and Benson, Theophilus A.},
+title = {P4-InTel: Bridging the Gap between ICF Diagnosis and Functionality},
+year = {2019},
+isbn = {9781450370004},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3359993.3366648},
+doi = {10.1145/3359993.3366648},
+abstract = {Data plane programmability promotes a new kind of computing paradigm in which parts of an application's execution can be offloaded into the network. However, this in-network compute functionality (iCF) adds an extra layer of management complexity for the tracing and debugging of distributed applications. Specifically, current programmable hardware does not provide powerful enough primitives or abstractions to enable in-network tracing. Further, existing distributed application debug solutions do not extend directly into programmable data planes.In this paper, we take a step back and revisit the fundamental problem by discussing open research questions and challenges towards a comprehensive iCF telemetry and debugging solution which bridges the gap between traditional and iCF-based debugging. To this end, we introduce a system, P4-InTel, which (i) leverages network telemetry to instrument PDPs into monitoring arbitrary trace data, indicated directly on PDP source code using annotations, and (ii) collects and encapsulates this data in a tracing abstraction. This abstraction provides a global vision of an in-network computation's life-cycle in a standard, readable format, which can either be fed to automatic debugging tools, or used by programmers to facilitate troubleshooting.},
+booktitle = {Proceedings of the 1st ACM CoNEXT Workshop on Emerging In-Network Computing Paradigms},
+pages = {21–26},
+numpages = {6},
+keywords = {In-Network Compute, Telemetry, Debugging},
+location = {Orlando, FL, USA},
+series = {ENCP '19}
 }
+
 
 @inproceedings{wang2018superneurons,
-  title={Superneurons: dynamic GPU memory management for training deep neural networks},
-  author={Wang, Linnan and Ye, Jinmian and Zhao, Yiyang and Wu, Wei and Li, Ang and Song, Shuaiwen Leon and Xu, Zenglin and Kraska, Tim},
-  booktitle={ACM SIGPLAN Notices},
-  volume={53},
-  number={1},
-  pages={41--53},
-  year={2018},
-  organization={ACM}
+author = {Wang, Linnan and Ye, Jinmian and Zhao, Yiyang and Wu, Wei and Li, Ang and Song, Shuaiwen Leon and Xu, Zenglin and Kraska, Tim},
+title = {Superneurons: Dynamic GPU Memory Management for Training Deep Neural Networks},
+year = {2018},
+isbn = {9781450349826},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3178487.3178491},
+doi = {10.1145/3178487.3178491},
+abstract = {Going deeper and wider in neural architectures improves their accuracy, while the limited GPU DRAM places an undesired restriction on the network design domain. Deep Learning (DL) practitioners either need to change to less desired network architectures, or nontrivially dissect a network across multiGPUs. These distract DL practitioners from concentrating on their original machine learning tasks. We present SuperNeurons: a dynamic GPU memory scheduling runtime to enable the network training far beyond the GPU DRAM capacity. SuperNeurons features 3 memory optimizations, Liveness Analysis, Unified Tensor Pool, and Cost-Aware Recomputation; together they effectively reduce the network-wide peak memory usage down to the maximal memory usage among layers. We also address the performance issues in these memory-saving techniques. Given the limited GPU DRAM, SuperNeurons not only provisions the necessary memory for the training, but also dynamically allocates the memory for convolution workspaces to achieve the high performance. Evaluations against Caffe, Torch, MXNet and TensorFlow have demonstrated that SuperNeurons trains at least 3.2432 deeper network than current ones with the leading performance. Particularly, SuperNeurons can train ResNet2500 that has 104 basic network layers on a 12GB K40c.},
+booktitle = {Proceedings of the 23rd ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming},
+pages = {41–53},
+numpages = {13},
+keywords = {runtime scheduling, neural networks, GPU memory management},
+location = {Vienna, Austria},
+series = {PPoPP '18}
 }
 
+@article{wang2018superneurons,
+author = {Wang, Linnan and Ye, Jinmian and Zhao, Yiyang and Wu, Wei and Li, Ang and Song, Shuaiwen Leon and Xu, Zenglin and Kraska, Tim},
+title = {Superneurons: Dynamic GPU Memory Management for Training Deep Neural Networks},
+year = {2018},
+issue_date = {January 2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {53},
+number = {1},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/3200691.3178491},
+doi = {10.1145/3200691.3178491},
+abstract = {Going deeper and wider in neural architectures improves their accuracy, while the limited GPU DRAM places an undesired restriction on the network design domain. Deep Learning (DL) practitioners either need to change to less desired network architectures, or nontrivially dissect a network across multiGPUs. These distract DL practitioners from concentrating on their original machine learning tasks. We present SuperNeurons: a dynamic GPU memory scheduling runtime to enable the network training far beyond the GPU DRAM capacity. SuperNeurons features 3 memory optimizations, Liveness Analysis, Unified Tensor Pool, and Cost-Aware Recomputation; together they effectively reduce the network-wide peak memory usage down to the maximal memory usage among layers. We also address the performance issues in these memory-saving techniques. Given the limited GPU DRAM, SuperNeurons not only provisions the necessary memory for the training, but also dynamically allocates the memory for convolution workspaces to achieve the high performance. Evaluations against Caffe, Torch, MXNet and TensorFlow have demonstrated that SuperNeurons trains at least 3.2432 deeper network than current ones with the leading performance. Particularly, SuperNeurons can train ResNet2500 that has 104 basic network layers on a 12GB K40c.},
+journal = {SIGPLAN Not.},
+month = {feb},
+pages = {41–53},
+numpages = {13},
+keywords = {neural networks, runtime scheduling, GPU memory management}
+}
+
+
 @inproceedings{lascasas18sampling,
-	Author = "Pedro Las-Casas and Jonathan Mace and Dorgival Guedes and Rodrigo Fonseca",
-	Booktitle = "Proceedings of the 9th ACM Symposium on Cloud Computing (SoCC)",
-	Month = "October",
-	Title = "Weighted Sampling of Execution Traces: Capturing More Needles and Less Hay",
-	Year = "2018"}
+author = {Las-Casas, Pedro and Mace, Jonathan and Guedes, Dorgival and Fonseca, Rodrigo},
+title = {Weighted Sampling of Execution Traces: Capturing More Needles and Less Hay},
+year = {2018},
+isbn = {9781450360111},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3267809.3267841},
+doi = {10.1145/3267809.3267841},
+abstract = {End-to-end tracing has emerged recently as a valuable tool to improve the dependability of distributed systems, by performing dynamic verification and diagnosing correctness and performance problems. Contrary to logging, end-to-end traces enable coherent sampling of the entire execution of specific requests, and this is exploited by many deployments to reduce the overhead and storage requirements of tracing. This sampling, however, is usually done uniformly at random, which dedicates a large fraction of the sampling budget to common, 'normal' executions, while missing infrequent, but sometimes important, erroneous or anomalous executions. In this paper we define the representative trace sampling problem, and present a new approach, based on clustering of execution graphs, that is able to bias the sampling of requests to maximize the diversity of execution traces stored towards infrequent patterns. In a preliminary, but encouraging work, we show how our approach chooses to persist representative and diverse executions, even when anomalous ones are very infrequent.},
+booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+pages = {326–332},
+numpages = {7},
+keywords = {weighted sampling, distributed tracing},
+location = {Carlsbad, CA, USA},
+series = {SoCC '18}
+}
 
 
 @inproceedings{demarinis2019scanning,
@@ -149,83 +232,94 @@
 
 
 @inproceedings{demarinis2017usable,
-	Address = "Dallas, TX, USA",
-	Author = "Nicholas DeMarinis and Rodrigo Fonseca",
-	Booktitle = "Proceedings of the 1st ACM CCS International Workshop on Internet of Things Security and Privacy (IoT S&P'17)",
-	Month = "November",
-	Title = "Toward Usable Network Traffic Policies for IoT Devices in Consumer Networks",
-	Year = "2017",
-	abstract={The Internet of Things (IoT) revolution has brought
-millions of small, low-cost, connected devices into our homes, cities,
-infrastructure, and more.  However, these devices are often plagued by
-security vulnerabilities that pose threats to user privacy or can
-threaten the Internet architecture as a whole.  Home networks can be
-particularly vulnerable to these threats as they typically have no
-network administrator and often contain unpatched or otherwise
-vulnerable devices.
-
-In this paper, we argue that the unique security challenges of home
-networks require a new network-layer architecture to both protect
-against external threats and mitigate attacks from compromised
-devices.  We present initial findings based on traffic analysis from a
-small-scale IoT testbed toward identifying predictable patterns in IoT
-traffic that may allow construction of a policy-based framework to
-restrict malicious traffic.  Based on our observations, we discuss key
-features for the design of this architecture to promote future
-developments in network-layer security in smart home networks.}
-	}
+author = {DeMarinis, Nicholas and Fonseca, Rodrigo},
+title = {Toward Usable Network Traffic Policies for IoT Devices in Consumer Networks},
+year = {2017},
+isbn = {9781450353960},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3139937.3139949},
+doi = {10.1145/3139937.3139949},
+abstract = {The Internet of Things (IoT) revolution has brought millions of small, low-cost, connected devices into our homes, cities, infrastructure, and more. However, these devices are often plagued by security vulnerabilities that pose threats to user privacy or can threaten the Internet architecture as a whole. Home networks can be particularly vulnerable to these threats as they typically have no network administrator and often contain unpatched or otherwise vulnerable devices.In this paper, we argue that the unique security challenges of home networks require a new network-layer architecture to both protect against external threats and mitigate attacks from compromised devices. We present initial findings based on traffic analysis from a small-scale IoT testbed toward identifying predictable patterns in IoT traffic that may allow construction of a policy-based framework to restrict malicious traffic. Based on our observations, we discuss key features for the design of this architecture to promote future developments in network-layer security in smart home networks.},
+booktitle = {Proceedings of the 2017 Workshop on Internet of Things Security and Privacy},
+pages = {43–48},
+numpages = {6},
+keywords = {intrusion detection, internet of things (iot), home networks, network security},
+location = {Dallas, Texas, USA},
+series = {IoTS&amp;P '17}
+}
 
 @inproceedings{nelson2016switches,
-	Author = "Tim Nelson and Nicholas DeMarinis and Timothy Adam Hoff and Rodrigo Fonseca and Shriram Krishnamurthi",
-	Booktitle = " {Proceedings of the Fifteenth ACM Workshop on Hot Topis in Networks (HotNets)}",
-	Month = "November",
-	Title = "Switches are Monitors Too! Stateful Property Monitoring as a Switch Design Criterion",
-	Year = "2016",
-	abstract={Testing and debugging networks in situ is
-                  notoriously difficult.  Many vital correctness
-                  properties involve histories over multiple packets
-                  (e.g., prior established connections). Checking such
-                  properties requires cross-packet state, which cannot
-                  be fully captured on stateless switch hardware.
-                  Recent SDN work is enabling limited switch
-                  operations on persistent state.  We present runtime
-                  checking of cross-packet correctness properties as a
-                  unique and instructive use case for developing
-                  stateful switch primitives.  In this paper, we
-                  examine a set of cross-packet properties and distill
-                  from them switch features needed to monitor their
-                  correctness.  We then contrast these against
-                  features provided by current approaches to switch
-                  state in SDNs and identify semantic gaps with an eye
-                  toward informing future switch instruction sets.  }
-		  }
+author = {Nelson, Tim and DeMarinis, Nicholas and Hoff, Timothy Adam and Fonseca, Rodrigo and Krishnamurthi, Shriram},
+title = {Switches Are Monitors Too! Stateful Property Monitoring as a Switch Design Criterion},
+year = {2016},
+isbn = {9781450346610},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3005745.3005755},
+doi = {10.1145/3005745.3005755},
+abstract = {Testing and debugging networks /in situ/ is notoriously difficult. Many vital correctness properties involve histories over multiple packets (e.g., prior established connections). Checking such properties requires /cross-packet state/, which cannot be fully captured on stateless switch hardware.Recent SDN work is enabling limited switch operations on persistent state. We present runtime checking of cross-packet correctness properties as a unique and instructive use case for developing stateful switch primitives. In this paper, we examine a set of cross-packet properties and distill from them switch features needed to monitor their correctness. We then contrast these against features provided by current approaches to switch state in SDNs and identify semantic gaps with an eye toward informing future switch instruction sets.},
+booktitle = {Proceedings of the 15th ACM Workshop on Hot Topics in Networks},
+pages = {99–105},
+numpages = {7},
+location = {Atlanta, GA, USA},
+series = {HotNets '16}
+}
 
 @inproceedings{sambasivan16tracing,
-	Address = "New York, NY, USA",
-	Author = "Sambasivan, Raja R. and Shafer, Ilari and Mace, Jonathan and Sigelman, Benjamin H. and Fonseca, Rodrigo and Ganger, Gregory R.",
-	Booktitle = "Proceedings of the Seventh ACM Symposium on Cloud Computing",
-	Month = "October",
-	Pages = "401--414",
-	Publisher = "ACM",
-	Series = "SoCC '16",
-	Title = "Principled Workflow-centric Tracing of Distributed Systems",
-	Year = "2016"}
+author = {Sambasivan, Raja R. and Shafer, Ilari and Mace, Jonathan and Sigelman, Benjamin H. and Fonseca, Rodrigo and Ganger, Gregory R.},
+title = {Principled Workflow-Centric Tracing of Distributed Systems},
+year = {2016},
+isbn = {9781450345255},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2987550.2987568},
+doi = {10.1145/2987550.2987568},
+abstract = {Workflow-centric tracing captures the workflow of causally-related events (e.g., work done to process a request) within and among the components of a distributed system. As distributed systems grow in scale and complexity, such tracing is becoming a critical tool for understanding distributed system behavior. Yet, there is a fundamental lack of clarity about how such infrastructures should be designed to provide maximum benefit for important management tasks, such as resource accounting and diagnosis. Without research into this important issue, there is a danger that workflow-centric tracing will not reach its full potential. To help, this paper distills the design space of workflow-centric tracing and describes key design choices that can help or hinder a tracing infrastructures utility for important tasks. Our design space and the design choices we suggest are based on our experiences developing several previous workflow-centric tracing infrastructures.},
+booktitle = {Proceedings of the Seventh ACM Symposium on Cloud Computing},
+pages = {401–414},
+numpages = {14},
+location = {Santa Clara, CA, USA},
+series = {SoCC '16}
+}
+
 
 @inproceedings{chen16dashs,
-	Address = "Florianopolis, Brazil",
-	Author = "Junyang Chen and Mostafa Ammar and Marwan Fayed and Rodrigo Fonseca",
-	Booktitle = " {Proceedings of the ACM SIGCOMM Workshop on QoE-based Analysis and Management of Data Communication Networks}",
-	Month = "August",
-	Title = " {Client-Driven Network Layer QoE for Encrypted `DASH-S'}",
-	Year = "2016"}
+author = {Chen, Junyang and Ammar, Mostafa and Fayed, Marwan and Fonseca, Rodrigo},
+title = {Client-Driven Network-Level QoE Fairness for Encrypted 'DASH-S'},
+year = {2016},
+isbn = {9781450344258},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2940136.2940144},
+doi = {10.1145/2940136.2940144},
+abstract = {Adaptive video streams, when competing behind a bottleneck link, generate flows that lead to instability, under-utilization, and unfairness. Recent studies suggest there is also a negative impact on users' perceived quality of experience as a consequence. Two general classes of solution exist. Client-side bitrate adaptation algorithms can improve stability and may achieve flow-rate equality. However, operating in isolation, bitrate adaptation has no ability to establish QoE fairness. Conversely, network services have been shown to achieve stability and quality of experience by managing bottleneck resources. However, the widespread use of HTTPS renders these services ineffective.In this paper we show that QoE can only be achieved when both network and client interact. We do so by a constructive argument, and then architect client-Driven Video Delivery (cDVD) in response. Our cDVD implementation provides a client-level API into the network and builds on software-defined principles. cDVD measurements reinforce our argument and raise new opportunities for exploration.},
+booktitle = {Proceedings of the 2016 Workshop on QoE-Based Analysis and Management of Data Communication Networks},
+pages = {55–60},
+numpages = {6},
+keywords = {Multimedia Streaming, Dynamic Adaptive Streaming over HTTP (DASH), Quality of Experience, QoE fairness, Performance, Network Architecture},
+location = {Florianopolis, Brazil},
+series = {Internet-QoE '16}
+}
+
 
 @inproceedings{mace16-2dfq,
-	Address = "Florianopolis, Brazil",
-	Author = "Jonathan Mace and Peter Bodik and Madanlal Musuvathi and Rodrigo Fonseca and Krishnan Varadarajan",
-	Booktitle = "Proceedings of the ACM SIGCOMM Conference",
-	Month = "August",
-	Title = " {2DFQ: Two-Dimensional Fair Queueing for Multi-Tenant Cloud Services}",
-	Year = "2016"}
+author = {Mace, Jonathan and Bodik, Peter and Musuvathi, Madanlal and Fonseca, Rodrigo and Varadarajan, Krishnan},
+title = {2DFQ: Two-Dimensional Fair Queuing for Multi-Tenant Cloud Services},
+year = {2016},
+isbn = {9781450341936},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2934872.2934878},
+doi = {10.1145/2934872.2934878},
+abstract = {In many important cloud services, different tenants execute their requests in the thread pool of the same process, requiring fair sharing of resources. However, using fair queue schedulers to provide fairness in this context is difficult because of high execution concurrency, and because request costs are unknown and have high variance. Using fair schedulers like WFQ and WF²Q in such settings leads to bursty schedules, where large requests block small ones for long periods of time. In this paper, we propose Two-Dimensional Fair Queueing (2DFQ), which spreads requests of different costs across di erent threads and minimizes the impact of tenants with unpredictable requests. In evaluation on production workloads from Azure Storage, a large-scale cloud system at Microsoft, we show that 2DFQ reduces the burstiness of service by 1-2 orders of magnitude. On workloads where many large requests compete with small ones, 2DFQ improves 99th percentile latencies by up to 2 orders of magnitude.},
+booktitle = {Proceedings of the 2016 ACM SIGCOMM Conference},
+pages = {144–159},
+numpages = {16},
+keywords = {Multi-Tenant Systems, Fair Request Scheduling},
+location = {Florianopolis, Brazil},
+series = {SIGCOMM '16}
+}
 
 @inproceedings{yu16netex,
 	Address = "Denver, CO",
@@ -237,12 +331,21 @@ developments in network-layer security in smart home networks.}
 	Year = "2016"}
 
 @inproceedings{rasley16yak,
-	Address = "London, UK",
-	Author = "Jeff Rasley and Konstantinos Karanasos and Srikanth Kandula and Rodrigo Fonseca and Milan Vojnovic and Sriram Rao",
-	Booktitle = "Proceedings of the 2016 European Conference on Computer Systems (EuroSys '16)",
-	Month = "April",
-	Title = "Efficient Queue Management for Cluster Scheduling",
-	Year = "2016"}
+author = {Rasley, Jeff and Karanasos, Konstantinos and Kandula, Srikanth and Fonseca, Rodrigo and Vojnovic, Milan and Rao, Sriram},
+title = {Efficient Queue Management for Cluster Scheduling},
+year = {2016},
+isbn = {9781450342407},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2901318.2901354},
+doi = {10.1145/2901318.2901354},
+abstract = {Job scheduling in Big Data clusters is crucial both for cluster operators' return on investment and for overall user experience. In this context, we observe several anomalies in how modern cluster schedulers manage queues, and argue that maintaining queues of tasks at worker nodes has significant benefits. On one hand, centralized approaches do not use worker-side queues. Given the inherent feedback delays that these systems incur, they achieve suboptimal cluster utilization, particularly for workloads dominated by short tasks. On the other hand, distributed schedulers typically do employ worker-side queuing, and achieve higher cluster utilization. However, they fail to place tasks at the best possible machine, since they lack cluster-wide information, leading to worse job completion time, especially for heterogeneous workloads. To the best of our knowledge, this is the first work to provide principled solutions to the above problems by introducing queue management techniques, such as appropriate queue sizing, prioritization of task execution via queue reordering, starvation freedom, and careful placement of tasks to queues. We instantiate our techniques by extending both a centralized (YARN) and a distributed (Mercury) scheduler, and evaluate their performance on a wide variety of synthetic and production workloads derived from Microsoft clusters. Our centralized implementation, Yaq-c, achieves 1.7x improvement on median job completion time compared to YARN, and our distributed one, Yaq-d, achieves 9.3x improvement over an implementation of Sparrow's batch sampling on Mercury.},
+booktitle = {Proceedings of the Eleventh European Conference on Computer Systems},
+articleno = {36},
+numpages = {15},
+location = {London, United Kingdom},
+series = {EuroSys '16}
+}
 
 @inproceedings{fonseca15losingtrack,
 	Address = "Asilomar",
@@ -253,13 +356,21 @@ developments in network-layer security in smart home networks.}
 	Year = "2015"}
 
 @inproceedings{mace15pivot,
-	Author = "Jonathan Mace and Ryan Roelke and Rodrigo Fonseca",
-	Booktitle = " {Proceedings of the 25th ACM Symposium on Operating Systems Principles (SOSP)}",
-	Month = "October",
-	Organization = "ACM",
-	Publisher = "ACM Press",
-	Title = "Pivot Tracing: Dynamic Causal Monitoring for Distributed Systems",
-	Year = "2015"}
+author = {Mace, Jonathan and Roelke, Ryan and Fonseca, Rodrigo},
+title = {Pivot Tracing: Dynamic Causal Monitoring for Distributed Systems},
+year = {2015},
+isbn = {9781450338349},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2815400.2815415},
+doi = {10.1145/2815400.2815415},
+abstract = {Monitoring and troubleshooting distributed systems is notoriously difficult; potential problems are complex, varied, and unpredictable. The monitoring and diagnosis tools commonly used today -- logs, counters, and metrics -- have two important limitations: what gets recorded is defined a priori, and the information is recorded in a component- or machine-centric way, making it extremely hard to correlate events that cross these boundaries. This paper presents Pivot Tracing, a monitoring framework for distributed systems that addresses both limitations by combining dynamic instrumentation with a novel relational operator: the happened-before join. Pivot Tracing gives users, at runtime, the ability to define arbitrary metrics at one point of the system, while being able to select, filter, and group by events meaningful at other parts of the system, even when crossing component or machine boundaries. We have implemented a prototype of Pivot Tracing for Java-based systems and evaluate it on a heterogeneous Hadoop cluster comprising HDFS, HBase, MapReduce, and YARN. We show that Pivot Tracing can effectively identify a diverse range of root causes such as software bugs, misconfiguration, and limping hardware. We show that Pivot Tracing is dynamic, extensible, and enables cross-tier analysis between inter-operating applications, with low execution overhead.},
+booktitle = {Proceedings of the 25th Symposium on Operating Systems Principles},
+pages = {378–393},
+numpages = {16},
+location = {Monterey, California},
+series = {SOSP '15}
+}
 
 @inproceedings{li15fence,
 	Author = "Tao Li and Albert Rafetseder and Rodrigo Fonseca and Justin Cappos",
@@ -277,21 +388,44 @@ developments in network-layer security in smart home networks.}
 	Title = "Selectively Taming Background Android Apps to Improve Battery Lifetime",
 	Year = "2015"}
 
+
 @inproceedings{nelson15exodus,
-	Author = "Tim Nelson and Andrew D. Ferguson and Da Yu and Rodrigo Fonseca and Shriram Krishnamurthi",
-	Booktitle = " {Proceedings of the 1st ACM Sigcomm Symposium on SDN Research (SOSR)}",
-	Month = "June",
-	Publisher = "ACM",
-	Title = "Exodus: Toward Automatic Migration of Enterprise Network Configurations to SDNs",
-	Year = "2015"}
+author = {Nelson, Tim and Ferguson, Andrew D. and Yu, Da and Fonseca, Rodrigo and Krishnamurthi, Shriram},
+title = {Exodus: Toward Automatic Migration of Enterprise Network Configurations to SDNs},
+year = {2015},
+isbn = {9781450334518},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2774993.2774997},
+doi = {10.1145/2774993.2774997},
+abstract = {We present the design and a prototype of Exodus, a system that consumes a collection of router configurations (e.g., in Cisco IOS), compiles these into a common, intermediate semantic form, and then produces corresponding SDN controller software in a high-level language. Exodus generates networks that are functionally similar to the original networks, with the advantage of having centralized programs that are verifiable and evolvable. Exodus supports a wide array of IOS features, including non-trivial kinds of packet-filtering, reflexive access-lists, NAT, VLANs, static and dynamic routing. Implementing Exodus has exposed several limitations in both today's languages for SDN programming and in OpenFlow itself. We briefly discuss these lessons learned and provide guidance for future SDN migration efforts.},
+booktitle = {Proceedings of the 1st ACM SIGCOMM Symposium on Software Defined Networking Research},
+articleno = {13},
+numpages = {7},
+keywords = {SDN migration, software-defined networking, OpenFlow},
+location = {Santa Clara, California},
+series = {SOSR '15}
+}
+
 
 @inproceedings{nelson15simon,
-	Author = "Tim Nelson and Da Yu and Yiming Li and Rodrigo Fonseca and Shriram Krishnamurthi",
-	Booktitle = " {Proceedings of the 1st ACM Sigcomm Symposium on SDN Research (SOSR)}",
-	Month = "June",
-	Publisher = "ACM",
-	Title = "Simon: Scriptable Interactive Monitoring for SDNs",
-	Year = "2015"}
+author = {Nelson, Tim and Yu, Da and Li, Yiming and Fonseca, Rodrigo and Krishnamurthi, Shriram},
+title = {Simon: Scriptable Interactive Monitoring for SDNs},
+year = {2015},
+isbn = {9781450334518},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2774993.2774994},
+doi = {10.1145/2774993.2774994},
+abstract = {Although Software-Defined Networking can simplify network management, it also poses new testing and debugging challenges for operators. Debugging is often an interactive process that involves stepping through data- and control-plane events and performing actions in response. Sometimes, however, this interactive process can become highly repetitive; in such cases, we should be able to script the activity to reduce operator overhead and increase reusability.We introduce Simon, a Scriptable Interactive Monitoring system for SDN. With Simon, operators can probe their network behavior by executing scripts for debugging, monitoring, and more. Simon is independent of the controller platform used, and does not require annotations or intimate knowledge of the controller software being run. Operators may compose debugging scripts both offline and interactively at Simon's debugging prompt. In the process, they can take advantage of the rich set of reactive functions Simon provides as well as the full power of Scala. We present the design of Simon and discuss its implementation and use.},
+booktitle = {Proceedings of the 1st ACM SIGCOMM Symposium on Software Defined Networking Research},
+articleno = {19},
+numpages = {7},
+keywords = {software-defined networking, OpenFlow, debugging},
+location = {Santa Clara, California},
+series = {SOSR '15}
+}
+
 
 @inproceedings{mace15retro,
 	Author = "Jonathan Mace and Peter Bodik and Madanlal Musuvathi and Rodrigo Fonseca",
@@ -301,15 +435,27 @@ developments in network-layer security in smart home networks.}
 	Title = "Retro: Targeted Resource Management in Multi-tenant Distributed Systems",
 	Year = "2015"}
 
+
 @article{gnawali14ctp-tosn,
-	Author = "Omprakash Gnawali and Rodrigo Fonseca and Kyle Jamieson and Maria Kazandjieva and David Moss and Philip Levis",
-	Journal = "ACM Transactions on Sensor Networks (TOSN)",
-	Month = "dec",
-	Number = "3",
-	Pages = " {16:1--16:49}",
-	Title = "CTP: An Efficient, Robust, and Reliable Collection Tree Protocol for Wireless Sensor Networks",
-	Volume = "10",
-	Year = "2014"}
+author = {Gnawali, Omprakash and Fonseca, Rodrigo and Jamieson, Kyle and Kazandjieva, Maria and Moss, David and Levis, Philip},
+title = {CTP: An Efficient, Robust, and Reliable Collection Tree Protocol for Wireless Sensor Networks},
+year = {2013},
+issue_date = {November 2013},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {10},
+number = {1},
+issn = {1550-4859},
+url = {https://doi.org/10.1145/2529988},
+doi = {10.1145/2529988},
+abstract = {We describe CTP, a collection routing protocol for wireless sensor networks. CTP uses three techniques to provide efficient, robust, and reliable routing in highly dynamic network conditions. CTP's link estimator accurately estimates link qualities by using feedback from both the data and control planes, using information from multiple layers through narrow, platform-independent interfaces. Second, CTP uses the Trickle algorithm to time the control traffic, sending few beacons in stable topologies yet quickly adapting to changes. Finally, CTP actively probes the topology with data traffic, quickly discovering and fixing routing failures. Through experiments on 13 different testbeds, encompassing seven platforms, six link layers, and multiple densities and frequencies, and detailed observations of a long-running sensor network application that uses CTP, we study how these three techniques contribute to CTP's overall performance.},
+journal = {ACM Trans. Sen. Netw.},
+month = {dec},
+articleno = {16},
+numpages = {49},
+keywords = {routing, adaptive beaconing, link-quality estimation, Wireless sensor network, datapath validation, wireless network protocol}
+}
+
 
 @inproceedings{mace14resource,
 	Address = "Broomfield, CO",
@@ -337,30 +483,102 @@ developments in network-layer security in smart home networks.}
 	Title = "Low-latency Network Monitoring via Oversubscribed Port Mirroring",
 	Year = "2014"}
 
+
 @inproceedings{rasley14planck,
-	Address = "New York, NY, USA",
-	Author = "Rasley, Jeff and Stephens, Brent and Dixon, Colin and Rozner, Eric and Felter, Wes and Agarwal, Kanak and Carter, John and Fonseca, Rodrigo",
-	Booktitle = "Proceedings of the 2014 ACM Conference on SIGCOMM",
-	Pages = "407--418",
-	Publisher = "ACM",
-	Series = "SIGCOMM '14",
-	Title = "Planck: Millisecond-scale Monitoring and Control for Commodity Networks",
-	Year = "2014"}
+author = {Rasley, Jeff and Stephens, Brent and Dixon, Colin and Rozner, Eric and Felter, Wes and Agarwal, Kanak and Carter, John and Fonseca, Rodrigo},
+title = {Planck: Millisecond-Scale Monitoring and Control for Commodity Networks},
+year = {2014},
+isbn = {9781450328364},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2619239.2626310},
+doi = {10.1145/2619239.2626310},
+abstract = {Software-defined networking introduces the possibility of building self-tuning networks that constantly monitor network conditions and react rapidly to important events such as congestion. Unfortunately, state-of-the-art monitoring mechanisms for conventional networks require hundreds of milliseconds to seconds to extract global network state, like link utilization or the identity of "elephant" flows. Such latencies are adequate for responding to persistent issues, e.g., link failures or long-lasting congestion, but are inadequate for responding to transient problems, e.g., congestion induced by bursty workloads sharing a link. In this paper, we present Planck, a novel network measurement architecture that employs oversubscribed port mirroring to extract network information at 280 µs--7 ms timescales on a 1 Gbps commodity switch and 275 µs--4 ms timescales on a 10 Gbps commodity switch,over 11x and 18x faster than recent approaches, respectively (and up to 291x if switch firmware allowed buffering to be disabled on some ports). To demonstrate the value of Planck's speed and accuracy, we use it to drive a traffic engineering application that can reroute congested flows in milliseconds. On a 10 Gbps commodity switch, Planck-driven traffic engineering achieves aggregate throughput within 1--4% of optimal for most workloads we evaluated, even with flows as small as 50 MiB, an improvement of up to 53% over previous schemes.},
+booktitle = {Proceedings of the 2014 ACM Conference on SIGCOMM},
+pages = {407–418},
+numpages = {12},
+keywords = {software-defined networking, networking measurement, traffic engineering},
+location = {Chicago, Illinois, USA},
+series = {SIGCOMM '14}
+}
+
+@article{rasley14planck,
+author = {Rasley, Jeff and Stephens, Brent and Dixon, Colin and Rozner, Eric and Felter, Wes and Agarwal, Kanak and Carter, John and Fonseca, Rodrigo},
+title = {Planck: Millisecond-Scale Monitoring and Control for Commodity Networks},
+year = {2014},
+issue_date = {October 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {44},
+number = {4},
+issn = {0146-4833},
+url = {https://doi.org/10.1145/2740070.2626310},
+doi = {10.1145/2740070.2626310},
+abstract = {Software-defined networking introduces the possibility of building self-tuning networks that constantly monitor network conditions and react rapidly to important events such as congestion. Unfortunately, state-of-the-art monitoring mechanisms for conventional networks require hundreds of milliseconds to seconds to extract global network state, like link utilization or the identity of "elephant" flows. Such latencies are adequate for responding to persistent issues, e.g., link failures or long-lasting congestion, but are inadequate for responding to transient problems, e.g., congestion induced by bursty workloads sharing a link. In this paper, we present Planck, a novel network measurement architecture that employs oversubscribed port mirroring to extract network information at 280 µs--7 ms timescales on a 1 Gbps commodity switch and 275 µs--4 ms timescales on a 10 Gbps commodity switch,over 11x and 18x faster than recent approaches, respectively (and up to 291x if switch firmware allowed buffering to be disabled on some ports). To demonstrate the value of Planck's speed and accuracy, we use it to drive a traffic engineering application that can reroute congested flows in milliseconds. On a 10 Gbps commodity switch, Planck-driven traffic engineering achieves aggregate throughput within 1--4% of optimal for most workloads we evaluated, even with flows as small as 50 MiB, an improvement of up to 53% over previous schemes.},
+journal = {SIGCOMM Comput. Commun. Rev.},
+month = {aug},
+pages = {407–418},
+numpages = {12},
+keywords = {networking measurement, traffic engineering, software-defined networking}
+}
+
 
 @inproceedings{ferguson13cogent,
-	Author = "Andrew Ferguson and Jordan Place and Rodrigo Fonseca",
-	Booktitle = "Proceedings of the Internet Measurement Conference",
-	Month = "October",
-	Series = "IMC",
-	Title = "Growth Analysis of a Large ISP",
-	Year = "2013"}
+author = {Ferguson, Andrew D. and Place, Jordan and Fonseca, Rodrigo},
+title = {Growth Analysis of a Large ISP},
+year = {2013},
+isbn = {9781450319539},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2504730.2504769},
+doi = {10.1145/2504730.2504769},
+abstract = {We present a time-series analysis of Cogent's inter-continental network. The analysis is based on descriptions of Cogent's routers and their interfaces, collected each week for more than one year. These descriptions are collected from public reverse DNS records, which we cross-validate using iffinder, a full Internet scan, and limited ground truth data provided by Cogent. For example, our dataset, which we make available to the research community, shows that while the number of Cogent routers grew by approximately 11.3 each week, the average number of interfaces per router, and the effective diameter of the inferred network remained stable over the same period. Our collected dataset includes information about interface types, port identifications, router locations, peer and customer attachments, and more.},
+booktitle = {Proceedings of the 2013 Conference on Internet Measurement Conference},
+pages = {347–352},
+numpages = {6},
+keywords = {reverse DNS, alias resolution},
+location = {Barcelona, Spain},
+series = {IMC '13}
+}
 
 @inproceedings{ferguson13participatory,
-	Author = "Andrew D. Ferguson and Arjun Guha and Chen Liang and Rodrigo Fonseca and Shriram Krishnamurthi",
-	Booktitle = "To appear in ACM SIGCOMM 2013",
-	Month = "August",
-	Title = " {Participatory Networking: An API for Application Control in SDNs}",
-	Year = "2013"}
+author = {Ferguson, Andrew D. and Guha, Arjun and Liang, Chen and Fonseca, Rodrigo and Krishnamurthi, Shriram},
+title = {Participatory Networking: An API for Application Control of SDNs},
+year = {2013},
+isbn = {9781450320566},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2486001.2486003},
+doi = {10.1145/2486001.2486003},
+abstract = {We present the design, implementation, and evaluation of an API for applications to control a software-defined network (SDN). Our API is implemented by an OpenFlow controller that delegates read and write authority from the network's administrators to end users, or applications and devices acting on their behalf. Users can then work with the network, rather than around it, to achieve better performance, security, or predictable behavior. Our API serves well as the next layer atop current SDN stacks. Our design addresses the two key challenges: how to safely decompose control and visibility of the network, and how to resolve conflicts between untrusted users and across requests, while maintaining baseline levels of fairness and security. Using a real OpenFlow testbed, we demonstrate our API's feasibility through microbenchmarks, and its usefulness by experiments with four real applications modified to take advantage of it.},
+booktitle = {Proceedings of the ACM SIGCOMM 2013 Conference on SIGCOMM},
+pages = {327–338},
+numpages = {12},
+keywords = {software-defined networks, participatory networking, openflow},
+location = {Hong Kong, China},
+series = {SIGCOMM '13}
+}
+
+@article{ferguson13participatory,
+author = {Ferguson, Andrew D. and Guha, Arjun and Liang, Chen and Fonseca, Rodrigo and Krishnamurthi, Shriram},
+title = {Participatory Networking: An API for Application Control of SDNs},
+year = {2013},
+issue_date = {October 2013},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {43},
+number = {4},
+issn = {0146-4833},
+url = {https://doi.org/10.1145/2534169.2486003},
+doi = {10.1145/2534169.2486003},
+abstract = {We present the design, implementation, and evaluation of an API for applications to control a software-defined network (SDN). Our API is implemented by an OpenFlow controller that delegates read and write authority from the network's administrators to end users, or applications and devices acting on their behalf. Users can then work with the network, rather than around it, to achieve better performance, security, or predictable behavior. Our API serves well as the next layer atop current SDN stacks. Our design addresses the two key challenges: how to safely decompose control and visibility of the network, and how to resolve conflicts between untrusted users and across requests, while maintaining baseline levels of fairness and security. Using a real OpenFlow testbed, we demonstrate our API's feasibility through microbenchmarks, and its usefulness by experiments with four real applications modified to take advantage of it.},
+journal = {SIGCOMM Comput. Commun. Rev.},
+month = {aug},
+pages = {327–338},
+numpages = {12},
+keywords = {openflow, software-defined networks, participatory networking}
+}
+
 
 @inproceedings{li13metering,
 	Address = "Cambridge, MA",
@@ -380,42 +598,98 @@ developments in network-layer security in smart home networks.}
 	Year = "2013"}
 
 @inproceedings{riondato12parma,
-	Author = "Matteo Riondato and Justin DeBrabant and Rodrigo Fonseca and Eli Upfal",
-	Booktitle = "Proceedings of the 21st ACM International Conference on Information and Knowledge Management (CIKM 2012)",
-	Month = "October",
-	Pages = "85-94",
-	Title = " {PARMA}: A Parallel Randomized Algorithm for Approximate Association Rules Mining in MapReduce",
-	Year = "2012"}
+author = {Riondato, Matteo and DeBrabant, Justin A. and Fonseca, Rodrigo and Upfal, Eli},
+title = {PARMA: A Parallel Randomized Algorithm for Approximate Association Rules Mining in MapReduce},
+year = {2012},
+isbn = {9781450311564},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2396761.2396776},
+doi = {10.1145/2396761.2396776},
+abstract = {Frequent Itemsets and Association Rules Mining (FIM) is a key task in knowledge discovery from data. As the dataset grows, the cost of solving this task is dominated by the component that depends on the number of transactions in the dataset. We address this issue by proposing PARMA, a parallel algorithm for the MapReduce framework, which scales well with the size of the dataset (as number of transactions) while minimizing data replication and communication cost. PARMA cuts down the dataset-size-dependent part of the cost by using a random sampling approach to FIM. Each machine mines a small random sample of the dataset, of size independent from the dataset size. The results from each machine are then filtered and aggregated to produce a single output collection. The output will be a very close approximation of the collection of Frequent Itemsets (FI's) or Association Rules (AR's) with their frequencies and confidence levels. The quality of the output is probabilistically guaranteed by our analysis to be within the user-specified accuracy and error probability parameters. The sizes of the random samples are independent from the size of the dataset, as is the number of samples. They depend on the user-chosen accuracy and error probability parameters and on the parallel computational model. We implemented PARMA in Hadoop MapReduce and show experimentally that it runs faster than previously introduced FIM algorithms for the same platform, while 1) scaling almost linearly, and 2) offering even higher accuracy and confidence than what is guaranteed by the analysis.},
+booktitle = {Proceedings of the 21st ACM International Conference on Information and Knowledge Management},
+pages = {85–94},
+numpages = {10},
+keywords = {frequent itemsets, sampling, MapReduce, association rules},
+location = {Maui, Hawaii, USA},
+series = {CIKM '12}
+}
+
 
 @inproceedings{ferguson12hft,
-	Address = "Helsinki, Finland",
-	Author = "Andrew D. Ferguson and Arjun Guha and Chen Liang and Rodrigo Fonseca and Shriram Krishnamurthi",
-	Booktitle = " {Proceedings of the Workshop on Hot Topics in Software Defined Networks (Hot-SDN)}",
-	Month = "August",
-	Title = " {Hierarchical Policies for Software Defined Networks}",
-	Year = "2012"}
+author = {Ferguson, Andrew D. and Guha, Arjun and Liang, Chen and Fonseca, Rodrigo and Krishnamurthi, Shriram},
+title = {Hierarchical Policies for Software Defined Networks},
+year = {2012},
+isbn = {9781450314770},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2342441.2342450},
+doi = {10.1145/2342441.2342450},
+abstract = {Hierarchical policies are useful in many contexts in which resources are shared among multiple entities. Such policies can easily express the delegation of authority and the resolution of conflicts, which arise naturally when decision-making is decentralized. Conceptually, a hierarchical policy could be used to manage network resources, but commodity switches, which match packets using flow tables, do not realize hierarchies directly.This paper presents Hierarchical Flow Tables (HFT), a framework for specifying and realizing hierarchical policies in software defined networks. HFT policies are organized as trees, where each component of the tree can independently determine the action to take on each packet. When independent parts of the tree arrive at conflicting decisions, HFT resolves conflicts with user-defined conflict-resolution operators, which exist at each node of the tree. We present a compiler that realizes HFT policies on a distributed network of OpenFlow switches, and prove its correctness using the Coq proof assistant. We then evaluate the use of HFT to improve performance of networked applications.},
+booktitle = {Proceedings of the First Workshop on Hot Topics in Software Defined Networks},
+pages = {37–42},
+numpages = {6},
+keywords = {hierarchical policies, participatory networking, openflow, software defined networks},
+location = {Helsinki, Finland},
+series = {HotSDN '12}
+}
+
 
 @inproceedings{backman12cmr,
-	Author = "Nathan Backman and Karthik Pattabiraman and Rodrigo Fonseca and Ugur Cetintemel",
-	Booktitle = "Proceedings of the 3rd International Workshop on MapReduce and its Applications, MapReduce `12",
-	Month = "June",
-	Pages = "1--8",
-	Title = "C-MR: Continuously Executing MapReduce Workflows on Multi-core Processors",
-	Year = "2012"}
+author = {Backman, Nathan and Pattabiraman, Karthik and Fonseca, Rodrigo and Cetintemel, Ugur},
+title = {C-MR: Continuously Executing MapReduce Workflows on Multi-Core Processors},
+year = {2012},
+isbn = {9781450313438},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2287016.2287018},
+doi = {10.1145/2287016.2287018},
+abstract = {The widespread appeal of MapReduce is due, in part, to its simple programming model. Programmers provide only application logic while the MapReduce framework handles the logistics of data distribution and parallel task management.We present the Continuous-MapReduce (C-MR) framework which implements a modified MapReduce processing model to continuously execute workflows of MapReduce jobs on unbounded data streams. In keeping with the philosophy of MapReduce, C-MR abstracts away the complexities of parallel stream processing and workflow scheduling while providing the simple and familiar MapReduce programming interface with the addition of stream window semantics.Modifying the MapReduce processing model allowed us to: (1) maintain correct stream order and execution semantics in the presence of parallel and asynchronous processing elements; (2) implement an operator scheduler framework to facilitate latency-oriented scheduling policies for executing complex workflows of MapReduce jobs; and (3) leverage much of the work that has gone into the last decade of stream processing research including: pipelined parallelism, incremental processing for both Map and Reduce operations, minimizing redundant computations, sharing of sub-queries, and adaptive query processing.C-MR was developed for use on a multiprocessor architecture, where we demonstrate its effectiveness at supporting high-performance stream processing even in the presence of load spikes and external workloads.},
+booktitle = {Proceedings of Third International Workshop on MapReduce and Its Applications Date},
+pages = {1–8},
+numpages = {8},
+keywords = {multi-core, mapreduce, stream processing},
+location = {Delft, The Netherlands},
+series = {MapReduce '12}
+}
+
 
 @inproceedings{backman12managing,
-	Author = "Nathan Backman and Rodrigo Fonseca and Ugur Cetintemel",
-	Booktitle = "Proceedings of the 1st International Workshop on Hot Topics in Cloud Data Processing, HotCDP `12",
-	Month = "April",
-	Title = "Managing Parallelism for Stream Processing in the Cloud",
-	Year = "2012"}
+author = {Backman, Nathan and Fonseca, Rodrigo and \c{C}etintemel, Uundefinedur},
+title = {Managing Parallelism for Stream Processing in the Cloud},
+year = {2012},
+isbn = {9781450311625},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2169090.2169091},
+doi = {10.1145/2169090.2169091},
+abstract = {Stream processing applications run continuously and have varying load. Cloud infrastructures present an attractive option to meet these fluctuating computational demands. Coordinating such resources to meet end-to-end latency objectives efficiently is important in preventing the frivolous use of cloud resources. We present a framework that parallelizes and schedules workflows of stream operators, in real-time, to meet latency objectives. It supports data- and task-parallel processing of all workflow operators, by all computing nodes, while maintaining the ordering properties of sorted data streams. We show that a latency-oriented operator scheduling policy coupled with the diversification of computing node responsibilities encourages parallelism models that achieve end-to-end latency-minimization goals. We demonstrate the effectiveness of our framework with preliminary experimental results using a variety of real-world applications on heterogeneous clusters.},
+booktitle = {Proceedings of the 1st International Workshop on Hot Topics in Cloud Data Processing},
+articleno = {1},
+numpages = {5},
+keywords = {stream processing, heterogeneous clusters, parallelism management},
+location = {Bern, Switzerland},
+series = {HotCDP '12}
+}
+
 
 @inproceedings{ferguson12jockey,
-	Author = "Andrew D. Ferguson and Peter Bodik and Srikanth Kandula and Eric Boutin and Rodrigo Fonseca",
-	Booktitle = "Proceedings of the European Conference on Computer Systems, Eurosys",
-	Month = "April",
-	Title = "Jockey: Guaranteed Job Latency in Data Parallel Clusters",
-	Year = "2012"}
+author = {Ferguson, Andrew D. and Bodik, Peter and Kandula, Srikanth and Boutin, Eric and Fonseca, Rodrigo},
+title = {Jockey: Guaranteed Job Latency in Data Parallel Clusters},
+year = {2012},
+isbn = {9781450312233},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2168836.2168847},
+doi = {10.1145/2168836.2168847},
+abstract = {Data processing frameworks such as MapReduce [8] and Dryad [11] are used today in business environments where customers expect guaranteed performance. To date, however, these systems are not capable of providing guarantees on job latency because scheduling policies are based on fair-sharing, and operators seek high cluster use through statistical multiplexing and over-subscription. With Jockey, we provide latency SLOs for data parallel jobs written in SCOPE. Jockey precomputes statistics using a simulator that captures the job's complex internal dependencies, accurately and efficiently predicting the remaining run time at different resource allocations and in different stages of the job. Our control policy monitors a job's performance, and dynamically adjusts resource allocation in the shared cluster in order to maximize the job's economic utility while minimizing its impact on the rest of the cluster. In our experiments in Microsoft's production Cosmos clusters, Jockey meets the specified job latency SLOs and responds to changes in cluster conditions.},
+booktitle = {Proceedings of the 7th ACM European Conference on Computer Systems},
+pages = {99–112},
+numpages = {14},
+keywords = {deadline, dynamic adaptation, SLO, data parallel, Dryad, MapReduce, scheduling},
+location = {Bern, Switzerland},
+series = {EuroSys '12}
+}
 
 @inproceedings{ferguson12pane,
 	Address = "San Jose, California, USA",
@@ -434,13 +708,22 @@ developments in network-layer security in smart home networks.}
 	Year = "2011"}
 
 @inproceedings{martins10ctp,
-	Address = "Zurich, Switzerland",
-	Author = "Marcelo Martins and Rodrigo Fonseca and Thomas Schmid and Prabal Dutta",
-	Booktitle = "Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems (SenSys)",
-	Month = "November",
-	Series = "Poster",
-	Title = " {Network-Wide Energy Profiling of CTP}",
-	Year = "2010"}
+author = {Martins, Marcelo and Fonseca, Rodrigo and Schmid, Thomas and Dutta, Prabal},
+title = {Network-Wide Energy Profiling of CTP},
+year = {2010},
+isbn = {9781450303446},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1869983.1870063},
+doi = {10.1145/1869983.1870063},
+abstract = {We present our experiences evaluating the power-performance tradeoffs of a sensornet network protocol on a power-aware testbed. We characterize the power draw of the entire network while running the Collection Tree Protocol (CTP), as a function of low-power-listening interval. We find that message transmission counts are poor predictors for energy consumption on the CC2420 radio, that CTP routinely creates energy hotspots in the routing tree, and that conclusions based on protocol evaluation performed without low-power listening enabled provide little insight about the same protocol performance using low-power listening.},
+booktitle = {Proceedings of the 8th ACM Conference on Embedded Networked Sensor Systems},
+pages = {439–440},
+numpages = {2},
+location = {Z\"{u}rich, Switzerland},
+series = {SenSys '10}
+}
+
 
 @inproceedings{ferguson10atc,
 	Address = "Boston, MA, USA",
@@ -496,73 +779,77 @@ developments in network-layer security in smart home networks.}
 
 
 @inproceedings{scc:eurosys19,
-  author    = {Sheng Liu and
-               Theophilus A. Benson and
-               Michael K. Reiter},
-  title     = {Efficient and Safe Network Updates with Suffix Causal Consistency},
-  booktitle = {Proceedings of the Fourteenth EuroSys Conference 2019, Dresden, Germany,
-               March 25-28, 2019},
-  pages     = {23:1--23:15},
-  year      = {2019},
-  crossref  = {DBLP:conf/eurosys/2019},
-  url       = {https://doi.org/10.1145/3302424.3303965},
-  doi       = {10.1145/3302424.3303965},
-  timestamp = {Thu, 28 Mar 2019 13:37:53 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/eurosys/LiuBR19},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Liu, Sheng and Benson, Theophilus A. and Reiter, Michael K.},
+title = {Efficient and Safe Network Updates with Suffix Causal Consistency},
+year = {2019},
+isbn = {9781450362818},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3302424.3303965},
+doi = {10.1145/3302424.3303965},
+abstract = {Though centrally managed by a controller, a software-defined network (SDN) can still encounter routing inconsistencies among its switches due to the non-atomic updates to their forwarding tables. In this paper, we propose a new method to rectify these inconsistencies that is inspired by causal consistency, a consistency model for shared-memory systems. Applied to SDNs, causal consistency would imply that once a packet is matched to ("reads") a forwarding rule in a switch, it can be matched in downstream switches only to rules that are equally or more up-to-date. We propose and analyze a relaxed but functionally equivalent version of this property called suffix causal consistency (SCC) and evaluate an implementation of SCC in Open vSwitch and P4 switches, in conjunction with the Ryu and P4Runtime controllers. Our results show that SCC provides greater efficiency than competing consistent-update alternatives while offering consistency that is strong enough to ensure high-level routing properties (black-hole freedom, bounded looping, etc.).},
+booktitle = {Proceedings of the Fourteenth EuroSys Conference 2019},
+articleno = {23},
+numpages = {15},
+keywords = {software-defined networking, consistent update, model checking, causal consistency},
+location = {Dresden, Germany},
+series = {EuroSys '19}
 }
+
 
 @inproceedings{harmony:hotos19,
-  author    = {Theophilus A. Benson},
-  title     = {In-Network Compute: Considered Armed and Dangerous},
-  booktitle = {Proceedings of the Workshop on Hot Topics in Operating Systems, HotOS
-               2019, Bertinoro, Italy, May 13-15, 2019},
-  pages     = {216--224},
-  year      = {2019},
-  crossref  = {DBLP:conf/hotos/2019},
-  url       = {https://doi.org/10.1145/3317550.3321436},
-  doi       = {10.1145/3317550.3321436},
-  timestamp = {Wed, 29 May 2019 13:38:37 +0200},
-  biburl    = {https://dblp.org/rec/bib/conf/hotos/Benson19},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus A.},
+title = {In-Network Compute: Considered Armed and Dangerous},
+year = {2019},
+isbn = {9781450367271},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3317550.3321436},
+doi = {10.1145/3317550.3321436},
+abstract = {Programmable data planes promise unprecedented flexibility and innovation. But enormous management issues arise when these programmable data-planes, and the in-network compute functionality they enable, are deployed within production networks. In this paper, we present an overview of these management challenges, then explore the limitations of existing management techniques. Finally, we propose a system, Harmony, that encapsulates new abstractions and primitives to address these problems.},
+booktitle = {Proceedings of the Workshop on Hot Topics in Operating Systems},
+pages = {216–224},
+numpages = {9},
+keywords = {in-network computing, programmable network devices},
+location = {Bertinoro, Italy},
+series = {HotOS '19}
 }
 
+
 @inproceedings{mozart:socc19,
-  author    = {Zhenyu Zhou and
-               Theophilus A. Benson},
-  title     = {Composing {SDN} Controller Enhancements with Mozart},
-  booktitle = {Proceedings of the {ACM} Symposium on Cloud Computing, SoCC 2019,
-               Santa Cruz, CA, USA, November 20-23, 2019},
-  pages     = {351--363},
-  year      = {2019},
-  crossref  = {DBLP:conf/socc/2019},
-  url       = {https://doi.org/10.1145/3357223.3362712},
-  doi       = {10.1145/3357223.3362712},
-  timestamp = {Tue, 12 Nov 2019 09:23:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/socc/ZhouB19},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Zhou, Zhenyu and Benson, Theophilus A.},
+title = {Composing SDN Controller Enhancements with Mozart},
+year = {2019},
+isbn = {9781450369732},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3357223.3362712},
+doi = {10.1145/3357223.3362712},
+abstract = {Over the last few years, we have experienced a massive transformation of the Software Defined Networking ecosystem with the development of SDNEnhancements, e.g., Statesman, ESPRES, Pane, and Pyretic, to provide better composability, better utilization of TCAM, consistent network updates, or congestion free updates. The end-result of this organic evolution is a disconnect between the SDN applications and the data-plane. A disconnect which can impact an SDN application's performance and efficacy.In this paper, we present the first systematic study of the interactions between SDNEnhancements and SDN applications -- we show that an SDN application's performance can be significantly impacted by these SDNEnhancements: for example, we observed that the efficiency of a traffic engineering SDN application was reduced by 24.8%. Motivated by these insights, we present, Mozart, a redesigned SDN controller centered around mitigating and reducing the impact of these SDNEnhancements. Using two prototypes interoperating with seven SDN applications and two SDNEnhancements, we demonstrate that our abstractions require minimal changes and can restore an SDN application's performance. We analyzed Mozart's scalability and overhead using large scale simulations of modern cloud networks and observed them to be negligible.},
+booktitle = {Proceedings of the ACM Symposium on Cloud Computing},
+pages = {351–363},
+numpages = {13},
+keywords = {Composition, Compilers, Software Defined Networks},
+location = {Santa Cruz, CA, USA},
+series = {SoCC '19}
 }
 
 @inproceedings{mud:sosr19,
-  author    = {Ayyoob Hamza and
-               Hassan Habibi Gharakheili and
-               Theophilus A. Benson and
-               Vijay Sivaraman},
-  title     = {Detecting Volumetric Attacks on loT Devices via SDN-Based Monitoring
-               of {MUD} Activity},
-  booktitle = {Proceedings of the 2019 {ACM} Symposium on {SDN} Research, {SOSR}
-               2019, San Jose, CA, USA, April 3-4, 2019},
-  pages     = {36--48},
-  year      = {2019},
-  crossref  = {DBLP:conf/sosr/2019},
-  url       = {https://doi.org/10.1145/3314148.3314352},
-  doi       = {10.1145/3314148.3314352},
-  timestamp = {Thu, 28 Mar 2019 15:17:13 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sosr/HamzaGBS19},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Hamza, Ayyoob and Gharakheili, Hassan Habibi and Benson, Theophilus A. and Sivaraman, Vijay},
+title = {Detecting Volumetric Attacks on LoT Devices via SDN-Based Monitoring of MUD Activity},
+year = {2019},
+isbn = {9781450367103},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3314148.3314352},
+doi = {10.1145/3314148.3314352},
+abstract = {Smart environments equipped with IoT devices are increasingly under threat from an escalating number of sophisticated cyber-attacks. Current security approaches are inaccurate, expensive, or unscalable, as they require static signatures of known attacks, specialized hardware, or full packet inspection. The IETF Manufacturer Usage Description (MUD) framework aims to reduce the attack surface on an IoT device by formally defining its expected network behavior. In this paper, we use SDN to monitor compliance with the MUD behavioral profile, and develop machine learning methods to detect volumetric attacks such as DoS, reflective TCP/UDP/ICMP flooding, and ARP spoofing to IoT devices.Our first contribution develops a machine for detecting anomalous patterns of MUD-compliant network activity via coarse-grained (device-level) and fine-grained (flow-level) SDN telemetry for each IoT device, thereby giving visibility into flows that contribute to a volumetric attack. For our second contribution we measure network behavior of IoT devices by collecting benign and volumetric attacks traffic traces in our lab, label our dataset, and make it available to the public. Our last contribution prototypes a full working system (built with an OpenFlow switch, Faucet SDN controller, and a MUD policy engine), demonstrates its application in detecting volumetric attacks on several consumer IoT devices with high accuracy, and provides insights into cost and performance of our system. Our data and solution modules are released as open source to the community.},
+booktitle = {Proceedings of the 2019 ACM Symposium on SDN Research},
+pages = {36–48},
+numpages = {13},
+location = {San Jose, CA, USA},
+series = {SOSR '19}
 }
-
-
 
 
 
@@ -585,6 +872,7 @@ developments in network-layer security in smart home networks.}
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
+
 @inproceedings{minerva:bigdata18,
   author    = {Christopher Streiffer and
                Ramya Raghavendra and
@@ -604,23 +892,23 @@ developments in network-layer security in smart home networks.}
 }
 
 @inproceedings{p4visor:conext18,
-  author    = {Peng Zheng and
-               Theophilus Benson and
-               Chengchen Hu},
-  title     = {P4Visor: lightweight virtualization and composition primitives for
-               building and testing modular programs},
-  booktitle = {Proceedings of the 14th International Conference on emerging Networking
-               EXperiments and Technologies, CoNEXT 2018, Heraklion, Greece, December
-               04-07, 2018},
-  pages     = {98--111},
-  year      = {2018},
-  crossref  = {DBLP:conf/conext/2018},
-  url       = {https://doi.org/10.1145/3281411.3281436},
-  doi       = {10.1145/3281411.3281436},
-  timestamp = {Wed, 28 Nov 2018 07:38:06 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/conext/ZhengBH18},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Zheng, Peng and Benson, Theophilus and Hu, Chengchen},
+title = {P4Visor: Lightweight Virtualization and Composition Primitives for Building and Testing Modular Programs},
+year = {2018},
+isbn = {9781450360807},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3281411.3281436},
+doi = {10.1145/3281411.3281436},
+abstract = {Programmable data planes, PDPs, enable an unprecedented level of flexibility and have emerged as a promising alternative to existing data planes. Despite the rapid development and prototyping cycles that PDPs promote, the existing PDP ecosystem lacks appropriate abstractions and algorithms to support these rapid testing and deployment life-cycles. In this paper, we propose P4Visor, a lightweight virtualization abstraction that provides testing primitives as a first-order citizen of the PDP ecosystem. P4Visor can efficiently support multiple PDP programs through a combination of compiler optimizations and program analysis-based algorithms. P4Visor s algorithm improves over state-of-the-art techniques by significantly reducing the resource overheads associated with embedding numerous versions of a PDP program into hardware. To demonstrate the efficiency and viability of P4Visor, we implemented and evaluated P4Visor on both a software switch and an FPGA-based hardware switch using fourteen different PDP programs. Our results demonstrate that P4Visor introduces minimal overheads (less than 1%) and is one order of magnitude more efficient than existing PDPs primitives for concurrently supporting multiple programs.},
+booktitle = {Proceedings of the 14th International Conference on Emerging Networking EXperiments and Technologies},
+pages = {98–111},
+numpages = {14},
+keywords = {code merge, programmable data plane, testing},
+location = {Heraklion, Greece},
+series = {CoNEXT '18}
 }
+
 
 @inproceedings{inspectorgadget:icdcs18,
   author    = {Usama Naseer and
@@ -639,146 +927,156 @@ developments in network-layer security in smart home networks.}
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
+
 @inproceedings{mphula:netcompute18,
-  author    = {Cristian Hernandez Benet and
-               Andreas J. Kassler and
-               Theophilus Benson and
-               Gergely Pongr{\'{a}}cz},
-  title     = {\{MP-HULA:\} Multipath Transport Aware Load Balancing Using Programmable
-               Data Planes},
-  booktitle = {Proceedings of the 2018 Morning Workshop on In-Network Computing,
-               NetCompute@SIGCOMM 2018, Budapest, Hungary, August 20, 2018},
-  pages     = {7--13},
-  year      = {2018},
-  crossref  = {DBLP:conf/sigcomm/2018netcompute},
-  url       = {https://doi.org/10.1145/3229591.3229596},
-  doi       = {10.1145/3229591.3229596},
-  timestamp = {Wed, 21 Nov 2018 12:44:03 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/BenetKBP18},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benet, Cristian Hernandez and Kassler, Andreas J. and Benson, Theophilus and Pongracz, Gergely},
+title = {MP-HULA: Multipath Transport Aware Load Balancing Using Programmable Data Planes},
+year = {2018},
+isbn = {9781450359085},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3229591.3229596},
+doi = {10.1145/3229591.3229596},
+abstract = {Datacenter networks offer a large degree of multipath in order to provide large bisectional bandwidth. The end-to-end performance is determined by the load-balancing strategy which needs to be designed to effectively manage congestion. Consequently, congestion aware load-balancing strategies such as CONGA or HULA have been designed. Recently, more and more applications that are hosted on cloud servers use multipath transport protocols such as MPTCP. However, in the presence of MPTCP, existing load-balancing schemes including ECMP, HULA or CONGA may lead to suboptimal forwarding decisions where multiple MPTCP subflows of one connection are pinned on the same bottleneck link.In this paper, we present MP-HULA, a transport layer multi-path aware load-balancing scheme using Programmable Data Planes. First, instead of tracking congestion information for the best path towards the destination, each MP-HULA switch tracks congestion information for the best-k paths to a destination through the neighbor switches. Second, we design MP-HULA using Programmable Data Planes, where each leaf switch can identify, using P4, which MPTCP subflow belongs to which connection. MP-HULA then load-balances different MPTCP subflows of a MPTCP connection on different next hops considering congestion state while aggregating bandwidth. Our evaluation shows that MP-HULA with MPTCP outperforms HULA in average flow completion time (2.1x at 50% load, 1.7x at 80% load).},
+booktitle = {Proceedings of the 2018 Morning Workshop on In-Network Computing},
+pages = {7–13},
+numpages = {7},
+keywords = {Network Congestion, In-Network Load Balancing, Multipath, Programmable Switches},
+location = {Budapest, Hungary},
+series = {NetCompute '18}
 }
+
 
 @inproceedings{deepconfig:netai18,
-  author    = {Saim Salman and
-               Christopher Streiffer and
-               Huan Chen and
-               Theophilus Benson and
-               Asim Kadav},
-  title     = {DeepConf: Automating Data Center Network Topologies Management with
-               Machine Learning},
-  booktitle = {Proceedings of the 2018 Workshop on Network Meets {AI} {\&} ML, NetAI@SIGCOMM
-               2018, Budapest, Hungary, August 24, 2018},
-  pages     = {8--14},
-  year      = {2018},
-  crossref  = {DBLP:conf/sigcomm/2018netai},
-  url       = {https://doi.org/10.1145/3229543.3229554},
-  doi       = {10.1145/3229543.3229554},
-  timestamp = {Tue, 27 Aug 2019 15:54:18 +0200},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/SalmanSCBK18},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Salman, Saim and Streiffer, Christopher and Chen, Huan and Benson, Theophilus and Kadav, Asim},
+title = {DeepConf: Automating Data Center Network Topologies Management with Machine Learning},
+year = {2018},
+isbn = {9781450359115},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3229543.3229554},
+doi = {10.1145/3229543.3229554},
+abstract = {In recent years, many techniques have been developed to improve the performance and efficiency of data center networks. While these techniques provide high accuracy, they are often designed using heuristics that leverage domain-specific properties of the workload or hardware.In this vision paper, we argue that many data center networking techniques, e.g., routing, topology augmentation, energy savings, with diverse goals share design and architectural similarities. We present a framework for developing general intermediate representations of network topologies using deep learning that is amenable to solving a large class of data center problems. We develop a framework, DeepConf, that simplifies the process of configuring and training deep learning agents by using our intermediate representation to learn different tasks. To illustrate the strength of our approach, we implemented and evaluated a DeepConf-agent that tackles the data center topology augmentation problem. Our initial results are promising --- DeepConf performs comparably to the optimal solution.},
+booktitle = {Proceedings of the 2018 Workshop on Network Meets AI &amp; ML},
+pages = {8–14},
+numpages = {7},
+keywords = {deep reinforcement learning, topology management, Data center networks},
+location = {Budapest, Hungary},
+series = {NetAI'18}
 }
 
+
+
 @inproceedings{shadowp4:sigcomm18,
-  author    = {Peng Zheng and
-               Theophilus Benson and
-               Chengchen Hu},
-  title     = {ShadowP4: Building and Testing Modular Programs},
-  booktitle = {Proceedings of the {ACM} {SIGCOMM} 2018 Conference on Posters and
-               Demos, {SIGCOMM} 2018, Budapest, Hungary, August 20-25, 2018},
-  pages     = {150--152},
-  year      = {2018},
-  crossref  = {DBLP:conf/sigcomm/2018p},
-  url       = {https://doi.org/10.1145/3234200.3234231},
-  doi       = {10.1145/3234200.3234231},
-  timestamp = {Wed, 21 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/ZhengBH18},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Zheng, Peng and Benson, Theophilus and Hu, Chengchen},
+title = {ShadowP4: Building and Testing Modular Programs},
+year = {2018},
+isbn = {9781450359153},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3234200.3234231},
+doi = {10.1145/3234200.3234231},
+booktitle = {Proceedings of the ACM SIGCOMM 2018 Conference on Posters and Demos},
+pages = {150–152},
+numpages = {3},
+keywords = {testing, code merge, programmable data plane},
+location = {Budapest, Hungary},
+series = {SIGCOMM '18}
 }
 
 
 @inproceedings{chopin:apnet17,
-  author    = {Theophilus Benson},
-  title     = {A Call To Arms for Tackling the Unexpected Implications of {SDN} Controller
-               Enhancements},
-  booktitle = {Proceedings of the First Asia-Pacific Workshop on Networking, APNet
-               2017, Hong Kong, China, August 3-4, 2017},
-  pages     = {15--21},
-  year      = {2017},
-  crossref  = {DBLP:conf/apnet/2017},
-  url       = {https://doi.org/10.1145/3106989.3107006},
-  doi       = {10.1145/3106989.3107006},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/apnet/Benson17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus},
+title = {A Call To Arms for Tackling the Unexpected Implications of SDN Controller Enhancements},
+year = {2017},
+isbn = {9781450352444},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3106989.3107006},
+doi = {10.1145/3106989.3107006},
+abstract = {The last few years have seen a massive and organic transformation of the Software Defined Networking ecosystem with the development of enhancements, e.g., Statesman, ESPRES, PANE, and Athens, to provide better composability, better utilization of TCAM, consistent network updates, or congestion free updates. The end-result of this organic evolution is a disconnect between the SDN applications and the dataplane. A disconnect which can impact an SDN application's performance or correctness.In this paper, we present the first systematic study of the interactions between enhancements and SDN applications -- we show that an application's performance can be significantly impacted by these enhancements: with the efficiency of a traffic engineering App reduced by 24.8%. Motivated by these insights, we argue for a redesign of the SDN controller centered around mitigating and reducing the impact of these enhancements. We demonstrate through an initial prototype and with experiments that our abstractions require minimal changes and can restore an SDN application's performance and efficiency.},
+booktitle = {Proceedings of the First Asia-Pacific Workshop on Networking},
+pages = {15–21},
+numpages = {7},
+keywords = {Software-defined Networking, Composition, Compilers},
+location = {Hong Kong, China},
+series = {APNet'17}
 }
+
+
 
 @inproceedings{bells:iotsp17,
-  author    = {Theophilus Benson and
-               Balakrishnan Chandrasekaran},
-  title     = {Sounding the Bell for Improving Internet (of Things) Security},
-  booktitle = {Proceedings of the 2017 Workshop on Internet of Things Security and
-               Privacy, IoT S{\&}P@CCS, Dallas, TX, USA, November 03, 2017},
-  pages     = {77--82},
-  year      = {2017},
-  crossref  = {DBLP:conf/ccs/2017iotsp},
-  url       = {https://doi.org/10.1145/3139937.3139946},
-  doi       = {10.1145/3139937.3139946},
-  timestamp = {Tue, 06 Nov 2018 11:07:29 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/ccs/Benson017},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus and Chandrasekaran, Balakrishnan},
+title = {Sounding the Bell for Improving Internet (of Things) Security},
+year = {2017},
+isbn = {9781450353960},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3139937.3139946},
+doi = {10.1145/3139937.3139946},
+abstract = {The fragility of the Internet of Things (iot) ecosystem poses serious threats to Internet security, and the proliferation of iot devices only exacerbates this situation by providing vulnerable end-points to be exploited and used as attack sources. While industry and academia are working hard on designing innovative solutions to detect, mitigate and thwart massive botnet-based ddos attacks, the space of solutions appears disjoint and fragmented. The lack of cooperation between the iot device manufacturers, network operators, content providers, end users, and other players precipitates in point solutions which offer at best a veneer of security. In this paper we alert the community to the security challenges posed by the fragile iot ecosystem, discuss the space of solutions, and present the need for a distributed, concerted effort, e.g., among end users, ISPs, and CDNs, to improve Internet security. We do not claim to solve the problem, but offer design guidelines and discuss the key implementation challenges to inform the debates on iot security.},
+booktitle = {Proceedings of the 2017 Workshop on Internet of Things Security and Privacy},
+pages = {77–82},
+numpages = {6},
+keywords = {internet of things (iot), ddos attacks, botnet},
+location = {Dallas, Texas, USA},
+series = {IoTS&amp;P '17}
 }
-
 
 
 @inproceedings{switchvisor:can17,
-  author    = {Huan Chen and
-               Theophilus Benson},
-  title     = {Switch-visor: towards infrastructure-level virtualization of {SDN}
-               switches},
-  booktitle = {Proceedings of the 2nd Workshop on Cloud-Assisted Networking, CAN@CoNEXT
-               2017, Incheon, Republic of Korea, December 12, 2017},
-  pages     = {25--30},
-  year      = {2017},
-  crossref  = {DBLP:conf/conext/2017can},
-  url       = {https://doi.org/10.1145/3155921.3158431},
-  doi       = {10.1145/3155921.3158431},
-  timestamp = {Tue, 06 Nov 2018 16:58:31 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/conext/ChenB17a},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Chen, Huan and Benson, Theophilus},
+title = {Switch-Visor: Towards Infrastructure-Level Virtualization of SDN Switches},
+year = {2017},
+isbn = {9781450354233},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3155921.3158431},
+doi = {10.1145/3155921.3158431},
+abstract = {To test and update switch operating systems, developers and testers need to install run beta-switch OSes (switch agents) alongside production versions. However, today's network virtualization solutions fail to support infrastructure-level virtualization of hardware switches. In particular, they fail to provide performance guarantee and isolation of the switch's resources: CPU, Memory, and ASIC (TCAM/SRAM).In this paper, we define the notion of infrastructure-level switch virtualization, akin to IaaS, infrastructure-level switch virtualization provides tenants, testers or developers, with low-level control over the switches: allowing a tenant to install switch agents on the switches and to run their own controller. To support this abstraction, we present a system, Switch-Visor, which presents a first step towards providing comprehensive virtualization of a switch's resources. Switch-Visor employs a synthesis of well-founded virtualization technologies and novel hardware virtualization techniques. Switch-Visor introduces three main concepts: first, using container-based virtualization on the switch to virtualize CPU and Memory; second, leveraging intelligent TCAM management and novel schedulers to provide guarantees within the ASIC, and employing novel domain-specific offloading techniques to eliminate sources of interference. Our proposed solutions, leverage changes to switch OS and switch agents making them immediately applicable to existing SDN switches.},
+booktitle = {Proceedings of the 2nd Workshop on Cloud-Assisted Networking},
+pages = {25–30},
+numpages = {6},
+keywords = {software-defined networking, resource allocation, virtualization},
+location = {Incheon, Republic of Korea},
+series = {CAN '17}
 }
 
+
 @inproceedings{huntingiot:can17,
-  author    = {Vincentius Martin and
-               Qiang Cao and
-               Theophilus Benson},
-  title     = {Fending off IoT-hunting attacks at home networks},
-  booktitle = {Proceedings of the 2nd Workshop on Cloud-Assisted Networking, CAN@CoNEXT
-               2017, Incheon, Republic of Korea, December 12, 2017},
-  pages     = {67--72},
-  year      = {2017},
-  crossref  = {DBLP:conf/conext/2017can},
-  url       = {https://doi.org/10.1145/3155921.3160640},
-  doi       = {10.1145/3155921.3160640},
-  timestamp = {Tue, 06 Nov 2018 16:58:31 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/conext/MartinCB17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Martin, Vincentius and Cao, Qiang and Benson, Theophilus},
+title = {Fending off IoT-Hunting Attacks at Home Networks},
+year = {2017},
+isbn = {9781450354233},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3155921.3160640},
+doi = {10.1145/3155921.3160640},
+abstract = {Many attacks target vulnerabilities of home IoT devices, such as bugs in outdated software and weak passwords. The home network is at a vantage point for deploying security appliances to deal with such IoT attacks. We propose a comprehensive home network defense, Pot2DPI, and use it to raise an attacker's uncertainty about devices and enable the home network to monitor traffic, detect anomalies, and filter malicious packets. The security offered by Pot2DPI comes from a synthesis of practical techniques: honeypot, deep packet inspection (DPI), and a realization of moving target defense (MTD) in port forwarding. In particular, Pot2DPI has a chain of honeypot and DPI that collects suspicious packet traces, acquires attack signatures, and installs filtering rules at a home router timely. Meanwhile, Pot2DPI shuffles the mapping of ports between the router and the devices connected to it, making a targeted attack difficult and defense more effective. Pot2DPI is our first step towards securing a smart home.},
+booktitle = {Proceedings of the 2nd Workshop on Cloud-Assisted Networking},
+pages = {67–72},
+numpages = {6},
+keywords = {honeypot, moving target defense, IoT, home network},
+location = {Incheon, Republic of Korea},
+series = {CAN '17}
 }
 
 @inproceedings{hermes:conext17,
-  author    = {Huan Chen and
-               Theophilus Benson},
-  title     = {Hermes: Providing Tight Control over High-Performance {SDN} Switches},
-  booktitle = {Proceedings of the 13th International Conference on emerging Networking
-               EXperiments and Technologies, CoNEXT 2017, Incheon, Republic of Korea,
-               December 12 - 15, 2017},
-  pages     = {283--295},
-  year      = {2017},
-  crossref  = {DBLP:conf/conext/2017},
-  url       = {https://doi.org/10.1145/3143361.3143391},
-  doi       = {10.1145/3143361.3143391},
-  timestamp = {Tue, 06 Nov 2018 16:58:30 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/conext/ChenB17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Chen, Huan and Benson, Theophilus},
+title = {Hermes: Providing Tight Control over High-Performance SDN Switches},
+year = {2017},
+isbn = {9781450354226},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3143361.3143391},
+doi = {10.1145/3143361.3143391},
+abstract = {SDN controllers demand tight performance guarantees over the control plane actions performed by switches. For example, traffic engineering techniques that frequently reconfigure the network require guarantees on the speed of reconfiguring the network. Initial experiments show that poor performance of Ternary Content-Addressable Memory (TCAM) control actions (e.g., rule insertion) can inflate application performance by a factor of 2x! Yet, modern switches provide no guarantees for these important control plane actions -- inserting, modifying, or deleting rules.In this paper, we present the design and evaluation of Hermes, a practical and immediately deployable framework that offers a novel method for partitioning and optimizing switch TCAM to enable performance guarantees. Hermes builds on recent studies on switch performance and provides guarantees by trading-off a nominal amount of TCAM space for assured performance. We evaluated Hermes using large-scale simulations. Our evaluations show that with less than 5% overheads, Hermes provides 5ms insertion guarantees that translates into an improvement of application level metrics by up to 80%. Hermes is more than 50% better than existing state of the art techniques and provides significant improvement for traditional networks running BGP.},
+booktitle = {Proceedings of the 13th International Conference on Emerging Networking EXperiments and Technologies},
+pages = {283–295},
+numpages = {13},
+keywords = {TCAM Update, Performance, Software-defined Networking},
+location = {Incheon, Republic of Korea},
+series = {CoNEXT '17}
 }
 
 @inproceedings{configtron:hotcloud17,
@@ -795,154 +1093,156 @@ developments in network-layer security in smart home networks.}
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
+
 @inproceedings{darnet:middlware17,
-  author    = {Christopher Streiffer and
-               Ramya Raghavendra and
-               Theophilus Benson and
-               Mudhakar Srivatsa},
-  title     = {Darnet: a deep learning solution for distracted driving detection},
-  booktitle = {Proceedings of the 18th {ACM/IFIP/USENIX} Middleware Conference: Industrial
-               Track, Las Vegas, NV, USA, December 11 - 15, 2017},
-  pages     = {22--28},
-  year      = {2017},
-  crossref  = {DBLP:conf/middleware/2017i},
-  url       = {https://doi.org/10.1145/3154448.3154452},
-  doi       = {10.1145/3154448.3154452},
-  timestamp = {Tue, 06 Nov 2018 16:57:13 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/middleware/StreifferRBS17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Streiffer, Christopher and Raghavendra, Ramya and Benson, Theophilus and Srivatsa, Mudhakar},
+title = {Darnet: A Deep Learning Solution for Distracted Driving Detection},
+year = {2017},
+isbn = {9781450352000},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3154448.3154452},
+doi = {10.1145/3154448.3154452},
+abstract = {Distracted driving is known to be the leading cause of motor vehicle accidents. With the increase in the number of IoT devices available within vehicles, there exists an abundance of data for monitoring driver behavior. However, designing a system around this goal presents two key challenges - how to concurrently collect data spanning multiple IoT devices, and how to jointly analyze this multimodal input. To that end, we present a unified data collection and analysis framework, DarNet, capable of detecting and classifying distracted driving behavior. DarNet consists of two primary components: a data collection system and an analytics engine. Our system takes advantage of advances in machine learning (ML) to classify driving behavior based on input sensor data. In our system implementation, we collect image data from an inward facing camera, and Inertial Measurement Unit (IMU) data from a mobile device, both located within the vehicle. Using deep learning techniques, we show that DarNet achieves a Top-1 classification percentage of 87.02% on our collected dataset, significantly outperforming our baseline model of 73.88%. Additionally, we address the privacy concerns associated with collecting image data by presenting an alternative framework designed to operate on down-sampled data which produces a Top-1 classification percentage of 80.00%.},
+booktitle = {Proceedings of the 18th ACM/IFIP/USENIX Middleware Conference: Industrial Track},
+pages = {22–28},
+numpages = {7},
+location = {Las Vegas, Nevada},
+series = {Middleware '17}
 }
+
 
 @inproceedings{dapper:sosr17,
-  author    = {Mojgan Ghasemi and
-               Theophilus Benson and
-               Jennifer Rexford},
-  title     = {Dapper: Data Plane Performance Diagnosis of {TCP}},
-  booktitle = {Proceedings of the Symposium on {SDN} Research, {SOSR} 2017, Santa
-               Clara, CA, USA, April 3-4, 2017},
-  pages     = {61--74},
-  year      = {2017},
-  crossref  = {DBLP:conf/sosr/2017},
-  url       = {https://doi.org/10.1145/3050220.3050228},
-  doi       = {10.1145/3050220.3050228},
-  timestamp = {Tue, 06 Nov 2018 11:07:02 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sosr/GhasemiBR17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Ghasemi, Mojgan and Benson, Theophilus and Rexford, Jennifer},
+title = {Dapper: Data Plane Performance Diagnosis of TCP},
+year = {2017},
+isbn = {9781450349475},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3050220.3050228},
+doi = {10.1145/3050220.3050228},
+abstract = {With more applications moving to the cloud, cloud providers need to diagnose performance problems in a timely manner. Offline processing of logs is slow and inefficient, and instrumenting the end-host network stack would violate the tenants' rights to manage their own virtual machines (VMs). Instead, our system Dapper analyzes TCP performance in real time near the end-hosts (e.g., at the hypervisor, NIC, or top-of-rack switch). Dapper determines whether a connection is limited by the sender (e.g., a slow server competing for shared resources), the network (e.g., congestion), or the receiver (e.g., small receive buffer). Emerging edge devices now offer flexible packet processing at high speed on commodity hardware, making it possible to monitor TCP performance in the data plane, at line rate. We use P4 to prototype Dapper and evaluate our design on real and synthetic traffic. To reduce the data-plane state requirements, we perform lightweight detection for all connections, followed by heavier-weight diagnosis just for the troubled connections.},
+booktitle = {Proceedings of the Symposium on SDN Research},
+pages = {61–74},
+numpages = {14},
+keywords = {Measurement, Network Monitoring, Performance Diagnosis},
+location = {Santa Clara, CA, USA},
+series = {SOSR '17}
 }
+
 
 @inproceedings{mecury:sosr17,
-  author    = {Huan Chen and
-               Theophilus Benson},
-  title     = {The Case for Making Tight Control Plane Latency Guarantees in {SDN}
-               Switches},
-  booktitle = {Proceedings of the Symposium on {SDN} Research, {SOSR} 2017, Santa
-               Clara, CA, USA, April 3-4, 2017},
-  pages     = {150--156},
-  year      = {2017},
-  crossref  = {DBLP:conf/sosr/2017},
-  url       = {https://doi.org/10.1145/3050220.3050237},
-  doi       = {10.1145/3050220.3050237},
-  timestamp = {Tue, 06 Nov 2018 11:07:02 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sosr/ChenB17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Chen, Huan and Benson, Theophilus},
+title = {The Case for Making Tight Control Plane Latency Guarantees in SDN Switches},
+year = {2017},
+isbn = {9781450349475},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3050220.3050237},
+doi = {10.1145/3050220.3050237},
+abstract = {SDN controllers demand tight performance guarantees over the control plane actions performed by SDN switches. For example, traffic engineering techniques that frequently reconfigure the network require guarantees on the speed of gathering data from the network and the speed of reconfiguring the network. Yet, modern switches provide no guarantees for these control plane actions, e.g., inserting rules or gathering statistics. In fact, initial experiments demonstrate that unpredictability in control plane actions, specifically rule insertion, can inflate application completion times by a factor of 4X!In this paper, we present Mercury, a framework that offers a novel method for efficiently and practically managing switch TCAM to enable strict performance guarantees. Specifically, Mercury builds on the fundamental properties of TCAMs and provides guarantees by trading-off a nominal amount of TCAM space for assured performance. Our preliminary evaluations show that with less than 10% overheads, Mercury provides guarantees of 10ms insertion time and improves application performance by a factor 2X to 5X.},
+booktitle = {Proceedings of the Symposium on SDN Research},
+pages = {150–156},
+numpages = {7},
+keywords = {Network Update, Software-defined Networking},
+location = {Santa Clara, CA, USA},
+series = {SOSR '17}
 }
+
 
 @inproceedings{delorean:sosr17,
-  author    = {Zhenyu Zhou and
-               Theophilus Benson and
-               Marco Canini and
-               Balakrishnan Chandrasekaran},
-  title     = {Delorean: Using Time Travel to Avoid Bugs and Failures in {SDN} Applications},
-  booktitle = {Proceedings of the Symposium on {SDN} Research, {SOSR} 2017, Santa
-               Clara, CA, USA, April 3-4, 2017},
-  pages     = {199--200},
-  year      = {2017},
-  crossref  = {DBLP:conf/sosr/2017},
-  url       = {https://doi.org/10.1145/3050220.3060610},
-  doi       = {10.1145/3050220.3060610},
-  timestamp = {Tue, 06 Nov 2018 11:07:02 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sosr/ZhouBC017},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Zhou, Zhenyu and Benson, Theophilus and Canini, Marco and Chandrasekaran, Balakrishnan},
+title = {Delorean: Using Time Travel to Avoid Bugs and Failures in SDN Applications},
+year = {2017},
+isbn = {9781450349475},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3050220.3060610},
+doi = {10.1145/3050220.3060610},
+booktitle = {Proceedings of the Symposium on SDN Research},
+pages = {199–200},
+numpages = {2},
+location = {Santa Clara, CA, USA},
+series = {SOSR '17}
 }
-
-
 
 
 
 @inproceedings{openstackbugs:can16,
-  author    = {Washington Garcia and
-               Theophilus Benson},
-  title     = {A First Look at Bugs in OpenStack},
-  booktitle = {Proceedings of the 2016 {ACM} Workshop on Cloud-Assisted Networking,
-               CAN@CoNEXT 2016, Irvine, California, USA, December 12, 2016},
-  pages     = {67--72},
-  year      = {2016},
-  crossref  = {DBLP:conf/conext/2016can},
-  url       = {https://doi.org/10.1145/3010079.3010086},
-  doi       = {10.1145/3010079.3010086},
-  timestamp = {Tue, 06 Nov 2018 16:58:31 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/conext/GarciaB16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Garcia, Washington and Benson, Theophilus},
+title = {A First Look at Bugs in OpenStack},
+year = {2016},
+isbn = {9781450346733},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3010079.3010086},
+doi = {10.1145/3010079.3010086},
+abstract = {An increasing amount of popular services are utilizing cloud infrastructure due to its convenience, low cost, and scalability. However, as more services turn to cloud as a means of storing and delivering data to consumers, the faults of cloud infrastructure become more apparent. When cloud infrastructure fails, the consequences are disastrous, with failures making national headlines. Popular services such as Amazon, Quora, Netflix, and many social media sites all rely on cloud computing at their core. Although new cloud infrastructures have sprouted in recent years, there is limited knowledge about what type of bugs they contain, and how these bugs affect quality of service of cloud components. We propose a system that can automatically classify bug tickets using the natural language descriptions provided by developers. We then utilize this system to classify a random sub-sample of 30k OpenStack bugs, and reveal trends related to OpenStack releases, priority assignments, and project characteristics. For example, we find that existing issues make up over 70% of bugs in OpenStack modules, with over half of these bugs corresponding to reliability.},
+booktitle = {Proceedings of the 2016 ACM Workshop on Cloud-Assisted Networking},
+pages = {67–72},
+numpages = {6},
+keywords = {machine learning, software bugs, openstack, cloud},
+location = {Irvine, California, USA},
+series = {CAN '16}
 }
+
 
 @inproceedings{picocenter:eurosys16,
-  author    = {Liang Zhang and
-               James Litton and
-               Frank Cangialosi and
-               Theophilus Benson and
-               Dave Levin and
-               Alan Mislove},
-  title     = {Picocenter: supporting long-lived, mostly-idle applications in cloud
-               environments},
-  booktitle = {Proceedings of the Eleventh European Conference on Computer Systems,
-               EuroSys 2016, London, United Kingdom, April 18-21, 2016},
-  pages     = {37:1--37:16},
-  year      = {2016},
-  crossref  = {DBLP:conf/eurosys/2016},
-  url       = {https://doi.org/10.1145/2901318.2901345},
-  doi       = {10.1145/2901318.2901345},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/eurosys/ZhangLCBLM16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Zhang, Liang and Litton, James and Cangialosi, Frank and Benson, Theophilus and Levin, Dave and Mislove, Alan},
+title = {Picocenter: Supporting Long-Lived, Mostly-Idle Applications in Cloud Environments},
+year = {2016},
+isbn = {9781450342407},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2901318.2901345},
+doi = {10.1145/2901318.2901345},
+abstract = {Cloud computing has evolved to meet user demands, from arbitrary VMs offered by IaaS to the narrow application interfaces of PaaS. Unfortunately, there exists an intermediate point that is not well met by today's offerings: users who wish to run arbitrary, already available binaries (as opposed to rewriting their own application for a PaaS) yet expect their applications to be long-lived but mostly idle (as opposed to the always-on VM of IaaS). For example, end users who wish to run their own email or DNS server.In this paper, we explore an alternative approach for cloud computation based on a process-like abstraction rather than a virtual machine abstraction, thereby gaining the scalability and efficiency of PaaS along with the generality of IaaS. We present the design of Picocenter, a hosting infrastructure for such applications that enables use of legacy applications. The key technical challenge in Picocenter is enabling fast swapping of applications to and from cloud storage (since, by definition, applications are largely idle, we expect them to spend the majority of their time swapped out). We develop an ActiveSet technique that prefetches the application's predicted memory working set when reviving an application. An evaluation on EC2 demonstrates that using ActiveSet, Picocenter is able to swap in applications in under 250 ms even when they are stored in S3 while swapped out.},
+booktitle = {Proceedings of the Eleventh European Conference on Computer Systems},
+articleno = {37},
+numpages = {16},
+location = {London, United Kingdom},
+series = {EuroSys '16}
 }
+
 
 @inproceedings{devworld:imc16,
-  author    = {Sohaib Ahmad and
-               Abdul Lateef Haamid and
-               Zafar Ayyub Qazi and
-               Zhenyu Zhou and
-               Theophilus Benson and
-               Ihsan Ayyub Qazi},
-  title     = {A View from the Other Side: Understanding Mobile Phone Characteristics
-               in the Developing World},
-  booktitle = {Proceedings of the 2016 {ACM} on Internet Measurement Conference,
-               {IMC} 2016, Santa Monica, CA, USA, November 14-16, 2016},
-  pages     = {319--325},
-  year      = {2016},
-  crossref  = {DBLP:conf/imc/2016},
-  url       = {http://dl.acm.org/citation.cfm?id=2987470},
-  timestamp = {Tue, 06 Nov 2018 11:07:19 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/imc/AhmadHQZBQ16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Ahmad, Sohaib and Haamid, Abdul Lateef and Qazi, Zafar Ayyub and Zhou, Zhenyu and Benson, Theophilus and Qazi, Ihsan Ayyub},
+title = {A View from the Other Side: Understanding Mobile Phone Characteristics in the Developing World},
+year = {2016},
+isbn = {9781450345262},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2987443.2987470},
+doi = {10.1145/2987443.2987470},
+abstract = {Mobile devices are becoming increasingly dominant in the developing world. However, there is little insight into the characteristics of devices being used in such regions. Using a dataset of ~0.5 million subscribers from one of the largest cellular operators in Pakistan, we analyze the characteristics of cell phones based on different features (e.g., CPU, memory, and cellular interface). We identify potential device-level bottlenecks for Internet access and analyze the security implications of the phones being used. To aid the analysis of cell phones, we propose abstractions (e.g., connectivity, capacity, and device security) and cluster phones based on these abstractions. Our analysis reveals interesting insights for improving mobile web performance.},
+booktitle = {Proceedings of the 2016 Internet Measurement Conference},
+pages = {319–325},
+numpages = {7},
+keywords = {developing regions, mobile devices, cellular networks},
+location = {Santa Monica, California, USA},
+series = {IMC '16}
 }
 
+
 @inproceedings{yvideo:imc16,
-  author    = {Mojgan Ghasemi and
-               Partha Kanuparthy and
-               Ahmed Mansy and
-               Theophilus Benson and
-               Jennifer Rexford},
-  title     = {Performance Characterization of a Commercial Video Streaming Service},
-  booktitle = {Proceedings of the 2016 {ACM} on Internet Measurement Conference,
-               {IMC} 2016, Santa Monica, CA, USA, November 14-16, 2016},
-  pages     = {499--511},
-  year      = {2016},
-  crossref  = {DBLP:conf/imc/2016},
-  url       = {http://dl.acm.org/citation.cfm?id=2987481},
-  timestamp = {Tue, 06 Nov 2018 11:07:19 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/imc/GhasemiKMBR16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Ghasemi, Mojgan and Kanuparthy, Partha and Mansy, Ahmed and Benson, Theophilus and Rexford, Jennifer},
+title = {Performance Characterization of a Commercial Video Streaming Service},
+year = {2016},
+isbn = {9781450345262},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2987443.2987481},
+doi = {10.1145/2987443.2987481},
+abstract = {Despite the growing popularity of video streaming over the Internet, problems such as re-buffering and high startup latency continue to plague users. In this paper, we present an end-to-end characterization of Yahoo's video streaming service, analyzing over 500 million video chunks downloaded over a two-week period. We gain unique visibility into the causes of performance degradation by instrumenting both the CDN server and the client player at the chunk level, while also collecting frequent snapshots of TCP variables from the server network stack. We uncover a range of performance issues, including an asynchronous disk-read timer and cache misses at the server, high latency and latency variability in the network, and buffering delays and dropped frames at the client. Looking across chunks in the same session, or destined to the same IP prefix, we see how some performance problems are relatively persistent, depending on the video's popularity, the distance between the client and server, and the client's operating system, browser, and Flash runtime.},
+booktitle = {Proceedings of the 2016 Internet Measurement Conference},
+pages = {499–511},
+numpages = {13},
+keywords = {end-to-end measurement, internet video, performance characterization},
+location = {Santa Monica, California, USA},
+series = {IMC '16}
 }
+
+
 
 @inproceedings{sfcchecker:nfvsdn16,
   author    = {Brendan Tschaen and
@@ -985,38 +1285,41 @@ developments in network-layer security in smart home networks.}
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
+
 @inproceedings{legosdn:sosr16,
-  author    = {Balakrishnan Chandrasekaran and
-               Brendan Tschaen and
-               Theophilus Benson},
-  title     = {Isolating and Tolerating {SDN} Application Failures with LegoSDN},
-  booktitle = {Proceedings of the Symposium on {SDN} Research, {SOSR} 2016, Santa
-               Clara, CA, USA, March 14 - 15, 2016},
-  pages     = {7},
-  year      = {2016},
-  crossref  = {DBLP:conf/sosr/2016},
-  url       = {https://doi.org/10.1145/2890955.2890965},
-  doi       = {10.1145/2890955.2890965},
-  timestamp = {Tue, 06 Nov 2018 11:07:02 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sosr/0002TB16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Chandrasekaran, Balakrishnan and Tschaen, Brendan and Benson, Theophilus},
+title = {Isolating and Tolerating SDN Application Failures with LegoSDN},
+year = {2016},
+isbn = {9781450342117},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2890955.2890965},
+doi = {10.1145/2890955.2890965},
+abstract = {Despite software-defined networking's proven benefits, there remains a significant reluctance in adopting it. Among the issues that hamper SDN's adoption, two issues stand out: reliability and fault tolerance. At the heart of these issues is a set of fate-sharing relationships: the first between the SDN control applications and controllers, wherein the crash of the former induces a crash of the latter, thereby affecting the controller's availability; and, the second between the SDN-Apps and the network, wherein the failure of the former violates network safety, e.g., network-loops, or network availability, e.g., black holes.In this paper, we argue for a redesign of the controller architecture centering around a set of abstractions to eliminate these fate-sharing relationships and thus improve the controller's availability. We present a prototype implementation of a framework, called LegoSDN, that embodies our abstractions, and we demonstrate the benefits of our abstractions by evaluating LegoSDN on an emulated network with five real SDN-Apps. Our evaluations show that LegoSDN can recover failed SDN-Apps 3x faster than controller reboots while simultaneously preventing policy violations.},
+booktitle = {Proceedings of the Symposium on SDN Research},
+articleno = {7},
+numpages = {12},
+location = {Santa Clara, CA, USA},
+series = {SOSR '16}
 }
 
+
 @inproceedings{contextualrouter:sosr16,
-  author    = {Ilker Nadi Bozkurt and
-               Theophilus Benson},
-  title     = {Contextual Router: Advancing Experience Oriented Networking to the
-               Home},
-  booktitle = {Proceedings of the Symposium on {SDN} Research, {SOSR} 2016, Santa
-               Clara, CA, USA, March 14 - 15, 2016},
-  pages     = {15},
-  year      = {2016},
-  crossref  = {DBLP:conf/sosr/2016},
-  url       = {https://doi.org/10.1145/2890955.2890972},
-  doi       = {10.1145/2890955.2890972},
-  timestamp = {Tue, 06 Nov 2018 11:07:02 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sosr/BozkurtB16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Bozkurt, Ilker Nadi and Benson, Theophilus},
+title = {Contextual Router: Advancing Experience Oriented Networking to the Home},
+year = {2016},
+isbn = {9781450342117},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2890955.2890972},
+doi = {10.1145/2890955.2890972},
+abstract = {In a home network, there are multiple users each running different applications interacting with the network. To enhance the experience of each user, prioritization of various network applications is important.Previous solutions to this problem assigned priorities in a static manner. Even though there has been some efforts to assign priorities dynamically, these solutions only used interactivity of the application to prioritize traffic. We present Contextual Router, which achieves better prioritization by detecting all the flows generated in a home network and assigning priorities in a dynamic manner using various features of flows collected from each user's machine.},
+booktitle = {Proceedings of the Symposium on SDN Research},
+articleno = {15},
+numpages = {7},
+keywords = {Software Defined Networking (SDN), Home Networks, Quality of Service (QoS), Bandwidth management},
+location = {Santa Clara, CA, USA},
+series = {SOSR '16}
 }
 
 
@@ -1038,284 +1341,314 @@ developments in network-layer security in smart home networks.}
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@article{dapper:arxiv16,
-  author    = {Mojgan Ghasemi and
-               Theophilus Benson and
-               Jennifer Rexford},
-  title     = {Dapper: Data Plane Performance Diagnosis of {TCP}},
-  journal   = {CoRR},
-  volume    = {abs/1611.01529},
-  year      = {2016},
-  url       = {http://arxiv.org/abs/1611.01529},
-  archivePrefix = {arXiv},
-  eprint    = {1611.01529},
-  timestamp = {Mon, 13 Aug 2018 01:00:00 +0200},
-  biburl    = {https://dblp.org/rec/bib/journals/corr/GhasemiBR16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+
+@inproceedings{dapper:arxiv16,
+author = {Ghasemi, Mojgan and Benson, Theophilus and Rexford, Jennifer},
+title = {Dapper: Data Plane Performance Diagnosis of TCP},
+year = {2017},
+isbn = {9781450349475},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3050220.3050228},
+doi = {10.1145/3050220.3050228},
+abstract = {With more applications moving to the cloud, cloud providers need to diagnose performance problems in a timely manner. Offline processing of logs is slow and inefficient, and instrumenting the end-host network stack would violate the tenants' rights to manage their own virtual machines (VMs). Instead, our system Dapper analyzes TCP performance in real time near the end-hosts (e.g., at the hypervisor, NIC, or top-of-rack switch). Dapper determines whether a connection is limited by the sender (e.g., a slow server competing for shared resources), the network (e.g., congestion), or the receiver (e.g., small receive buffer). Emerging edge devices now offer flexible packet processing at high speed on commodity hardware, making it possible to monitor TCP performance in the data plane, at line rate. We use P4 to prototype Dapper and evaluate our design on real and synthetic traffic. To reduce the data-plane state requirements, we perform lightweight detection for all connections, followed by heavier-weight diagnosis just for the troubled connections.},
+booktitle = {Proceedings of the Symposium on SDN Research},
+pages = {61–74},
+numpages = {14},
+keywords = {Measurement, Network Monitoring, Performance Diagnosis},
+location = {Santa Clara, CA, USA},
+series = {SOSR '17}
+}
+
+
+@inproceedings{armaggedon:ccr15,
+author = {Chang, Michael Alan and Tschaen, Bredan and Benson, Theophilus and Vanbever, Laurent},
+title = {Chaos Monkey: Increasing SDN Reliability through Systematic Network Destruction},
+year = {2015},
+isbn = {9781450335423},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2785956.2790038},
+doi = {10.1145/2785956.2790038},
+booktitle = {Proceedings of the 2015 ACM Conference on Special Interest Group on Data Communication},
+pages = {371–372},
+numpages = {2},
+location = {London, United Kingdom},
+series = {SIGCOMM '15}
 }
 
 @article{armaggedon:ccr15,
-  author    = {Michael Alan Chang and
-               Brendan Tschaen and
-               Theophilus Benson and
-               Laurent Vanbever},
-  title     = {Chaos Monkey: Increasing {SDN} Reliability through Systematic Network
-               Destruction},
-  journal   = {Computer Communication Review},
-  volume    = {45},
-  number    = {5},
-  pages     = {371--372},
-  year      = {2015},
-  url       = {https://doi.org/10.1145/2829988.2790038},
-  doi       = {10.1145/2829988.2790038},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/journals/ccr/ChangTBV15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Chang, Michael Alan and Tschaen, Bredan and Benson, Theophilus and Vanbever, Laurent},
+title = {Chaos Monkey: Increasing SDN Reliability through Systematic Network Destruction},
+year = {2015},
+issue_date = {October 2015},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {45},
+number = {4},
+issn = {0146-4833},
+url = {https://doi.org/10.1145/2829988.2790038},
+doi = {10.1145/2829988.2790038},
+journal = {SIGCOMM Comput. Commun. Rev.},
+month = {aug},
+pages = {371–372},
+numpages = {2}
 }
+
 
 @inproceedings{armaggedon:hotnets15,
-  author    = {Nick Shelly and
-               Brendan Tschaen and
-               Klaus{-}Tycho F{\"{o}}rster and
-               Michael Alan Chang and
-               Theophilus Benson and
-               Laurent Vanbever},
-  title     = {Destroying networks for fun (and profit)},
-  booktitle = {Proceedings of the 14th \{ACM\} Workshop on Hot Topics in Networks,
-               Philadelphia, PA, USA, November 16 - 17, 2015},
-  pages     = {6:1--6:7},
-  year      = {2015},
-  crossref  = {DBLP:conf/hotnets/2015},
-  url       = {https://doi.org/10.1145/2834050.2834099},
-  doi       = {10.1145/2834050.2834099},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/hotnets/ShellyTFCBV15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Shelly, Nick and Tschaen, Brendan and F\"{o}rster, Klaus-Tycho and Chang, Michael and Benson, Theophilus and Vanbever, Laurent},
+title = {Destroying Networks for Fun (and Profit)},
+year = {2015},
+isbn = {9781450340472},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2834050.2834099},
+doi = {10.1145/2834050.2834099},
+abstract = {Network failures are inevitable. Interfaces go down, devices crash and resources become exhausted. It is the responsibility of the control software to provide reliable services on top of unreliable components and throughout unpredictable events. Guaranteeing the correctness of the controller under all types of failures is therefore essential for network operations. Yet, this is also an almost impossible task due to the complexity of the control software, the underlying network, and the lack of precision in simulation tools.Instead, we argue that testing network control software should follow in the footsteps of large scale distributed systems, such as those of Netflix or Google, which deliberately induce live failures in their production environments during working hours, and analyze how their control software reacts.In this paper, we describe Armageddon, a framework for introducing sustainable and systematic chaos in networks. When we cause failures, we do so without violating some operator-specified network invariants (e.g., end-to-end connectivity). The injected failures also guarantee some notion of coverage. If the controller can sustain all of the failures, then it can be considered resilient with a high degree of confidence. We describe efficient algorithms to compute failure scenarios and implemented them in a prototype. Applied to real-world networks, our algorithms a coverage of 80% of the links within only three iterations of failures.},
+booktitle = {Proceedings of the 14th ACM Workshop on Hot Topics in Networks},
+articleno = {6},
+numpages = {7},
+location = {Philadelphia, PA, USA},
+series = {HotNets-XIV}
 }
+
 
 @inproceedings{universaldcn:icdcn15,
-  author    = {Aditya Akella and
-               Theophilus Benson and
-               Balakrishnan Chandrasekaran and
-               Cheng Huang and
-               Bruce M. Maggs and
-               David A. Maltz},
-  title     = {A Universal Approach to Data Center Network Design},
-  booktitle = {Proceedings of the 2015 International Conference on Distributed Computing
-               and Networking, {ICDCN} 2015, Goa, India, January 4-7, 2015},
-  pages     = {41:1--41:10},
-  year      = {2015},
-  crossref  = {DBLP:conf/icdcn/2015},
-  url       = {https://doi.org/10.1145/2684464.2684505},
-  doi       = {10.1145/2684464.2684505},
-  timestamp = {Wed, 11 Sep 2019 12:17:11 +0200},
-  biburl    = {https://dblp.org/rec/bib/conf/icdcn/AkellaBCHMM15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Akella, Aditya and Benson, Theophilus and Chandrasekaran, Bala and Huang, Cheng and Maggs, Bruce and Maltz, David},
+title = {A Universal Approach to Data Center Network Design},
+year = {2015},
+isbn = {9781450329286},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2684464.2684505},
+doi = {10.1145/2684464.2684505},
+abstract = {This paper proposes an approach to the design of large-scale general-purpose data center networks based on the notions of volume and area universality introduced by Leiserson in the 1980's in the context of VLSI design. In particular, we suggest that the principle goal of the network designer should be to build a single network that is provably competitive, for any application, with any network that can be built for the same amount of money. After describing our approach, we survey the technology choices available to network designers today, and examine several existing commercial data center networks. In the most recent of these networks resources are allocated roughly as we suggest in this paper.},
+booktitle = {Proceedings of the 2015 International Conference on Distributed Computing and Networking},
+articleno = {41},
+numpages = {10},
+location = {Goa, India},
+series = {ICDCN '15}
 }
+
+
 
 @inproceedings{qos2:hotmiddlebox15,
-  author    = {Zhenyu Zhou and
-               Theophilus Benson},
-  title     = {Towards a Safe Playground for {HTTPS} and Middle Boxes with QoS2},
-  booktitle = {Proceedings of the 2015 \{ACM\} \{SIGCOMM\} Workshop on Hot Topics in
-               Middleboxes and Network Function Virtualization, HotMiddlebox@SIGCOMM
-               2015, London, United Kingdom, August 21, 2015},
-  pages     = {7--12},
-  year      = {2015},
-  crossref  = {DBLP:conf/sigcomm/2015hotmiddlebox},
-  url       = {https://doi.org/10.1145/2785989.2785998},
-  doi       = {10.1145/2785989.2785998},
-  timestamp = {Tue, 06 Nov 2018 11:07:11 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/ZhouB15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Zhou, Zhenyu and Benson, Theophilus},
+title = {Towards a Safe Playground for HTTPS and Middle Boxes with QoS2},
+year = {2015},
+isbn = {9781450335409},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2785989.2785998},
+doi = {10.1145/2785989.2785998},
+abstract = {With the increasing concern for network security and privacy, adoption of HTTPS has sky-rocket, with over 50% of traffic flows employing HTTPS. Unfortunately by encrypting the data, HTTPS eliminates the benefits provided by Middle-boxes such as proxies and caches. We claim that these limitations, highlight the need for alternative mechanisms for quickly and safely viewing websites: QoS2. QoS2 argues for fine-grained identification of common web-content and user-specific content, which are then deliver over either HTTP or HTTPS respectively. The main challenge in enabling a framework, such as QoS2, lies in ensuring that security is not compromised, namely vulnerability to Man in the Middle attacks. QoS2 overcomes such attacks, by judiciously employing object level checksums which are sent exclusively over the HTTPS connection. To quantify the benefits of QoS2, we have manually tagged the content for a number of sites and emulated an QoS2 server: initial results are promising with QoS2 providing 20%-70% speed up over traditional HTTPS.},
+booktitle = {Proceedings of the 2015 ACM SIGCOMM Workshop on Hot Topics in Middleboxes and Network Function Virtualization},
+pages = {7–12},
+numpages = {6},
+keywords = {network performance, network management, transport layer security, network security},
+location = {London, United Kingdom},
+series = {HotMiddlebox '15}
 }
+
 
 @inproceedings{armaggedon:sigcomm15,
-  author    = {Michael Alan Chang and
-               Brendan Tschaen and
-               Theophilus Benson and
-               Laurent Vanbever},
-  title     = {Chaos Monkey: Increasing {SDN} Reliability through Systematic Network
-               Destruction},
-  booktitle = {Proceedings of the 2015 \{ACM\} Conference on Special Interest Group
-               on Data Communication, {SIGCOMM} 2015, London, United Kingdom, August
-               17-21, 2015},
-  pages     = {371--372},
-  year      = {2015},
-  crossref  = {DBLP:conf/sigcomm/2015},
-  url       = {https://doi.org/10.1145/2785956.2790038},
-  doi       = {10.1145/2785956.2790038},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/ChangTBV15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Chang, Michael Alan and Tschaen, Bredan and Benson, Theophilus and Vanbever, Laurent},
+title = {Chaos Monkey: Increasing SDN Reliability through Systematic Network Destruction},
+year = {2015},
+isbn = {9781450335423},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2785956.2790038},
+doi = {10.1145/2785956.2790038},
+booktitle = {Proceedings of the 2015 ACM Conference on Special Interest Group on Data Communication},
+pages = {371–372},
+numpages = {2},
+location = {London, United Kingdom},
+series = {SIGCOMM '15}
 }
+
+@article{armaggedon:sigcomm15,
+author = {Chang, Michael Alan and Tschaen, Bredan and Benson, Theophilus and Vanbever, Laurent},
+title = {Chaos Monkey: Increasing SDN Reliability through Systematic Network Destruction},
+year = {2015},
+issue_date = {October 2015},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {45},
+number = {4},
+issn = {0146-4833},
+url = {https://doi.org/10.1145/2829988.2790038},
+doi = {10.1145/2829988.2790038},
+journal = {SIGCOMM Comput. Commun. Rev.},
+month = {aug},
+pages = {371–372},
+numpages = {2}
+}
+
 
 @inproceedings{slick:sosr15,
-  author    = {Bilal Anwer and
-               Theophilus Benson and
-               Nick Feamster and
-               Dave Levin},
-  title     = {Programming slick network functions},
-  booktitle = {Proceedings of the 1st \{ACM\} {SIGCOMM} Symposium on Software Defined
-               Networking Research, {SOSR} '15, Santa Clara, California, USA, June
-               17-18, 2015},
-  pages     = {14:1--14:13},
-  year      = {2015},
-  crossref  = {DBLP:conf/sosr/2015},
-  url       = {https://doi.org/10.1145/2774993.2774998},
-  doi       = {10.1145/2774993.2774998},
-  timestamp = {Tue, 06 Nov 2018 11:07:02 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sosr/AnwerBFL15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Anwer, Bilal and Benson, Theophilus and Feamster, Nick and Levin, Dave},
+title = {Programming Slick Network Functions},
+year = {2015},
+isbn = {9781450334518},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2774993.2774998},
+doi = {10.1145/2774993.2774998},
+abstract = {Current approaches to in-network traffic processing involve the deployment of monolithic middleboxes in virtual machines. These approaches make it difficult to reuse functionality across different packet processing elements and also do not use available in-network processing resources efficiently. We present Slick, a framework for programming network functions that allows a programmer to write a single high-level control program that specifies custom packet processing on precise subsets of traffic. The Slick runtime coordinates the placement of fine-grained packet processing elements (e.g., firewalls, load balancers) and steers traffic through sequences of these element instances. A Slick program merely dictates what processing should be performed on specific traffic flows, without requiring the programmer to specify where in the network specific processing elements are instantiated or how traffic should be routed through them. In contrast to previous work, Slick handles both the placement of fine-grained elements and the steering of traffic through specific sequences of element instances, allowing for more efficient use of network resources than solutions that solve each problem in isolation.},
+booktitle = {Proceedings of the 1st ACM SIGCOMM Symposium on Software Defined Networking Research},
+articleno = {14},
+numpages = {13},
+keywords = {network functions virtualization (NFV), software-defined networking (SDN)},
+location = {Santa Clara, California},
+series = {SOSR '15}
 }
-
 
 
 @inproceedings{legosdn:hotnets14,
-  author    = {Balakrishnan Chandrasekaran and
-               Theophilus Benson},
-  title     = {Tolerating {SDN} Application Failures with LegoSDN},
-  booktitle = {Proceedings of the 13th \{ACM\} Workshop on Hot Topics in Networks,
-               HotNets-XIII, Los Angeles, CA, USA, October 27-28, 2014},
-  pages     = {22:1--22:7},
-  year      = {2014},
-  crossref  = {DBLP:conf/hotnets/2014},
-  url       = {https://doi.org/10.1145/2670518.2673880},
-  doi       = {10.1145/2670518.2673880},
-  timestamp = {Tue, 06 Nov 2018 16:58:14 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/hotnets/ChandrasekaranB14},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Chandrasekaran, Balakrishnan and Benson, Theophilus},
+title = {Tolerating SDN Application Failures with LegoSDN},
+year = {2014},
+isbn = {9781450332569},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2670518.2673880},
+doi = {10.1145/2670518.2673880},
+abstract = {Despite Software Defined Network's (SDN) proven benefits, there remains significant reluctance in adopting it. Among the issues that hamper SDN's adoption two stand out: reliability and fault tolerance. At the heart of these issues is a set of fate-sharing relationships: The first between the SDN-Apps and controllers, where-in the crash of the former induces a crash of the latter, and thereby affecting availability; and, the second between the SDN-App and the network, where-in a byzantine failure e.g., black-holes and network-loops, induces a failure in the network, and thereby affecting network availability. The principal position of this paper is that availability is of utmost concern -- second only to security. To this end, we present a re-design of the controller architecture centering around a set of abstractions to eliminate these fate-sharing relationships, and make the controllers and network resilient to SDN-App failures. We illustrate how these abstractions can be used to improve the reliability of an SDN environment, thus eliminating one of the barriers to SDN's adoption.},
+booktitle = {Proceedings of the 13th ACM Workshop on Hot Topics in Networks},
+pages = {1–7},
+numpages = {7},
+keywords = {Fault Tolerance, Software-Defined Networking},
+location = {Los Angeles, CA, USA},
+series = {HotNets-XIII}
 }
+
 
 @inproceedings{paris:dcc14,
-  author    = {Dushyant Arora and
-               Theophilus Benson and
-               Jennifer Rexford},
-  title     = {ProActive routing in scalable data centers with {PARIS}},
-  booktitle = {Proceedings of the 2014 \{ACM\} {SIGCOMM} workshop on Distributed cloud
-               computing, {DCC} '14, Chicago, Illinois, USA, August 18, 2014},
-  pages     = {5--10},
-  year      = {2014},
-  crossref  = {DBLP:conf/sigcomm/2014dcc},
-  url       = {https://doi.org/10.1145/2627566.2627571},
-  doi       = {10.1145/2627566.2627571},
-  timestamp = {Tue, 06 Nov 2018 11:07:12 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/AroraBR14},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Arora, Dushyant and Benson, Theophilus and Rexford, Jennifer},
+title = {ProActive Routing in Scalable Data Centers with PARIS},
+year = {2014},
+isbn = {9781450329927},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2627566.2627571},
+doi = {10.1145/2627566.2627571},
+abstract = {Modern data centers must scale to a large number of servers, while offering flexible placement and migration of virtual machines. The traditional approach of connecting layer-two pods through a layer-three core constrains VM placement. More recent 'flat' designs are more flexible but have scalability limitations due to flooding/broadcasting or querying directories of VM locations. Rather than reactively learn VM locations, our PARIS architecture has a controller that pre-positions IP forwarding entries in the switches. Switches within a pod have complete information about the VMs beneath them, while each core switch maintains complete forwarding state for part of the address space. PARIS offers network designers the flexibility to choose a topology that meets their latency and bandwidth requirements. We evaluate our PARIS prototype built using OpenFlow-compliant switches and NOX controller. Using PARIS we can build a data center network that supports up to 100K servers.},
+booktitle = {Proceedings of the 2014 ACM SIGCOMM Workshop on Distributed Cloud Computing},
+pages = {5–10},
+numpages = {6},
+keywords = {network virtualization, data center networking, software-defined networking},
+location = {Chicago, Illinois, USA},
+series = {DCC '14}
 }
+
 
 @inproceedings{legosdn:hotsdn14,
-  author    = {Balakrishnan Chandrasekaran and
-               Theophilus Benson},
-  title     = {Tolerating {SDN} application failures with LegoSDN},
-  booktitle = {Proceedings of the third workshop on Hot topics in software defined
-               networking, HotSDN '14, Chicago, Illinois, USA, August 22, 2014},
-  pages     = {235--236},
-  year      = {2014},
-  crossref  = {DBLP:conf/sigcomm/2014hotsdn},
-  url       = {https://doi.org/10.1145/2620728.2620781},
-  doi       = {10.1145/2620728.2620781},
-  timestamp = {Tue, 06 Nov 2018 11:07:11 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/ChandrasekaranB14},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Chandrasekaran, Balakrishnan and Benson, Theophilus},
+title = {Tolerating SDN Application Failures with LegoSDN},
+year = {2014},
+isbn = {9781450329897},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2620728.2620781},
+doi = {10.1145/2620728.2620781},
+booktitle = {Proceedings of the Third Workshop on Hot Topics in Software Defined Networking},
+pages = {235–236},
+numpages = {2},
+keywords = {software-defined networking, fault tolerance},
+location = {Chicago, Illinois, USA},
+series = {HotSDN '14}
 }
+
 
 @inproceedings{cloudssi:socc13,
-  author    = {Mansoor Alicherry and
-               Ashok Anand and
-               Shoban Preeth Chandrabose and
-               Theophilus Benson},
-  title     = {CloudSSI: revisiting {SSI} in cloud era},
-  booktitle = {\{ACM\} Symposium on Cloud Computing, {SOCC} '13, Santa Clara, CA, USA,
-               October 1-3, 2013},
-  pages     = {51:1},
-  year      = {2013},
-  crossref  = {DBLP:conf/cloud/2013},
-  url       = {https://doi.org/10.1145/2523616.2525959},
-  doi       = {10.1145/2523616.2525959},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/cloud/AlicherryACB13},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Alicherry, Mansoor and Anand, Ashok and Chandrabose, Shoban Preeth and Benson, Theophilius},
+title = {CloudSSI: Revisiting SSI in Cloud Era},
+year = {2013},
+isbn = {9781450324281},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2523616.2525959},
+doi = {10.1145/2523616.2525959},
+abstract = {The current IaaS model has several shortcomings. First, several IaaS providers only offers VM (virtual machine) with predefined sizes, thus enterprise tenants must judiciously determine the VM size that best fit their application. This is challenging as overprovisioning VMs can lead to waste of resources while underprovisioned VMs can lead to poor performance. Second, when an application requires more resources than a VM can provide, tenants are currently limited to either scaling-out or scaling-up their applications. However, in both situations the granularity is at the level of VMs which leads to sizing issues discussed earlier. Third, scaling-up is ineffective as it incurs a significant amount of downtime/poor performance while the new VM is being provisioned and not all applications support scaling-out. For example while, Web servers can be easily scaled-out other legacy applications can not [1], thus limiting its applicability.},
+booktitle = {Proceedings of the 4th Annual Symposium on Cloud Computing},
+articleno = {51},
+numpages = {1},
+location = {Santa Clara, California},
+series = {SOCC '13}
 }
+
 
 @inproceedings{harmony:socc13,
-  author    = {Robert Grandl and
-               Yizheng Chen and
-               Junaid Khalid and
-               Suli Yang and
-               Ashok Anand and
-               Theophilus Benson and
-               Aditya Akella},
-  title     = {Harmony: coordinating network, compute, and storage in software-defined
-               clouds},
-  booktitle = {\{ACM\} Symposium on Cloud Computing, {SOCC} '13, Santa Clara, CA, USA,
-               October 1-3, 2013},
-  pages     = {53:1--53:2},
-  year      = {2013},
-  crossref  = {DBLP:conf/cloud/2013},
-  url       = {https://doi.org/10.1145/2523616.2525961},
-  doi       = {10.1145/2523616.2525961},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/cloud/GrandlCKYABA13},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Grandl, Robert and Chen, Yizheng and Khalid, Junaid and Yang, Suli and Anand, Ashok and Benson, Theophilus and Akella, Aditya},
+title = {Harmony: Coordinating Network, Compute, and Storage in Software-Defined Clouds},
+year = {2013},
+isbn = {9781450324281},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2523616.2525961},
+doi = {10.1145/2523616.2525961},
+abstract = {The progress of a big data job is often a function of storage, networking and processing. Hence, for efficient job execution, it is important to collectively optimize all three components. Prior proposals [1], in contrast, have focused on mainly on one or two of the three components. This narrow focus constraints the extent to which these proposals can support efficient operation of big data applications.},
+booktitle = {Proceedings of the 4th Annual Symposium on Cloud Computing},
+articleno = {53},
+numpages = {2},
+location = {Santa Clara, California},
+series = {SOCC '13}
 }
 
+
 @inproceedings{dapper:conext13,
-  author    = {Mojgan Ghasemi and
-               Theophilus Benson and
-               Jennifer Rexford},
-  title     = {Real-time diagnosis of {TCP} performance in clouds},
-  booktitle = {Proceedings of the 2013 workshop on Student workhop, CoNEXT Student
-               Workhop '13, Santa Barbara, California, USA, December 9, 2013},
-  pages     = {57--58},
-  year      = {2013},
-  crossref  = {DBLP:conf/conext/2013sw},
-  url       = {https://doi.org/10.1145/2537148.2537156},
-  doi       = {10.1145/2537148.2537156},
-  timestamp = {Tue, 06 Nov 2018 16:58:31 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/conext/GhasemiBR13},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Ghasemi, Mojgan and Benson, Theophilus and Rexford, Jennifer},
+title = {Real-Time Diagnosis of TCP Performance in Clouds},
+year = {2013},
+isbn = {9781450325752},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2537148.2537156},
+doi = {10.1145/2537148.2537156},
+abstract = {Enterprises running critical applications in the cloud expect their providers to offer good, predictable performance. However, existing TCP monitoring tools either run offline, preventing real-time adaptation to performance problems, or require modification to the tenant's VMs, which raises trust issues. In this work, we present an online tool that accurately detects the cause of TCP performance problems.},
+booktitle = {Proceedings of the 2013 Workshop on Student Workhop},
+pages = {57–58},
+numpages = {2},
+keywords = {measurement, performance},
+location = {Santa Barbara, California, USA},
+series = {CoNEXT Student Workhop '13}
 }
 
 @inproceedings{hotswap:hotsdn13,
-  author    = {Laurent Vanbever and
-               Joshua Reich and
-               Theophilus Benson and
-               Nate Foster and
-               Jennifer Rexford},
-  title     = {HotSwap: correct and efficient controller upgrades for software-defined
-               networks},
-  booktitle = {Proceedings of the Second \{ACM\} {SIGCOMM} Workshop on Hot Topics in
-               Software Defined Networking, HotSDN 2013, The Chinese University of
-               Hong Kong, Hong Kong, China, Friday, August 16, 2013},
-  pages     = {133--138},
-  year      = {2013},
-  crossref  = {DBLP:conf/sigcomm/2013hotsdn},
-  url       = {https://doi.org/10.1145/2491185.2491194},
-  doi       = {10.1145/2491185.2491194},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/VanbeverRBFR13},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Vanbever, Laurent and Reich, Joshua and Benson, Theophilus and Foster, Nate and Rexford, Jennifer},
+title = {HotSwap: Correct and Efficient Controller Upgrades for Software-Defined Networks},
+year = {2013},
+isbn = {9781450321785},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2491185.2491194},
+doi = {10.1145/2491185.2491194},
+abstract = {Like any complex software, SDN programs must be updated periodically, whether to migrate to a new controller platform, repair bugs, or address performance issues. Nowadays, SDN operators typically perform such upgrades by stopping the old controller and starting the new one---an approach that wipes out all installed flow table entries and causes substantial disruption including losing packets, increasing latency, and even compromising correctness.This paper presents HotSwap, a system for upgrading SDN controllers in a disruption-free and correct manner. HotSwap is a hypervisor (sitting between the switches and the controller) that maintains a history of network events. To upgrade from an old controller to a new one, HotSwap bootstraps the new controller (by replaying the history) and monitors its output (to determine which parts of the network state may be reused with the new controller). To ensure good performance, HotSwap filters the history using queries specified by programmers. We describe our design and preliminary implementation of HotSwap, and present experimental results demonstrating its effectiveness for managing upgrades to third-party controller programs.},
+booktitle = {Proceedings of the Second ACM SIGCOMM Workshop on Hot Topics in Software Defined Networking},
+pages = {133–138},
+numpages = {6},
+keywords = {controller upgrade, dynamic software updating, software-defined network},
+location = {Hong Kong, China},
+series = {HotSDN '13}
 }
 
 @inproceedings{slick:hotsdn13,
-  author    = {Muhammad Bilal Anwer and
-               Theophilus Benson and
-               Nick Feamster and
-               Dave Levin and
-               Jennifer Rexford},
-  title     = {A slick control plane for network middleboxes},
-  booktitle = {Proceedings of the Second \{ACM\} {SIGCOMM} Workshop on Hot Topics in
-               Software Defined Networking, HotSDN 2013, The Chinese University of
-               Hong Kong, Hong Kong, China, Friday, August 16, 2013},
-  pages     = {147--148},
-  year      = {2013},
-  crossref  = {DBLP:conf/sigcomm/2013hotsdn},
-  url       = {https://doi.org/10.1145/2491185.2491223},
-  doi       = {10.1145/2491185.2491223},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/AnwerBFLR13},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Anwer, Bilal and Benson, Theophilus and Feamster, Nick and Levin, Dave and Rexford, Jennifer},
+title = {A Slick Control Plane for Network Middleboxes},
+year = {2013},
+isbn = {9781450321785},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2491185.2491223},
+doi = {10.1145/2491185.2491223},
+booktitle = {Proceedings of the Second ACM SIGCOMM Workshop on Hot Topics in Software Defined Networking},
+pages = {147–148},
+numpages = {2},
+keywords = {middlebox, software-defined networking, network management},
+location = {Hong Kong, China},
+series = {HotSDN '13}
 }
 
 @article{stratos:arxiv13,
@@ -1342,94 +1675,116 @@ developments in network-layer security in smart home networks.}
 }
 
 @inproceedings{cloudnaas:socc11,
-  author    = {Theophilus Benson and
-               Aditya Akella and
-               Anees Shaikh and
-               Sambit Sahu},
-  title     = {CloudNaaS: a cloud networking platform for enterprise applications},
-  booktitle = {\{ACM\} Symposium on Cloud Computing in conjunction with {SOSP} 2011,
-               {SOCC} '11, Cascais, Portugal, October 26-28, 2011},
-  pages     = {8},
-  year      = {2011},
-  crossref  = {DBLP:conf/cloud/2011},
-  url       = {https://doi.org/10.1145/2038916.2038924},
-  doi       = {10.1145/2038916.2038924},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/cloud/BensonASS11},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus and Akella, Aditya and Shaikh, Anees and Sahu, Sambit},
+title = {CloudNaaS: A Cloud Networking Platform for Enterprise Applications},
+year = {2011},
+isbn = {9781450309769},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2038916.2038924},
+doi = {10.1145/2038916.2038924},
+abstract = {Enterprises today face several challenges when hosting line-of-business applications in the cloud. Central to many of these challenges is the limited support for control over cloud network functions, such as, the ability to ensure security, performance guarantees or isolation, and to flexibly interpose middleboxes in application deployments. In this paper, we present the design and implementation of a novel cloud networking system called CloudNaaS. Customers can leverage CloudNaaS to deploy applications augmented with a rich and extensible set of network functions such as virtual network isolation, custom addressing, service differentiation, and flexible interposition of various middleboxes. CloudNaaS primitives are directly implemented within the cloud infrastructure itself using high-speed programmable network elements, making CloudNaaS highly efficient. We evaluate an OpenFlow-based prototype of CloudNaaS and find that it can be used to instantiate a variety of network functions in the cloud, and that its performance is robust even in the face of large numbers of provisioned services and link/device failures.},
+booktitle = {Proceedings of the 2nd ACM Symposium on Cloud Computing},
+articleno = {8},
+numpages = {13},
+keywords = {datacenter, virtual network},
+location = {Cascais, Portugal},
+series = {SOCC '11}
 }
 
 @inproceedings{microte:conext11,
-  author    = {Theophilus Benson and
-               Ashok Anand and
-               Aditya Akella and
-               Ming Zhang},
-  title     = {MicroTE: fine grained traffic engineering for data centers},
-  booktitle = {Proceedings of the 2011 Conference on Emerging Networking Experiments
-               and Technologies, Co-NEXT '11, Tokyo, Japan, December 6-9, 2011},
-  pages     = {8},
-  year      = {2011},
-  crossref  = {DBLP:conf/conext/2011},
-  url       = {https://doi.org/10.1145/2079296.2079304},
-  doi       = {10.1145/2079296.2079304},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/conext/BensonAAZ11},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus and Anand, Ashok and Akella, Aditya and Zhang, Ming},
+title = {MicroTE: Fine Grained Traffic Engineering for Data Centers},
+year = {2011},
+isbn = {9781450310413},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2079296.2079304},
+doi = {10.1145/2079296.2079304},
+abstract = {The effects of data center traffic characteristics on data center traffic engineering is not well understood. In particular, it is unclear how existing traffic engineering techniques perform under various traffic patterns, namely how do the computed routes differ from the optimal routes. Our study reveals that existing traffic engineering techniques perform 15% to 20% worse than the optimal solution. We find that these techniques suffer mainly due to their inability to utilize global knowledge about flow characteristics and make coordinated decision for scheduling flows.To this end, we have developed MicroTE, a system that adapts to traffic variations by leveraging the short term and partial predictability of the traffic matrix. We implement MicroTE within the OpenFlow framework and with minor modification to the end hosts. In our evaluations, we show that our system performs close to the optimal solution and imposes minimal overhead on the network making it appropriate for current and future data centers.},
+booktitle = {Proceedings of the Seventh COnference on Emerging Networking EXperiments and Technologies},
+articleno = {8},
+numpages = {12},
+keywords = {traffic engineering, data center network},
+location = {Tokyo, Japan},
+series = {CoNEXT '11}
 }
 
 @inproceedings{configevolution:imc11,
-  author    = {Hyojoon Kim and
-               Theophilus Benson and
-               Aditya Akella and
-               Nick Feamster},
-  title     = {The evolution of network configuration: a tale of two campuses},
-  booktitle = {Proceedings of the 11th {ACM} {SIGCOMM} Internet Measurement Conference,
-               {IMC} '11, Berlin, Germany, November 2-, 2011},
-  pages     = {499--514},
-  year      = {2011},
-  crossref  = {DBLP:conf/imc/2011},
-  url       = {https://doi.org/10.1145/2068816.2068863},
-  doi       = {10.1145/2068816.2068863},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/imc/KimBAF11},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Kim, Hyojoon and Benson, Theophilus and Akella, Aditya and Feamster, Nick},
+title = {The Evolution of Network Configuration: A Tale of Two Campuses},
+year = {2011},
+isbn = {9781450310130},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2068816.2068863},
+doi = {10.1145/2068816.2068863},
+abstract = {Studying network configuration evolution can improve our understanding of the evolving complexity of networks and can be helpful in making network configuration less error-prone. Unfortunately, the nature of changes that operators make to network configuration is poorly understood. Towards improving our understanding, we examine and analyze five years of router, switch, and firewall configurations from two large campus networks using the logs from version control systems used to store the configurations. We study how network configuration is distributed across different network operations tasks and how the configuration for each task evolves over time, for different types of devices and for different locations in the network. To understand the trends of how configuration evolves over time, we study the extent to which configuration for various tasks are added, modified, or deleted. We also study whether certain devices experience configuration changes more frequently than others, as well as whether configuration changes tend to focus on specific portions of the configuration (or on specific tasks). We also investigate when network operators make configuration changes of various types. Our results concerning configuration changes can help the designers of configuration languages understand which aspects of configuration might be more automated or tested more rigorously and may ultimately help improve configuration languages.},
+booktitle = {Proceedings of the 2011 ACM SIGCOMM Conference on Internet Measurement Conference},
+pages = {499–514},
+numpages = {16},
+keywords = {longitudinal analysis, network configuration, network evolution},
+location = {Berlin, Germany},
+series = {IMC '11}
 }
 
 @inproceedings{ispservices:sigcomm11,
-  author    = {Theophilus Benson and
-               Aditya Akella and
-               Aman Shaikh},
-  title     = {Demystifying configuration challenges and trade-offs in network-based
-               {ISP} services},
-  booktitle = {Proceedings of the {ACM} {SIGCOMM} 2011 Conference on Applications,
-               Technologies, Architectures, and Protocols for Computer Communications,
-               Toronto, ON, Canada, August 15-19, 2011},
-  pages     = {302--313},
-  year      = {2011},
-  crossref  = {DBLP:conf/sigcomm/2011},
-  url       = {https://doi.org/10.1145/2018436.2018471},
-  doi       = {10.1145/2018436.2018471},
-  timestamp = {Tue, 06 Nov 2018 11:07:12 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/BensonAS11},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus and Akella, Aditya and Shaikh, Aman},
+title = {Demystifying Configuration Challenges and Trade-Offs in Network-Based ISP Services},
+year = {2011},
+isbn = {9781450307970},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2018436.2018471},
+doi = {10.1145/2018436.2018471},
+abstract = {ISPs are increasingly offering a variety of network-based services such as VPN, VPLS, VoIP, Virtual-Wire and DDoS protection. Although both enterprise and residential networks are rapidly adopting these services, there is little systematic work on the design challenges and trade-offs ISPs face in providing them. The goal of our paper is to understand the complexity underlying the layer-3 design of services and to highlight potential factors that hinder their introduction, evolution and management. Using daily snapshots of configuration and device metadata collected from a tier-1 ISP, we examine the logical dependencies and special cases in device configurations for five different network-based services. We find: (1) the design of the core data-plane is usually service-agnostic and simple, but the control-planes for different services become more complex as services evolve; (2) more crucially, the configuration at the service edge inevitably becomes more complex over time, potentially hindering key management issues such as service upgrades and troubleshooting; and (3) there are key service-specific issues that also contribute significantly to the overall design complexity. Thus, the high prevalent complexity could impede the adoption and growth of network-based services. We show initial evidence that some of the complexity can be mitigated systematically.},
+booktitle = {Proceedings of the ACM SIGCOMM 2011 Conference},
+pages = {302–313},
+numpages = {12},
+keywords = {network services, network modeling, configuration analysis},
+location = {Toronto, Ontario, Canada},
+series = {SIGCOMM '11}
 }
 
+@article{10.1145/2043164.2018471,
+author = {Benson, Theophilus and Akella, Aditya and Shaikh, Aman},
+title = {Demystifying Configuration Challenges and Trade-Offs in Network-Based ISP Services},
+year = {2011},
+issue_date = {August 2011},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {41},
+number = {4},
+issn = {0146-4833},
+url = {https://doi.org/10.1145/2043164.2018471},
+doi = {10.1145/2043164.2018471},
+abstract = {ISPs are increasingly offering a variety of network-based services such as VPN, VPLS, VoIP, Virtual-Wire and DDoS protection. Although both enterprise and residential networks are rapidly adopting these services, there is little systematic work on the design challenges and trade-offs ISPs face in providing them. The goal of our paper is to understand the complexity underlying the layer-3 design of services and to highlight potential factors that hinder their introduction, evolution and management. Using daily snapshots of configuration and device metadata collected from a tier-1 ISP, we examine the logical dependencies and special cases in device configurations for five different network-based services. We find: (1) the design of the core data-plane is usually service-agnostic and simple, but the control-planes for different services become more complex as services evolve; (2) more crucially, the configuration at the service edge inevitably becomes more complex over time, potentially hindering key management issues such as service upgrades and troubleshooting; and (3) there are key service-specific issues that also contribute significantly to the overall design complexity. Thus, the high prevalent complexity could impede the adoption and growth of network-based services. We show initial evidence that some of the complexity can be mitigated systematically.},
+journal = {SIGCOMM Comput. Commun. Rev.},
+month = {aug},
+pages = {302–313},
+numpages = {12},
+keywords = {network modeling, network services, configuration analysis}
+}
+
+
 @article{dctraffic:ccr10,
-  author    = {Theophilus Benson and
-               Ashok Anand and
-               Aditya Akella and
-               Ming Zhang},
-  title     = {Understanding data center traffic characteristics},
-  journal   = {Computer Communication Review},
-  volume    = {40},
-  number    = {1},
-  pages     = {92--99},
-  year      = {2010},
-  url       = {https://doi.org/10.1145/1672308.1672325},
-  doi       = {10.1145/1672308.1672325},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/journals/ccr/BensonAAZ10},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus and Anand, Ashok and Akella, Aditya and Zhang, Ming},
+title = {Understanding Data Center Traffic Characteristics},
+year = {2010},
+issue_date = {January 2010},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {40},
+number = {1},
+issn = {0146-4833},
+url = {https://doi.org/10.1145/1672308.1672325},
+doi = {10.1145/1672308.1672325},
+abstract = {As data centers become more and more central in Internet communications, both research and operations communities have begun to explore how to better design and manage them. In this paper, we present a preliminary empirical study of end-to-end traffic patterns in data center networks that can inform and help evaluate research and operational approaches. We analyze SNMP logs collected at 19 data centers to examine temporal and spatial variations in link loads and losses. We find that while links in the core are heavily utilized the ones closer to the edge observe a greater degree of loss. We then study packet traces collected at a small number of switches in one data center and find evidence of ON-OFF traffic behavior. Finally, we develop a framework that derives ON-OFF traffic parameters for data center traffic sources that best explain the SNMP data collected for the data center. We show that the framework can be used to evaluate data center traffic engineering approaches. We are also applying the framework to design network-level traffic generators for data centers.},
+journal = {SIGCOMM Comput. Commun. Rev.},
+month = {jan},
+pages = {92–99},
+numpages = {8},
+keywords = {traffic modeling, data center traffic}
 }
 
 @inproceedings{cloudbugs:hotcloud10,
@@ -1449,20 +1804,21 @@ developments in network-layer security in smart home networks.}
 }
 
 @inproceedings{dctraffic:imc10,
-  author    = {Theophilus Benson and
-               Aditya Akella and
-               David A. Maltz},
-  title     = {Network traffic characteristics of data centers in the wild},
-  booktitle = {Proceedings of the 10th {ACM} {SIGCOMM} Internet Measurement Conference,
-               {IMC} 2010, Melbourne, Australia - November 1-3, 2010},
-  pages     = {267--280},
-  year      = {2010},
-  crossref  = {DBLP:conf/imc/2010},
-  url       = {https://doi.org/10.1145/1879141.1879175},
-  doi       = {10.1145/1879141.1879175},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/imc/BensonAM10},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus and Akella, Aditya and Maltz, David A.},
+title = {Network Traffic Characteristics of Data Centers in the Wild},
+year = {2010},
+isbn = {9781450304832},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1879141.1879175},
+doi = {10.1145/1879141.1879175},
+abstract = {Although there is tremendous interest in designing improved networks for data centers, very little is known about the network-level traffic characteristics of data centers today. In this paper, we conduct an empirical study of the network traffic in 10 data centers belonging to three different categories, including university, enterprise campus, and cloud data centers. Our definition of cloud data centers includes not only data centers employed by large online service providers offering Internet-facing applications but also data centers used to host data-intensive (MapReduce style) applications). We collect and analyze SNMP statistics, topology and packet-level traces. We examine the range of applications deployed in these data centers and their placement, the flow-level and packet-level transmission properties of these applications, and their impact on network and link utilizations, congestion and packet drops. We describe the implications of the observed traffic patterns for data center internal traffic engineering as well as for recently proposed architectures for data center networks.},
+booktitle = {Proceedings of the 10th ACM SIGCOMM Conference on Internet Measurement},
+pages = {267–280},
+numpages = {14},
+keywords = {characterization, data center traffic},
+location = {Melbourne, Australia},
+series = {IMC '10}
 }
 
 @inproceedings{microte:wren10,
@@ -1482,20 +1838,21 @@ developments in network-layer security in smart home networks.}
 }
 
 @inproceedings{policyatoms:imc09,
-  author    = {Theophilus Benson and
-               Aditya Akella and
-               David A. Maltz},
-  title     = {Mining policies from enterprise network configuration},
-  booktitle = {Proceedings of the 9th {ACM} {SIGCOMM} Internet Measurement Conference,
-               {IMC} 2009, Chicago, Illinois, USA, November 4-6, 2009},
-  pages     = {136--142},
-  year      = {2009},
-  crossref  = {DBLP:conf/imc/2009},
-  url       = {https://doi.org/10.1145/1644893.1644909},
-  doi       = {10.1145/1644893.1644909},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/imc/BensonAM09},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus and Akella, Aditya and Maltz, David A.},
+title = {Mining Policies from Enterprise Network Configuration},
+year = {2009},
+isbn = {9781605587714},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1644893.1644909},
+doi = {10.1145/1644893.1644909},
+abstract = {Few studies so far have examined the nature of reachability policies in enterprise networks. A better understanding of reachability policies could both inform future approaches to network design as well as current network configuration mechanisms. In this paper, we introduce the notion of a policy unit, which is an abstract representation of how the policies implemented in a network apply to different network hosts. We develop an approach for reverse-engineering a network's policy units from its router configuration. We apply this approach to the configurations of five productions networks, including three university and two private enterprises. Through our empirical study, we validate that policy units capture useful characteristics of a network's policy. We also obtain insights into the nature of the policies implemented in modern enterprises. For example, we find most hosts in these networks are subject to nearly identical reachability policies at Layer 3.},
+booktitle = {Proceedings of the 9th ACM SIGCOMM Conference on Internet Measurement},
+pages = {136–142},
+numpages = {7},
+keywords = {configuration management},
+location = {Chicago, Illinois, USA},
+series = {IMC '09}
 }
 
 @inproceedings{complexitymetrics:nsdi09,
@@ -1515,19 +1872,19 @@ developments in network-layer security in smart home networks.}
 }
 
 @inproceedings{dctraffic:wren09,
-  author    = {Theophilus Benson and
-               Ashok Anand and
-               Aditya Akella and
-               Ming Zhang},
-  title     = {Understanding data center traffic characteristics},
-  booktitle = {Proceedings of the 1st {ACM} {SIGCOMM} 2009 Workshop on Research on
-               Enterprise Networking, {WREN} 2009, Barcelona, Spain, August 21, 2009},
-  pages     = {65--72},
-  year      = {2009},
-  crossref  = {DBLP:conf/sigcomm/2009wren},
-  url       = {https://doi.org/10.1145/1592681.1592692},
-  doi       = {10.1145/1592681.1592692},
-  timestamp = {Tue, 06 Nov 2018 00:00:00 +0100},
-  biburl    = {https://dblp.org/rec/bib/conf/sigcomm/BensonAAZ09},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+author = {Benson, Theophilus and Anand, Ashok and Akella, Aditya and Zhang, Ming},
+title = {Understanding Data Center Traffic Characteristics},
+year = {2009},
+isbn = {9781605584430},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1592681.1592692},
+doi = {10.1145/1592681.1592692},
+abstract = {As data centers become more and more central in Internet communications, both research and operations communities have begun to explore how to better design and manage them. In this paper, we present a preliminary empirical study of end-to-end traffic patterns in data center networks that can inform and help evaluate research and operational approaches. We analyze SNMP logs collected at 19 data centers to examine temporal and spatial variations in link loads and losses. We find that while links in the core are heavily utilized the ones closer to the edge observe a greater degree of loss. We then study packet traces collected at a small number of switches in one data center and find evidence of ON-OFF traffic behavior. Finally, we develop a framework that derives ON-OFF traffic parameters for data center traffic sources that best explain the SNMP data collected for the data center. We show that the framework can be used to evaluate data center traffic engineering approaches. We are also applying the framework to design network-level traffic generators for data centers.},
+booktitle = {Proceedings of the 1st ACM Workshop on Research on Enterprise Networking},
+pages = {65–72},
+numpages = {8},
+keywords = {data center traffic, traffic modeling},
+location = {Barcelona, Spain},
+series = {WREN '09}
 }
