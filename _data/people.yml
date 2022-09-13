@@ -19,6 +19,10 @@ people:
     name: "Shriram Krishnamurthi"
     site: "https://cs.brown.edu/~sk"
     type: faculty
+  - key: rlewis
+    name: "Robert Y. Lewis"
+    site: "https://robertylewis.com/"
+    type: faculty
   - key: tn
     name: "Tim Nelson"
     site: "https://cs.brown.edu/~tn"
