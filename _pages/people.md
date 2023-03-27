@@ -23,8 +23,8 @@ order: 2
 #### Masters
 {% include peoplelist.html type="masters" %}
 
-#### Undergraduate
-{% include peoplelist.html type="ugrad" %}
+#### Friends
+{% include peoplelist.html type="friends" %}
 
 ### Alumni
 {% include peoplelist.html type="alum" %}

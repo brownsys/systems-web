@@ -1,19 +1,7 @@
 people:
-  - key: tab
-    name: "Theo Benson"
-    site: "https://cs.brown.edu/~tab"
-    type: faculty
   - key: ndemarin
     name: "Nick DeMarinis"
     site: "https://cs.brown.edu/~ndemarin"
-    type: faculty
-  - key: rfonseca
-    name: "Rodrigo Fonseca"
-    site: "https://cs.brown.edu/~rfonseca"
-    type: friends
-  - key: rbahar
-    name: "R. Iris Bahar"
-    site: "https://vivo.brown.edu/display/rbahar"
     type: faculty
   - key: sk
     name: "Shriram Krishnamurthi"
@@ -42,9 +30,7 @@ people:
   - key: kdakalba
     name: "Kinan Dak Albab"
     type: phd
-  - key: gmurtaza
-    name: "Ghulam Murtaza"
-    type: phd
+    site: "https://babman.io"
   - key: unaseer
     name: "Usama Naseer"
     site: "https://usama6naseer.github.io/"
@@ -57,6 +43,10 @@ people:
     name: "Leonhard Spiegelberg"
     type: phd
     site: "https://cs.brown.edu/~lspiegel"
+  - key: fsolleza
+    name: "Franco Solleza"
+    type: phd
+    site: "https://cs.brown.edu/people/grad/fsolleza/"
   - key: samthomas
     name: "Samuel Thomas"
     type: phd
@@ -143,3 +133,19 @@ people:
   - key: ayu9
     name: "Alexander Yu"
     type: alum
+  - key: tab
+    name: "Theo Benson"
+    site: "https://cs.brown.edu/~tab"
+    type: friends
+  - key: rfonseca
+    name: "Rodrigo Fonseca"
+    site: "https://cs.brown.edu/~rfonseca"
+    type: friends
+  - key: rbahar
+    name: "R. Iris Bahar"
+    site: "https://vivo.brown.edu/display/rbahar"
+    type: friends
+  - key: gmurtaza
+    name: "Ghulam Murtaza"
+    type: alum
+
