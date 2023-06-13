@@ -17,30 +17,13 @@ New talks and changes to the schedule are announced on the mailing list
 which you can subscribe to
 [here](https://lists.cs.brown.edu/sympa/info/sysread).
 
-{% assign today = 'now' | date: '%s' %}
-{% assign sorted = site.sysread | reverse %}
+<h3>Calendar</h3>
 
-<h3>Upcoming talks</h3>
+See the calendar below for a list of past and upcoming talks.  For a
+list of older sysread talks, see the [archive](../sysread-archive/).
 
-<ul>
-  {% for post in site.sysread %}
-  {% assign this_date = post.date | date: '%s' %}
-  {% if this_date > today %}
-    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}:  {{ post.title }}</a></li>
-  {% endif %}
-  {% endfor %}
-</ul>
-
-<h3>Past Talks</h3>
-
-<ul>
-  {% for post in sorted %}
-  {% assign this_date = post.date | date: '%s' %}
-  {% if this_date <= today %}
-    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}:  {{ post.title }}</a></li>
-  {% endif %}
-  {% endfor %}
-</ul>
+If the calendar does not load, [try this link instead](https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=AGENDA&showCalendars=0&src=bmkwNjBhcDVlazZxZWdkM3FnbWhuODdvMGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F4511E){:target="_blank"}.  
 
 
-<!-- {% include pagination.html %} -->
+<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=AGENDA&showCalendars=0&src=bmkwNjBhcDVlazZxZWdkM3FnbWhuODdvMGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23F4511E" style="border:solid 1px #777" width="700" height="600" frameborder="0" scrolling="no"></iframe>
+
