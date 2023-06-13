@@ -18,3 +18,12 @@ jobs:
         docker run \
         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
         jekyll/builder:latest /bin/bash -c "chmod -R 777 /srv/jekyll && jekyll build --future"
+    - shell: bash
+      name: Create site tarball
+      run: |
+        tar -czvf /tmp/build.tar.gz ${{github.workspace}}/_site
+    - name: Create site as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: site-archive
+        path: /tmp/build.tar.gz
