@@ -25,8 +25,8 @@ core_courses:
    title: "CSCI1680:  Computer Networks"
    link: https://cs.brown.edu/courses/csci1680
  - csci1950y:
-   title: "CSCI1950-Y: Logic for Systems"
-   link: http://cs.brown.edu/courses/cs195y/
+   title: "CSCI1710: Logic for Systems"
+   link: http://cs.brown.edu/courses/csci1710/
 
 seminar_courses:
  - csci2390f19:
