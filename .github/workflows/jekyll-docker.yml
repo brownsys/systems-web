@@ -27,13 +27,16 @@ jobs:
       with:
         name: site-archive
         path: /tmp/build.tar.gz
+    - name: Get short commit string
+      id: vars
+      run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
     - name: Create release
       uses: softprops/action-gh-release@v1
       with:
         token: "${{ secrets.API_TOKEN }}"
         draft: false
         prerelease: false
-        tag_name: "${{ github.sha }}"
+        tag_name: "auto-${{ steps.vars.outputs.sha_short }}"
         files: /tmp/build.tar.gz
     - name: Update status
       if: always()
