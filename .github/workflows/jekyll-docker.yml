@@ -27,6 +27,10 @@ jobs:
       with:
         name: site-archive
         path: /tmp/build.tar.gz
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
     - name: Invoke deployment hook
       uses: distributhor/workflow-webhook@v3
       env:
