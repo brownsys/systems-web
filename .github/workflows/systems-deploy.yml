@@ -1,9 +1,7 @@
-name: Jekyll site CI
+name: Deploy to systems webserver
 
 on:
   status:
-    branches: [ "master" ]
-  pull_request:
     branches: [ "master" ]
 
 jobs:
