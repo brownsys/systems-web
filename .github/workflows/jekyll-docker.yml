@@ -27,6 +27,15 @@ jobs:
       with:
         name: site-archive
         path: /tmp/build.tar.gz
+    - name: Create release
+      uses: "marvinpinto/action-automatic-releases@latest"
+      with:
+        repo_token: "${{ secrets.API_TOKEN }}"
+        automatic_release_tag: "latest"
+        preprelease: false
+        title: "Automatically generated build"
+        files: |
+          /tmp/build.tar.gz
     - name: Update status
       if: always()
       uses: ouzi-dev/commit-status-updater@v2
