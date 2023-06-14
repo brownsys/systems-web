@@ -33,7 +33,7 @@ jobs:
         token: "${{ secrets.API_TOKEN }}"
         draft: false
         prerelease: false
-        tag_name "${{ github.sha }}"
+        tag_name: "${{ github.sha }}"
         files: /tmp/build.tar.gz
     - name: Update status
       if: always()
