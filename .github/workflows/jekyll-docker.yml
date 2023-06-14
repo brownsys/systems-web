@@ -21,9 +21,14 @@ jobs:
     - shell: bash
       name: Create site tarball
       run: |
-        tar -czvf /tmp/build.tar.gz ${{github.workspace}}/_site
+        tar -czvf /tmp/build.tar.gz -C ${{github.workspace}} _site
     - name: Create site as artifact
       uses: actions/upload-artifact@v3
       with:
         name: site-archive
         path: /tmp/build.tar.gz
+    - name: Invoke deployment hook
+      uses: distributhor/workflow-webhook@v3
+      env:
+        webhook_url: ${{ secrets.WEBHOOK_URL }}
+        webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
