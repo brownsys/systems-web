@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-03-23 02:17:00-0400
+date: 2023-07-11 02:17:00-0400
 inline: true
 ---
 
-Our paper on privacy-compliant web application storage by construction will appear at [OSDI 2023](https://www.usenix.org/conference/osdi23)!
+Our paper on [K9db](https://github.com/brownsys/K9db) appeared at [OSDI](https://www.usenix.org/conference/osdi23/presentation/albab).
