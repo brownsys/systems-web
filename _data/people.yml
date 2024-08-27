@@ -23,6 +23,22 @@ people:
     name: "Nikos Vasilakis"
     site: "https://nikos.vasilak.is"
     type: faculty
+  - key: deepti
+    name: "Deepti Raghavan"
+    site: "https://deeptir.me/"
+    type: faculty
+  - key: akshay
+    name: "Akshay Narayan"
+    site: "https://akshayn.xyz/"
+    type: faculty
+  - key: pch
+    name: "Howie Chen"
+    type: phd
+    site: "https://www.howchenn.com/"
+  - key: tzerbib
+    name: "Timothée Zerbib"
+    type: phd
+    site: "https://tzerbib.github.io/"
   - key: jadam2
     name: "Justus Adam"
     type: phd
@@ -34,14 +50,15 @@ people:
   - key: unaseer
     name: "Usama Naseer"
     site: "https://usama6naseer.github.io/"
-    type: phd
+    type: alum
   - key: ssalman1
     name: "Saim Salman"
     site: "https://saimsalman36.github.io/webpage/"
-    type: phd
+    type: alum
   - key: lspiegel
     name: "Leonhard Spiegelberg"
-    type: phd
+    type: alum
+    note: "(PhD 2023) → Snowflake"
     site: "https://cs.brown.edu/~lspiegel"
   - key: fsolleza
     name: "Franco Solleza"
@@ -87,7 +104,7 @@ people:
     name: "Eleonora Kiziv"
     type: alum
     note: "(BSc 2020) → Google"
-  - key: andersonaddo
+  - key: bgivertz
     name: "Ben Givertz"
     type: alum
     note: "(BSc 2022) → Twitch"
