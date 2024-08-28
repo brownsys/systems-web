@@ -31,6 +31,9 @@ people:
     name: "Akshay Narayan"
     site: "https://akshayn.xyz/"
     type: faculty
+  - key: milda
+    name: "Milda Zizyte"
+    type: faculty
   - key: pch
     name: "Howie Chen"
     type: phd
