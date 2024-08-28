@@ -21,12 +21,18 @@ core_courses:
  - csci1380:
    title: "CSCI1380:  Distributed Systems"
    link: https://cs.brown.edu/courses/csci1380
+ - csci1600:
+   title: "CSCI1600: Real-Time and Embedded Software"
+   link: "https://brown-cs1600.github.io/"
  - csci1680:
    title: "CSCI1680:  Computer Networks"
    link: https://cs.brown.edu/courses/csci1680
- - csci1950y:
+ - csci1720:
    title: "CSCI1710: Logic for Systems"
    link: http://cs.brown.edu/courses/csci1710/
+ - csci1952y:
+   title: "CSCI1952y: Computer Architecture"
+   link: "https://browncs1952y.github.io/"
 
 seminar_courses:
  - csci2390f19:
