@@ -23,7 +23,7 @@ order: 2
 #### Masters
 {% include peoplelist.html type="masters" %}
 
-#### Friends
+### Friends
 {% include peoplelist.html type="friends" %}
 
 ### Alumni

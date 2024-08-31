@@ -73,7 +73,7 @@ people:
   - key: mmarkovi
     name: "Michael Markovitch"
     site: "https://cs.brown.edu/~mmarkovi"
-    type: phd
+    type: alum
   - key: lucas
     name: "Lucas Castanheira"
     type: masters
@@ -85,10 +85,6 @@ people:
     name: "Linnan Wang"
     site: "https://linnanwang.github.io"
     type: alum
-  - key: unaseer
-    name: "Usama Naseer"
-    site: "https://usama6naseer.github.io/"
-    type: phd
   - key: cwu55
     name: "Changhao Wu"
     site: "https://gordonwucn.github.io"

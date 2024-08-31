@@ -31,26 +31,24 @@ core_courses:
    title: "CSCI1710: Logic for Systems"
    link: http://cs.brown.edu/courses/csci1710/
  - csci1952y:
-   title: "CSCI1952y: Computer Architecture"
-   link: "https://browncs1952y.github.io/"
+   title: "CSCI1952-Y: Computer Architecture"
+   link: https://browncs1952y.github.io/
 
 seminar_courses:
- - csci2390f19:
-   term: Fall 2019
+ - csci2390:
    title: "CSCI2390:   Privacy-Conscious Computer Systems"
    link: https://cs.brown.edu/courses/csci2390
    instructor: Malte Schwarzkopf
  - csci2950us18:
    term: Spring 2018
-   title: "CSCI2950u:  Cloud 3.0 Infrastructure"
+   title: "CSCI2950-U:  Cloud 3.0 Infrastructure"
    link: https://cs.brown.edu/courses/csci2950-u/s18
    instructor: Rodrigo Fonseca
  - csci2950us17:
-   title: "CSCI2950u:  Advanced Networking"
+   title: "CSCI2950-U:  Advanced Networking"
    term: Spring 2017
    link: https://cs.brown.edu/courses/csci2950-u/s17
    instructor: Rodrigo Fonseca
-
 ---
 
 Faculty in our group are teach several courses in various areas of
