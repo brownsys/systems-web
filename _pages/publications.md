@@ -8,10 +8,12 @@ years: [2020,2019,2018,2017,2016,2015,2014,2013]
 earlier: 2012
 ---
 
-{% for y in page.years %}
-  <h3 class="year">{{y}}</h3>
-  {% bibliography  -q @*[year={{y}}]* %}
-{% endfor %}
+<!-- This link is the "download as a bib file" link from DBLP.
+     (Author page) -> Download icon -> export as bibtex -> download as a bib file -->
+<bibtex src="https://dblp.org/pid/49/7988.bib?param=1"></bibtex>
 
-<h3 class="year">Earlier</h3>
-{% bibliography  -q @*[year<={{page.earlier}}]* %}
+<div id="bibtex_display">
+</div>
+
+
+
