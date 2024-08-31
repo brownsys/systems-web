@@ -79,6 +79,7 @@ GEM
       gemoji (>= 3, < 5)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
+    json (2.7.2)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -139,6 +140,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-scholar
   jemoji
+  json
   tzinfo (~> 1.2)
   tzinfo-data
   unicode_utils
