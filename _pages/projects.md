@@ -4,6 +4,7 @@ title: Projects
 permalink: /projects/
 description: The group is working on a range of projects, and we list some examples below.
 order: 3
+published: false
 ---
 
 {% assign current_projects = site.projects | where: "ongoing", "true" %}
