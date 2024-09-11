@@ -34,6 +34,10 @@ people:
   - key: milda
     name: "Milda Zizyte"
     type: faculty
+  - key: ugur
+    name: "Ugur Cetintemel"
+    site: "https://sites.google.com/a/brown.edu/ugur-cetintemel/"
+    type: faculty
   - key: pch
     name: "Howie Chen"
     type: phd
