@@ -23,6 +23,9 @@ order: 2
 #### Masters
 {% include peoplelist.html type="masters" %}
 
+#### Undergrads
+{% include peoplelist.html type="ugrad" %}
+
 ### Friends
 {% include peoplelist.html type="friends" %}
 
