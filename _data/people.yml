@@ -52,8 +52,18 @@ people:
     site: "https://justus.science"
   - key: kdakalba
     name: "Kinan Dak Albab"
-    type: phd
+    type: alum
     site: "https://babman.io"
+    note: "PhD 2025 → Boston University"
+  - key: ziyun_song
+    name: "Alice Song"
+    type: masters
+  - key: megan_zheng
+    name: "Megan Zheng"
+    type: ugrad
+  - key: nayani_modugula
+    name: "Nayani Modugula"
+    type: ugrad
   - key: unaseer
     name: "Usama Naseer"
     site: "https://usama6naseer.github.io/"
@@ -73,7 +83,8 @@ people:
     site: "https://cs.brown.edu/people/grad/fsolleza/"
   - key: samthomas
     name: "Samuel Thomas"
-    type: phd
+    type: alum
+    note: "PhD 2025 → Pomona College"
   - key: mmarkovi
     name: "Michael Markovitch"
     site: "https://cs.brown.edu/~mmarkovi"
@@ -168,4 +179,3 @@ people:
   - key: gmurtaza
     name: "Ghulam Murtaza"
     type: alum
-
