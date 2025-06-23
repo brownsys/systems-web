@@ -131,7 +131,8 @@ faculty.forEach((faculty) => {
         src="${faculty.photo}"
         alt="${faculty.name}"
         onerror="this.onerror=null;this.src='assets/people/default.jpg';"
-        style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; margin-bottom: 10px;"
+        style="width: 125px; height: 125px; object-fit: cover; margin-bottom: 10px; border: 1px solid #ccc;"
+
       />
       <div class="mt-3 col-lg-2 col-md-12">
         <strong>${faculty.name}</strong>
