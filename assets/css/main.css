@@ -627,7 +627,7 @@ div.equation { margin: 0.5rem 0; }
 /*# sourceMappingURL=main.css.map */
 
 .wrapper {
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -636,7 +636,7 @@ div.equation { margin: 0.5rem 0; }
   /* Wider containers */
   .container,
   .container-fluid {
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
   }
   
@@ -645,7 +645,7 @@ div.equation { margin: 0.5rem 0; }
   #postdoc-gallery,
   #phd-gallery {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
   }
   
