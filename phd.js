@@ -115,7 +115,7 @@
           src="${student.photo}"
           alt="${student.name}"
           onerror="this.onerror=null;this.src='assets/people/default.jpg';"
-          style="width: 125px; height: 125px; object-fit: cover; margin-bottom: 10px; border: 1px solid #ccc;"
+          style="width: 125px; height: 125px; object-fit: cover; margin-bottom: 10px; border-radius: 8px;"
         />
         <div class="mt-3 col-lg-2 col-md-12">
           <strong>${student.name}</strong>
