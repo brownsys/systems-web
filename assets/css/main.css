@@ -737,6 +737,12 @@ div.equation { margin: 0.5rem 0; }
   display: flex;          /* optional but handy when you want       */
   flex-direction: column; /* the content inside each column stacked */
 }
+.column-right ul.list-unstyled li {
+  white-space: normal;
+  word-break: break-word;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
   @media (min-width: 768px) {
     .column-left {
       flex: 1 1 45%;
