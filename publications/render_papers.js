@@ -1,7 +1,4 @@
-// pubs.js — BibTeX → HTML renderer with file:// fallback (no deps) — polished
-
 (function () {
-    // ------------ URL resolution ------------
     const qs = new URLSearchParams(location.search);
     const script = document.currentScript;
     const scriptBase = new URL(script.src, location.href);
@@ -17,7 +14,6 @@
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#39;");
   
-    // Fix entries like "@inproceedingskumquat:ppopp:2022," → "@inproceedings{kumquat:ppopp:2022,"
     function repairMissingBrace(text) {
       const TYPES = [
         "article","inproceedings","incollection","inbook","book",
@@ -30,7 +26,6 @@
       );
     }
   
-    // Minimal TeX → Unicode cleanup for field values only
     function cleanTeX(s) {
       if (!s) return "";
       let t = String(s);
@@ -77,13 +72,13 @@
         while ((f = fre.exec(body)) !== null) {
           const key = f[1].toLowerCase();
           const raw = (f[3] ?? f[4] ?? "").trim();
-          fields[key] = cleanTeX(raw);          // clean only field values
+          fields[key] = cleanTeX(raw);          // clean field values
         }
         entries.push({
           entryType: entryType.toLowerCase(),
           citationKey,
           fields,
-          raw: m[0]                              // show the original (repaired) entry, uncleaned
+          raw: m[0]                              // show the original uncleaned
         });
       }
       return entries;
