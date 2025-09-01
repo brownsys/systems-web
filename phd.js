@@ -1,6 +1,12 @@
 (() => {
     const phdStudents = [
       {
+        name: " Alexander J. Gaidis",
+        photo: "assets/people/ajg.jpg",
+        website: "https://cs.brown.edu/~agaidis/",
+        email: "agaidis@cs.brown.edu",
+      },
+      {
         name: "Eric Zhao",
         photo: "assets/people/eric.jpg",
         website: "https://mustardfox.org/",
