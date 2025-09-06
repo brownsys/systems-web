@@ -455,7 +455,7 @@ footer a:hover { color: #ed1c24; }
 
 .news table { border-collapse: collapse; width: 100%; }
 
-.news table .date { width: 19%; }
+.news table .date { width: 12%; }
 
 .news table .announcement { width: 81%; }
 
@@ -626,132 +626,54 @@ div.equation { margin: 0.5rem 0; }
 
 /*# sourceMappingURL=main.css.map */
 
-.wrapper {
-    max-width: 900px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  /* Wider containers */
-  .container,
-  .container-fluid {
-    max-width: 900px;
-    width: 100%;
-  }
-  
-  /* Gallery adjustments */
-  #gallery,
-  #postdoc-gallery,
-  #phd-gallery {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: left;
-  }
-  
-  
-  .alumni-columns ul {
-    column-count: 2;
-    column-gap: 2rem;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .alumni-columns ul {
-      column-count: 1;
-    }
-  }
+.wrapper { max-width: 900px; width: 100%; margin: 0 auto; padding: 0 20px; }
 
-  .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 1em;
-  }
-  
-  .site-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-    margin-right: 1rem;
-    white-space: nowrap;
-  }
-  
-  .site-nav {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
-  .page-link {
-    font-size: 1rem;
-    color: #666;
-    text-decoration: none;
-  }
-  
-  .page-link:hover {
-    text-decoration: underline;
-  }
-  
+.container, .container-fluid { max-width: 900px; width: 100%; }
 
-  .calendar-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    align-items: flex-start;
-    margin-top: 2rem;
-  }
-  
-  .calendar-text {
-    flex: 1 1 350px;
-    min-width: 300px;
-  }
-  
-  .calendar-iframe {
-    flex: 1 1 600px;
-    min-width: 400px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .calendar-section {
-      flex-direction: column;
-    }
-  }
-  
-.grid-two-col{
-  display: flex;          /* lay the two columns side-by-side */
-  gap: 2rem;              /* space between the columns (opt.)   */
-  align-items: stretch;   /* <— the key: make every child the
-                               full height of the tallest one   */
+#gallery, #postdoc-gallery, #phd-gallery { width: 100%; max-width: 900px; margin: 0 auto; }
+
+.gallery-grid { display: flex; flex-wrap: wrap; gap: 30px; justify-content: left; }
+
+.alumni-columns ul { column-count: 2; column-gap: 2rem; }
+
+@media screen and (max-width: 768px) { .alumni-columns ul { column-count: 1; } }
+
+.site-header { display: flex; justify-content: space-between; align-items: center; padding: 0.5em 1em; }
+
+.site-title { font-size: 1.5rem; font-weight: bold; color: #333; text-decoration: none; margin-right: 1rem; white-space: nowrap; }
+
+.site-nav { display: flex; align-items: center; gap: 1.5rem; }
+
+.page-link { font-size: 1rem; color: #666; text-decoration: none; }
+
+.page-link:hover { text-decoration: underline; }
+
+.calendar-section { display: flex; flex-wrap: wrap; gap: 2rem; align-items: flex-start; margin-top: 2rem; }
+
+.calendar-text { flex: 1 1 350px; min-width: 300px; }
+
+.calendar-iframe { flex: 1 1 600px; min-width: 400px; }
+
+@media screen and (max-width: 768px) { .calendar-section { flex-direction: column; } }
+
+.grid-two-col { display: flex; gap: 2rem; align-items: stretch; }
+
+.column-left, .column-right { flex: 1 1 0; display: flex; flex-direction: column; }
+
+.column-right ul.list-unstyled li { white-space: normal; word-break: break-word; font-size: 0.95em; line-height: 1.4; }
+
+@media (min-width: 768px) { .column-left { flex: 1 1 45%; max-width: 45%; } .column-right { flex: 1 1 50%; max-width: 50%; } }
+
+.people h4 { margin-bottom: 1.7rem; }
+
+#phd-gallery { margin-top: 1.7rem; }
+
+.news details summary { cursor: pointer; list-style: none; }
+.news details summary::-webkit-details-marker { display: none; }
+.news details summary::after { content: "▾"; margin-left: .5rem; }
+.news details[open] summary::after { content: "▴"; }
+
+.news-toggle {display: inline-block; margin-top: 1rem; padding: 0.5rem 0.5rem; background: #eee; color: #000; font-weight: bold;text-decoration: none; cursor: pointer;}
+.news-toggle:hover {
+  background: #ddd;
 }
-.column-left,
-.column-right{
-  flex: 1 1 0;            /* equal width, may wrap on small screens */
-  display: flex;          /* optional but handy when you want       */
-  flex-direction: column; /* the content inside each column stacked */
-}
-.column-right ul.list-unstyled li {
-  white-space: normal;
-  word-break: break-word;
-  font-size: 0.95em;
-  line-height: 1.4;
-}
-  @media (min-width: 768px) {
-    .column-left {
-      flex: 1 1 45%;
-      max-width: 45%;
-    }
-  
-    .column-right {
-      flex: 1 1 50%;
-      max-width: 50%;
-    }
-  }
-  
