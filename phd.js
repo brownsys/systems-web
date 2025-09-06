@@ -48,12 +48,12 @@
         website: "https://justus.science/",
         email: "me@justus.science",
       },
-    //   {
-    //     name: "Kinan Dak Albab",
-    //     photo: "assets/people/kinan.jpg",
-    //     website: "https://babman.io",
-    //     email: "kinan@brown.edu",
-    //   },
+      {
+        name: "Neophytos Christou",
+        photo: "assets/people/neophytos.jpg",
+        website: "",
+        email: "nchrist9@cs.brown.edu",
+      },
       {
         name: "Oğuzhan Çölkesen",
         photo: "assets/people/oguzhan.jpg",
