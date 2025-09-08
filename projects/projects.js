@@ -10,10 +10,11 @@ const projects = [
     ],
     people: {
       "Brown Faculty": [
-        { name: "Nikos Vasilakis", url: "https://nikos.vasilak.is/" }
+        { name: "Nikos Vasilakis", url: "https://nikos.vasilak.is/" },
+        { name: "Deepti Raghavan", url: "https://deeptir.me/" },
       ],
       "External Collaborators": [
-        { name: "Konstantinos Kallas", url: "https://angelhof.github.io/" }
+        { name: "Konstantinos Kallas (UCLA)", url: "https://angelhof.github.io/" }
       ]
     }
   },
@@ -28,14 +29,115 @@ const projects = [
     ],
     people: {
       "Brown Faculty": [
-        { name: "Nikos Vasilakis", url: "https://nikos.vasilak.is/" }
+        { name: "Nikos Vasilakis", url: "https://nikos.vasilak.is/" },
+        { name: "Vasileios P. Kemerlis", url: "https://cs.brown.edu/~vpk/" }
+      ],
+      // "External Collaborators": [
+      //   // { name: "First Last", url: "https://example.com" }
+      // ]
+    }
+  },
+  {
+    title: "Privacy-Compliance by Construction",
+    image: "../assets/projects/privacy.jpg",
+    description: `Web services that store and process sensitive personal data are critical to the digital economy today, but are often built without sufficient attention to users' rights over their data and its privacy. Doing a good job at data privacy is difficult, requiring substantial manual effort that costs billions of dollars every year. This project develops new software systems that democratize good privacy practices, make it easy for users and web service operators to handle data in compliance with privacy laws, and retain or improve performance. Systems include a database (K9db), programming frameworks for web services (Edna, Sesame), and tools to automatically find privacy bugs (Paralegal).`,
+    links: [
+      { label: "OSDI'23", url: "https://cs.brown.edu/people/malte/pub/papers/2023-osdi-k9db.pdf" },
+      { label: "SOSP'23", url: "https://cs.brown.edu/people/malte/pub/papers/2023-sosp-edna.pdf" },
+      { label: "SOSP'24", url: "https://cs.brown.edu/people/malte/pub/papers/2024-sosp-sesame.pdf" },
+      { label: "OSDI'25", url: "https://cs.brown.edu/people/malte/pub/papers/2025-osdi-paralegal.pdf" }
+    ],
+    people: {
+      "Brown Faculty": [
+        { name: "Malte Schwarzkopf", url: "https://cs.brown.edu/people/malte/" },
+        { name: "Will Crichton", url: "https://willcrichton.net" },
+        { name: "Shriram Krishnamurthi", url: "https://cs.brown.edu/~sk/" }
       ],
       "External Collaborators": [
-        { name: "First Last", url: "https://example.com" }
+        { name: "Kinan Dab Albab (BU)", url: "https://www.babman.io/" },
+        { name: "Frans Kaashoek (MIT)", url: "https://people.csail.mit.edu/kaashoek/" },
+        { name: "Eddie Kohler (Harvard)", url: "https://www.read.seas.harvard.edu/~kohler/" }
       ]
     }
   },
-  // To add more projects, follow the above format.
+  {
+    title: "Improving Data Center Resource Utilization Through New Abstractions",
+    image: "../assets/projects/datacenter.jpg",
+    description: `Today’s data centers often run at surprisingly low utilization rates, wasting expensive resources, energy, and money. This project investigates how to redesign the abstractions on which contemporary computer systems are built to increase utilization. Examples include enabling servers with low memory to leverage spare memory on others (AIFM, Soft Memory) and decomposing monolithic processes into quickly migratable proclets (Nu, Quicksand). These abstractions let systems exploit otherwise stranded resources without trading off performance for utilization.`,
+    links: [
+      { label: "OSDI'20", url: "https://www.usenix.org/system/files/osdi20-ruan.pdf" },
+      { label: "NSDI'23", url: "https://www.usenix.org/conference/osdi23/presentation/albab" },
+      { label: "HotOS'23", url: "https://dl.acm.org/doi/10.1145/3593856.3595902" },
+      { label: "NSDI'25", url: "https://www.usenix.org/system/files/nsdi25-ruan.pdf" }
+    ],
+    people: {
+      "Brown Faculty": [
+        { name: "Malte Schwarzkopf", url: "https://cs.brown.edu/people/malte/" }
+      ],
+      "External Collaborators": [
+        { name: "Adam Belay (MIT)", url: "http://www.abelay.me/" },
+        { name: "Marcos Aguilera (VMWare Research)", url: "https://mkaguilera.kawazoe.org/" },
+        { name: "Seo Jin Park (USC)", url: "https://seojinpark.net/" }
+      ]
+    }
+  },
+  {
+    title: "Improving Computational Notebooks",
+    image: "../assets/projects/notebooks.jpg",
+    description: `Computational notebooks are a key environment for data analysis but present usability challenges. This project explores techniques to make notebooks faster and more intuitive. For example, reactive notebooks should respond to changes without causing unexpected behavior. The goal is to enable rich data analysis with both the flexibility of code and the user-friendliness of spreadsheets.`,
+    links: [
+      { label: "arXiv Preprint (Coming Soon)", url: "#" }
+    ],
+    people: {
+      "Brown Faculty": [
+        { name: "Akshay Narayan", url: "https://akshayn.xyz/" },
+        { name: "Deepti Raghavan", url: "https://deeptir.me/" },
+        { name: "Nikos Vasilakis", url: "https://nikos.vasilak.is/" },
+        { name: "Will Crichton", url: "https://willcrichton.net" }
+      ]
+    }
+  },
+  {
+    title: "Using the Rust Programming Language to Effectively Build Systems",
+    image: "../assets/projects/rust.jpg",
+    description: `Rust’s strong safety features make it an attractive choice for building low-level systems, but effectively leveraging its properties requires expertise. This project investigates techniques to identify systems-critical Rust code that the compiler cannot reason about—such as unsafe Rust—so that experts or automated systems can audit this code efficiently. The goal is to enable Rust’s use in building effective and safe systems.`,
+    links: [
+      { label: "arXiv Preprint (Coming Soon)", url: "#" }
+    ],
+    people: {
+      "Brown Faculty": [
+        { name: "Akshay Narayan", url: "https://akshayn.xyz/" },
+        { name: "Deepti Raghavan", url: "https://deeptir.me/" },
+        { name: "Malte Schwarzkopf", url: "https://cs.brown.edu/people/malte/" },
+        { name: "Will Crichton", url: "https://willcrichton.net" }
+      ],
+      "External Collaborators": [
+        { name: "Kinan Dab Albab (BU)", url: "https://www.babman.io/" },
+        { name: "Phil Levis (Stanford)", url: "https://csl.stanford.edu/~pal/" }
+      ]
+    }
+  },
+  {
+    title: "Making eBPF Kernel Extensions Usable with Domain-Specific Languages",
+    image: "../assets/projects/ebpf.jpg",
+    description: `eBPF enables developers to write safe OS extensions for monitoring, observability, and customization. However, writing eBPF code requires expertise both in the domain and in eBPF programming. This project explores using domain-specific languages (DSLs) to make eBPF extensions easier to write, removing the need for specialized expertise while preserving safety and functionality.`,
+    links: [
+      { label: "eBPF 2025", url: "https://akshayn.xyz/res/bql_sigcomm_2025.pdf" },
+      { label: "PLOS'25", url: "#" }
+    ],
+    people: {
+      "Brown Faculty": [
+        { name: "Akshay Narayan", url: "https://akshayn.xyz/" },
+        { name: "Malte Schwarzkopf", url: "https://cs.brown.edu/people/malte/" },
+        { name: "Nikos Vasilakis", url: "https://nikos.vasilak.is/" },
+        { name: "Robert Y. Lewis", url: "https://robertylewis.com/" }
+      ],
+      "External Collaborators": [
+        { name: "Andrew Crotty (Northwestern)", url: "https://cs.brown.edu/people/acrotty/" },
+        { name: "Nesime Tatbul (MIT)", url: "people.csail.mit.edu/tatbul/" }
+      ]
+    }
+  }
 ];
 
 function renderProjects(containerId, projects) {
