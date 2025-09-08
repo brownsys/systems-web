@@ -48,13 +48,13 @@ const faculty = [
         website: "https://robertylewis.com/",
         email: "robert_lewis@brown.edu",
     },
-    // {
-    //     name: "Shriram Krishnamurthi",
-    //     role: "Faculty",
-    //     photo: "assets/people/shriram.jpg",
-    //     website: "https://cs.brown.edu/~sk/",
-    //     email: "shriram@brown.edu",
-    // },
+    {
+        name: "Shriram Krishnamurthi",
+        role: "Faculty",
+        photo: "assets/people/shriram.jpg",
+        website: "https://cs.brown.edu/~sk/",
+        email: "shriram@brown.edu",
+    },
     {
         name: "Tim Nelson",
         role: "Faculty",
