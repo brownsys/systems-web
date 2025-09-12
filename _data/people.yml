@@ -38,6 +38,9 @@ people:
     name: "Ugur Cetintemel"
     site: "https://sites.google.com/a/brown.edu/ugur-cetintemel/"
     type: faculty
+  - key: mborjigi
+    name: "Morgan Borjigin-Wang"
+    type: phd
   - key: pch
     name: "Howie Chen"
     type: phd
