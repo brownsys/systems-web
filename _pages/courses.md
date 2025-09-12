@@ -21,9 +21,15 @@ core_courses:
  - csci1380:
    title: "CSCI1380:  Distributed Systems"
    link: https://cs.brown.edu/courses/csci1380
+ - csci1390:
+   title: "CSCI1390:  Systems for Machine Learning"
+   link: https://cs.brown.edu/courses/csci1390
  - csci1600:
    title: "CSCI1600: Real-Time and Embedded Software"
    link: "https://brown-cs1600.github.io/"
+ - csci1675:
+   title: "CSCI1675:  Designing High-Performance Network Systems"
+   link: https://cs.brown.edu/courses/csci1675
  - csci1680:
    title: "CSCI1680:  Computer Networks"
    link: https://cs.brown.edu/courses/csci1680
@@ -35,8 +41,16 @@ core_courses:
    link: https://browncs1952y.github.io/
 
 seminar_courses:
+ - csci2690:
+   title: "CSCI2690: Cloud and Datacenter Operating Systems"
+   link: https://cs.brown.edu/courses/csci2690
+   instructor: Deepti Raghavan
+ - csci2680:
+   title: "CSCI2680: Computer Networks and the Internet"
+   link: https://cs.brown.edu/courses/csci2680
+   instructor: Akshay Narayan
  - csci2390:
-   title: "CSCI2390:   Privacy-Conscious Computer Systems"
+   title: "CSCI2390: Privacy-Conscious Computer Systems"
    link: https://cs.brown.edu/courses/csci2390
    instructor: Malte Schwarzkopf
  - csci2950us18:
