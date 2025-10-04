@@ -39,7 +39,7 @@ const projects = [
   },
   {
     title: "Privacy-Compliance by Construction",
-    image: "../assets/projects/privacy.jpg",
+    // image: "../assets/projects/privacy.jpg",
     description: `Web services that store and process sensitive personal data are critical to the digital economy today, but are often built without sufficient attention to users' rights over their data and its privacy. Doing a good job at data privacy is difficult, requiring substantial manual effort that costs billions of dollars every year. This project develops new software systems that democratize good privacy practices, make it easy for users and web service operators to handle data in compliance with privacy laws, and retain or improve performance. Systems include a database (K9db), programming frameworks for web services (Edna, Sesame), and tools to automatically find privacy bugs (Paralegal).`,
     links: [
       { label: "OSDI'23", url: "https://cs.brown.edu/people/malte/pub/papers/2023-osdi-k9db.pdf" },
@@ -62,7 +62,7 @@ const projects = [
   },
   {
     title: "Improving Data Center Resource Utilization Through New Abstractions",
-    image: "../assets/projects/datacenter.jpg",
+    // image: "../assets/projects/datacenter.jpg",
     description: `Today’s data centers often run at surprisingly low utilization rates, wasting expensive resources, energy, and money. This project investigates how to redesign the abstractions on which contemporary computer systems are built to increase utilization. Examples include enabling servers with low memory to leverage spare memory on others (AIFM, Soft Memory) and decomposing monolithic processes into quickly migratable proclets (Nu, Quicksand). These abstractions let systems exploit otherwise stranded resources without trading off performance for utilization.`,
     links: [
       { label: "OSDI'20", url: "https://www.usenix.org/system/files/osdi20-ruan.pdf" },
@@ -83,7 +83,7 @@ const projects = [
   },
   {
     title: "Improving Computational Notebooks",
-    image: "../assets/projects/notebooks.jpg",
+    // image: "../assets/projects/notebooks.jpg",
     description: `Computational notebooks are a key environment for data analysis but present usability challenges. This project explores techniques to make notebooks faster and more intuitive. For example, reactive notebooks should respond to changes without causing unexpected behavior. The goal is to enable rich data analysis with both the flexibility of code and the user-friendliness of spreadsheets.`,
     links: [
       { label: "arXiv Preprint (Coming Soon)", url: "#" }
@@ -99,7 +99,7 @@ const projects = [
   },
   {
     title: "Using the Rust Programming Language to Effectively Build Systems",
-    image: "../assets/projects/rust.jpg",
+    // image: "../assets/projects/rust.jpg",
     description: `Rust’s strong safety features make it an attractive choice for building low-level systems, but effectively leveraging its properties requires expertise. This project investigates techniques to identify systems-critical Rust code that the compiler cannot reason about—such as unsafe Rust—so that experts or automated systems can audit this code efficiently. The goal is to enable Rust’s use in building effective and safe systems.`,
     links: [
       { label: "arXiv Preprint (Coming Soon)", url: "#" }
@@ -119,7 +119,7 @@ const projects = [
   },
   {
     title: "Making eBPF Kernel Extensions Usable with Domain-Specific Languages",
-    image: "../assets/projects/ebpf.jpg",
+    // image: "../assets/projects/ebpf.jpg",
     description: `eBPF enables developers to write safe OS extensions for monitoring, observability, and customization. However, writing eBPF code requires expertise both in the domain and in eBPF programming. This project explores using domain-specific languages (DSLs) to make eBPF extensions easier to write, removing the need for specialized expertise while preserving safety and functionality.`,
     links: [
       { label: "eBPF 2025", url: "https://akshayn.xyz/res/bql_sigcomm_2025.pdf" },
@@ -179,9 +179,27 @@ function renderProjects(containerId, projects) {
     collaboratorsHTML = `<div style="margin:0;"><strong>External Collaborators:</strong> ${links}</div>`;
   }
 
+      // Create image element (conditionally)
+      let imageHTML = "";
+      if (project.image) {
+        const img = document.createElement("img");
+        img.className = "imgStuffResearch";
+        img.src = project.image;
+        img.alt = project.title;
+        img.align = "left";
+        img.style.marginRight = "1rem";
+        img.style.width = "150px";
+  
+        // If image fails to load → hide it
+        img.onerror = () => img.style.display = "none";
+        imageHTML = img.outerHTML;
+      }
+ 
+  // ${project.image ? `<img class="imgStuffResearch" src="${project.image}" alt="${project.title}" align="left" style="margin-right:1rem; width:150px;" />` : ""}
+  
   // Final HTML
   div.innerHTML = `
-    ${project.image ? `<img class="imgStuffResearch" src="${project.image}" alt="${project.title}" align="left" style="margin-right:1rem; width:150px;" />` : ""}
+    ${imageHTML}
     <h3>${project.title}</h3>
     ${facultyHTML}
     ${paperLinks ? `<div style="margin:0;"><strong>Relevant Papers:</strong> ${paperLinks}</div>` : ""}
