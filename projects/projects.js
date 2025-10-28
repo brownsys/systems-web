@@ -1,7 +1,8 @@
 const projects = [
   {
     title: "Automating Acceleration and Scale-out of Software Systems",
-    image: "../assets/projects/systems.jpg",
+    // image: "../assets/projects/systems.jpg",
+    image: "../assets/projects/stub.png",
     description: `Language-agnostic programming environments hinder automated parallelization and distribution, often forcing developers that deal with large datasets to manually rewrite programs and their components in languages that support these features. We have built a series of systems that accelerate, parallelize, distribute, and scale out computations fully automatically — while maintaining key correctness and security guarantees. Our systems target widely used environments — e.g., JavaScript, Python, the Shell — and are offered by open-source consortia such as the Linux Foundation.`,
     links: [
       { label: "NSDI'23", url: "http://nikos.vasilak.is/p/pash:nsdi:2023.pdf" },
@@ -20,7 +21,8 @@ const projects = [
   },
   {
     title: "Automating Protections Against Software Supply-Chain Threats",
-    image: "../assets/projects/supply-chain.jpeg",
+    // image: "../assets/projects/supply-chain.jpeg",
+    image: "../assets/projects/stub.png",
     description: `Modern software incorporates thousands of dependencies as a means of accelerating development and reducing cost—risking safety and security for both developers and end-users. We have built a series of systems targeting the JavaScript ecosystem—the largest such ecosystem out there—automating the analysis, transformation, and synthesis of JavaScript dependencies across a variety of threat models.`,
     links: [
       { label: "AsiaCCS'23", url: "http://nikos.vasilak.is/p/binwrap:asiaccs:2023.pdf" },
@@ -39,7 +41,7 @@ const projects = [
   },
   {
     title: "Privacy-Compliance by Construction",
-    // image: "../assets/projects/privacy.jpg",
+    image: "../assets/projects/stub.png",
     description: `Web services that store and process sensitive personal data are critical to the digital economy today, but are often built without sufficient attention to users' rights over their data and its privacy. Doing a good job at data privacy is difficult, requiring substantial manual effort that costs billions of dollars every year. This project develops new software systems that democratize good privacy practices, make it easy for users and web service operators to handle data in compliance with privacy laws, and retain or improve performance. Systems include a database (K9db), programming frameworks for web services (Edna, Sesame), and tools to automatically find privacy bugs (Paralegal).`,
     links: [
       { label: "OSDI'23", url: "https://cs.brown.edu/people/malte/pub/papers/2023-osdi-k9db.pdf" },
@@ -62,7 +64,7 @@ const projects = [
   },
   {
     title: "Improving Data Center Resource Utilization Through New Abstractions",
-    // image: "../assets/projects/datacenter.jpg",
+    image: "../assets/projects/stub.png",
     description: `Today’s data centers often run at surprisingly low utilization rates, wasting expensive resources, energy, and money. This project investigates how to redesign the abstractions on which contemporary computer systems are built to increase utilization. Examples include enabling servers with low memory to leverage spare memory on others (AIFM, Soft Memory) and decomposing monolithic processes into quickly migratable proclets (Nu, Quicksand). These abstractions let systems exploit otherwise stranded resources without trading off performance for utilization.`,
     links: [
       { label: "OSDI'20", url: "https://www.usenix.org/system/files/osdi20-ruan.pdf" },
@@ -83,7 +85,7 @@ const projects = [
   },
   {
     title: "Improving Computational Notebooks",
-    // image: "../assets/projects/notebooks.jpg",
+    image: "../assets/projects/stub.png",
     description: `Computational notebooks are a key environment for data analysis but present usability challenges. This project explores techniques to make notebooks faster and more intuitive. For example, reactive notebooks should respond to changes without causing unexpected behavior. The goal is to enable rich data analysis with both the flexibility of code and the user-friendliness of spreadsheets.`,
     links: [
       { label: "arXiv Preprint (Coming Soon)", url: "#" }
@@ -99,7 +101,7 @@ const projects = [
   },
   {
     title: "Using the Rust Programming Language to Effectively Build Systems",
-    // image: "../assets/projects/rust.jpg",
+    image: "../assets/projects/stub.png",
     description: `Rust’s strong safety features make it an attractive choice for building low-level systems, but effectively leveraging its properties requires expertise. This project investigates techniques to identify systems-critical Rust code that the compiler cannot reason about—such as unsafe Rust—so that experts or automated systems can audit this code efficiently. The goal is to enable Rust’s use in building effective and safe systems.`,
     links: [
       { label: "arXiv Preprint (Coming Soon)", url: "#" }
@@ -119,7 +121,7 @@ const projects = [
   },
   {
     title: "Making eBPF Kernel Extensions Usable with Domain-Specific Languages",
-    // image: "../assets/projects/ebpf.jpg",
+    image: "../assets/projects/stub.png",
     description: `eBPF enables developers to write safe OS extensions for monitoring, observability, and customization. However, writing eBPF code requires expertise both in the domain and in eBPF programming. This project explores using domain-specific languages (DSLs) to make eBPF extensions easier to write, removing the need for specialized expertise while preserving safety and functionality.`,
     links: [
       { label: "eBPF 2025", url: "https://akshayn.xyz/res/bql_sigcomm_2025.pdf" },
