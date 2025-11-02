@@ -15,10 +15,13 @@ const projects = [
         { name: "Deepti Raghavan", url: "https://deeptir.me/" },
       ],
       "External Collaborators": [
-        { name: "Konstantinos Kallas (UCLA)", url: "https://angelhof.github.io/" }
+        { name: "Konstantinos Kallas (UCLA)", url: "https://angelhof.github.io/" } ,
+        { name: "Michael Greenberg (STEVENS)", url: "https://greenberg.science" },
+        { name: "Konstantinos Mamouras (RICE)", url: "https://kmamouras.github.io/" }
       ]
     }
   },
+
   {
     title: "Automating Protections Against Software Supply-Chain Threats",
     // image: "../assets/projects/supply-chain.jpeg",
@@ -34,11 +37,12 @@ const projects = [
         { name: "Nikos Vasilakis", url: "https://nikos.vasilak.is/" },
         { name: "Vasileios P. Kemerlis", url: "https://cs.brown.edu/~vpk/" }
       ],
-      // "External Collaborators": [
-      //   // { name: "First Last", url: "https://example.com" }
-      // ]
+      "External Collaborators": [
+         { name: "Martin C. Rinard", url: "https://people.csail.mit.edu/rinard/" }
+      ]
     }
   },
+
   {
     title: "Privacy-Compliance by Construction",
     image: "../assets/projects/stub.png",
@@ -62,6 +66,7 @@ const projects = [
       ]
     }
   },
+
   {
     title: "Improving Data Center Resource Utilization Through New Abstractions",
     image: "../assets/projects/stub.png",
@@ -83,6 +88,7 @@ const projects = [
       ]
     }
   },
+
   {
     title: "Improving Computational Notebooks",
     image: "../assets/projects/stub.png",
@@ -99,6 +105,7 @@ const projects = [
       ]
     }
   },
+
   {
     title: "Using the Rust Programming Language to Effectively Build Systems",
     image: "../assets/projects/stub.png",
@@ -119,6 +126,7 @@ const projects = [
       ]
     }
   },
+
   {
     title: "Making eBPF Kernel Extensions Usable with Domain-Specific Languages",
     image: "../assets/projects/stub.png",
@@ -136,11 +144,21 @@ const projects = [
       ],
       "External Collaborators": [
         { name: "Andrew Crotty (Northwestern)", url: "https://cs.brown.edu/people/acrotty/" },
-        { name: "Nesime Tatbul (MIT)", url: "people.csail.mit.edu/tatbul/" }
+        { name: "Nesime Tatbul (MIT)", url: "https://people.csail.mit.edu/tatbul/" }
       ]
     }
   }
 ];
+
+// randomize order of projects
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]]; // Swap
+  }
+  return array;
+}
+
 
 function renderProjects(containerId, projects) {
   const container = document.getElementById(containerId);
@@ -215,5 +233,6 @@ function renderProjects(containerId, projects) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderProjects("projects", projects);
+  const shuffledProjects = shuffleArray([...projects]); // Copy & shuffle
+  renderProjects("projects", shuffledProjects);
 });

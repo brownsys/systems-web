@@ -99,7 +99,7 @@
   <div id="${e.id}" style="white-space:pre-line">
 <b>${escapeHTML(e.title)}</b>
 ${escapeHTML(authorsLine)}
-${venueLine}${notesLine}${yearLine}
+${venueLine}${notesLine}
 [ ${links.join(" | ")} ]
   </div>
 </li>`;
@@ -126,7 +126,7 @@ ${venueLine}${notesLine}${yearLine}
   right: 0;
   top: -0.7em;
   background: #fff;
-  color: rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.2);
   font-weight: 500;
   padding: 0 0.3em;
   font-size: 1.8em;
