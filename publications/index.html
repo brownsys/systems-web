@@ -9,28 +9,34 @@
   <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="../assets/css/main.css" />
-  <!-- Change data-bib if your .bib lives elsewhere -->
-  <script src="render_papers.js" defer data-bib="./publications.bib"></script>
 
+  <!-- Use Markdown-based publications parser -->
+  <script src="render_papers_md.js" defer></script>
 </head>
+
 <header class="site-header">
   <script type="module" src="../assets/components/navbar.js"></script>
-  </header>
+</header>
+
 <body>
   <site-header></site-header>
 
-<div class="page-content">
-  <div class="wrapper">
-    <div class="post">
-      <header class="post-header">
-        A list of the Systems Group's publications. More recent first.
-      </header>
-      <article id="pubs" class="post-content Publications clearfix">
-        <!-- Render target -->
-        <noscript>Please enable JavaScript to view publications.</noscript>
-      </article>
+  <div class="page-content">
+    <div class="wrapper">
+      <div class="post">
+        <header class="post-header">
+          A list of the Systems Group's publications. More recent first.
+        </header>
+        <article 
+          id="pubs" 
+          class="post-content Publications clearfix"
+          data-src="./publications.md"
+        >
+          <!-- Render target -->
+          <noscript>Please enable JavaScript to view publications.</noscript>
+        </article>
+      </div>
     </div>
   </div>
-</div>
 </body>
 </html>
