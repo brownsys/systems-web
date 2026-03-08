@@ -41,9 +41,9 @@ const postdocs = [
               alt="${student.name}"
           style="width: 125px; height: 125px; object-fit: cover; margin-bottom: 10px; border-radius: 8px;"
           />
-        <div class="mt-3 col-lg-2 col-md-12">
+        <div class="gallery-item-details">
           <strong>${student.name}</strong>
-          <div class="mt-1" id="links">
+          <div class="person-links">
             ${emailPart}${websitePart}
           </div>
         </div>

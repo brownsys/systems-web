@@ -1,12 +1,6 @@
 (() => {
     const phdStudents = [
       {
-        name: " Alexander J. Gaidis",
-        photo: "assets/people/ajg.jpg",
-        website: "https://cs.brown.edu/~agaidis/",
-        email: "agaidis@cs.brown.edu",
-      },
-      {
         name: "Eric Zhao",
         photo: "assets/people/eric.jpg",
         website: "https://mustardfox.org/",
@@ -35,6 +29,12 @@
         photo: "assets/people/grigoris.jpg",
         website: "https://www.ntousakis.com/",
         email: "grigoris@brown.edu",
+      },
+      {
+        name: " Alexander J. Gaidis",
+        photo: "assets/people/ajg.jpg",
+        website: "https://cs.brown.edu/~agaidis/",
+        email: "agaidis@cs.brown.edu",
       },
       {
         name: "Howie Chen",
@@ -84,7 +84,7 @@
         website: "https://www.linkedin.com/in/morgan-borjigin-wang-2098a915a/",
         email: "morgan_borjigin-wang@brown.edu"
       }
-    ].sort((a, b) => a.name.localeCompare(b.name));
+    ];
   
     const phdGallery = document.getElementById("phd-gallery");
   
@@ -113,8 +113,6 @@
       const websitePart = student.website
         ? `[<a href="${student.website}" target="_blank">website</a>]`
         : "";
-      const comma = emailPart && websitePart ? ", " : "";
-  
       item.innerHTML = `
         <img
           class="imgStuff"
@@ -123,9 +121,9 @@
           onerror="this.onerror=null;this.src='assets/people/default.jpg';"
           style="width: 125px; height: 125px; object-fit: cover; margin-bottom: 10px; border-radius: 8px;"
         />
-        <div class="mt-3 col-lg-2 col-md-12">
+        <div class="gallery-item-details">
           <strong>${student.name}</strong>
-          <div class="mt-1" id="links">
+          <div class="person-links">
             ${emailPart}${websitePart}
           </div>
         </div>

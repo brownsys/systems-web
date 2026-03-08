@@ -205,7 +205,7 @@
       style.id = "pubs-injected-style";
       style.textContent = `
 .hidden{display:none}
-.publications-container .pub-layout{display:grid;grid-template-columns:16rem minmax(0,1fr);gap:1.5rem;align-items:start}
+.publications-container .pub-layout{display:grid;grid-template-columns:13rem minmax(0,1fr);gap:1.25rem;align-items:start}
 .publications-container .pub-filters{position:sticky;top:1rem}
 .publications-container .filter-section + .filter-section{margin-top:1.25rem}
 .publications-container .filter-title{font-size:1rem;font-weight:700;margin:0 0 .5rem;color:inherit}
@@ -217,7 +217,7 @@
 .bibliography>.pub{margin:1rem 0 1.3rem}
 .year-block + .year-block{margin-top:2.5rem}
 .year{margin:0 0 1rem;color:#999}
-.title{display:block;font-weight:700;font-size:1.05rem}
+.title{display:block;font-weight:550;font-size:1.05rem;white-space:nowrap}
 .author{display:block}
 .periodical{display:block}
 .links{display:block}

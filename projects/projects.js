@@ -15,8 +15,7 @@ const projects = [
       ],
       "External Collaborators": [
         { name: "Konstantinos Kallas (UCLA)", url: "https://angelhof.github.io/" } ,
-        { name: "Michael Greenberg (STEVENS)", url: "https://greenberg.science" },
-        { name: "Konstantinos Mamouras (RICE)", url: "https://kmamouras.github.io/" }
+        { name: "Michael Greenberg (Stevens)", url: "https://greenberg.science" },
       ]
     }
   },
@@ -61,6 +60,25 @@ const projects = [
         { name: "Kinan Dab Albab (BU)", url: "https://www.babman.io/" },
         { name: "Frans Kaashoek (MIT)", url: "https://people.csail.mit.edu/kaashoek/" },
         { name: "Eddie Kohler (Harvard)", url: "https://www.read.seas.harvard.edu/~kohler/" }
+      ]
+    }
+  },
+
+  {
+    title: "Improving the Robustness of Modern Software Systems",
+    image: "../assets/projects/automating_correctness.png",
+    description: `Modern software systems fail in a variety of ways. We are developing systems for improving the reliability and robustness of these systems, including checks and guarantees before, during, and after their execution.`,
+    links: [
+      { label: "HotOS'25", url: "https://doi.org/10.1145/3713082.3730395" },
+      { label: "ICFP'21", url: "https://doi.org/10.1145/3473570" }
+    ],
+    people: {
+      "Brown Faculty": [
+        { name: "Nikos Vasilakis", url: "https://nikos.vasilak.is/" },
+        { name: "Robert Y. Lewis", url: "https://robertylewis.com/" }
+      ],
+      "External Collaborators": [
+        { name: "Konstantinos Mamouras (Rice)", url: "https://kmamouras.github.io/" }
       ]
     }
   },

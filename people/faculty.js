@@ -70,18 +70,18 @@ const faculty = [
         email: "vpk@cs.brown.edu",
     },
     {
-        name: "Shriram Krishnamurthi",
-        role: "Faculty",
-        photo: "assets/people/shriram.jpg",
-        website: "https://cs.brown.edu/~sk/",
-        email: "shriram@brown.edu",
-    },
-    {
         name: "Will P.L. Crichton",
         role: "Faculty",
         photo: "assets/people/will.jpg",
         website: "https://willcrichton.net",
         email: "will_crichton@brown.edu",
+    },
+    {
+        name: "Shriram Krishnamurthi",
+        role: "Faculty",
+        photo: "assets/people/shriram.jpg",
+        website: "https://cs.brown.edu/~sk/",
+        email: "shriram@brown.edu",
     }
 ];
 
@@ -133,9 +133,9 @@ faculty.forEach((faculty) => {
         onerror="this.onerror=null;this.src='assets/people/default.jpg';"
         style="width: 125px; height: 125px; object-fit: cover; margin-bottom: 10px; border-radius: 8px;"
       />
-      <div class="mt-3 col-lg-2 col-md-12">
+      <div class="gallery-item-details">
         <strong>${faculty.name}</strong>
-        <div class="mt-1" id="links">
+        <div class="person-links">
           ${emailPart}${websitePart}
         </div>
       </div>

@@ -21,22 +21,6 @@ const TYPE_LABELS = {
   mastersthesis: 'Masters Thesis'
 };
 
-const TYPE_ORDER = [
-  'article',
-  'inproceedings',
-  'inbook',
-  'book',
-  'phdthesis',
-  'mastersthesis',
-  'preprint',
-  'techreport'
-];
-
-function typeRank(type) {
-  const index = TYPE_ORDER.indexOf(type);
-  return index === -1 ? TYPE_ORDER.length : index;
-}
-
 function thesisInstitutionRank(entry) {
   if (entry.type !== 'phdthesis' && entry.type !== 'mastersthesis') {
     return 0;
@@ -79,6 +63,60 @@ function parseTags(rawValue) {
   }
 
   return out;
+}
+
+function isPreprint(entry) {
+  const venue = clean(entry.venue).toLowerCase();
+  const archivePrefix = clean(entry.archiveprefix).toLowerCase();
+  const url = clean(entry.url).toLowerCase();
+
+  return Boolean(
+    clean(entry.eprint) ||
+    archivePrefix === 'arxiv' ||
+    venue.includes('arxiv') ||
+    venue === 'corr' ||
+    url.includes('arxiv.org')
+  );
+}
+
+function isThesis(entry) {
+  const type = clean(entry.type).toLowerCase();
+  const thesisType = clean(entry.thesis_type).toLowerCase();
+  return type.includes('thesis') || thesisType.includes('thesis');
+}
+
+function isWorkshop(entry) {
+  if (isPreprint(entry) || isThesis(entry)) return false;
+
+  const venue = clean(entry.venue).toLowerCase();
+  const workshopHints = [
+    'workshop',
+    'hotos',
+    'hotnets',
+    'apsys',
+    'edgesys',
+    'plos',
+    'damon',
+    'ebpf'
+  ];
+
+  return workshopHints.some((hint) => venue.includes(hint));
+}
+
+function publicationBucket(entry) {
+  if (isThesis(entry)) return 3;
+  if (isPreprint(entry)) return 2;
+  if (isWorkshop(entry)) return 1;
+  return 0;
+}
+
+function peerReviewedRank(entry) {
+  const type = clean(entry.type).toLowerCase();
+  if (type === 'inproceedings') return 0;
+  if (type === 'article') return 1;
+  if (type === 'inbook' || type === 'book') return 2;
+  if (type === 'techreport') return 3;
+  return 4;
 }
 
 function getYear(item, rawTags) {
@@ -196,7 +234,10 @@ async function main() {
 
   const entries = [...dedup.values()].sort((a, b) => {
     if (a.year !== b.year) return b.year - a.year;
-    if (typeRank(a.type) !== typeRank(b.type)) return typeRank(a.type) - typeRank(b.type);
+    if (publicationBucket(a) !== publicationBucket(b)) return publicationBucket(a) - publicationBucket(b);
+    if (publicationBucket(a) === 0 && peerReviewedRank(a) !== peerReviewedRank(b)) {
+      return peerReviewedRank(a) - peerReviewedRank(b);
+    }
     if (thesisInstitutionRank(a) !== thesisInstitutionRank(b)) return thesisInstitutionRank(a) - thesisInstitutionRank(b);
     return a.title.localeCompare(b.title);
   });
