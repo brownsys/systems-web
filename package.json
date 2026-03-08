@@ -1,0 +1,11 @@
+{
+  "name": "systems-at-brown",
+  "private": true,
+  "scripts": {
+    "build:publications": "node scripts/build-publications.js"
+  },
+  "dependencies": {
+    "@citation-js/core": "^0.7.21",
+    "@citation-js/plugin-bibtex": "^0.7.21"
+  }
+}
