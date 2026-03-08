@@ -60,12 +60,6 @@
         website: "https://www.oguzhancolkesen.com/",
         email: "oguzhan@brown.edu",
       },
-    //   {
-    //     name: "Samuel Thomas",
-    //     photo: "assets/people/samuel.jpg",
-    //     website: "",
-    //     email: "samuel@brown.edu",
-    //   },
       {
         name: "Timothée Zerbib",
         photo: "assets/people/timothee.jpg",
@@ -75,7 +69,7 @@
       {
         name: "Yuchen Lu",
         photo: "assets/people/yuchen.jpg",
-        website: "",
+        website: "https://lwwlwwl.github.io/",
         email: "yuchen_lu@brown.edu",
       },
       {
@@ -84,6 +78,12 @@
         website: "https://yizhengx.github.io/",
         email: "yizheng@brown.edu",
       },
+      {
+        name: "Morgan Borjigin-Wang",
+        photo: "assets/people/morgan.jpg",
+        website: "https://www.linkedin.com/in/morgan-borjigin-wang-2098a915a/",
+        email: "morgan_borjigin-wang@brown.edu"
+      }
     ].sort((a, b) => a.name.localeCompare(b.name));
   
     const phdGallery = document.getElementById("phd-gallery");

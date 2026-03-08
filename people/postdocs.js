@@ -1,11 +1,5 @@
 const postdocs = [
     {
-      name: "Di Jin",
-      photo: "assets/people/di.jpg",
-      email: "di_jin@brown.edu",
-      website: "https://sleepymug.me/",
-    },
-    {
       name: "Lukas Lazarek",
       photo: "assets/people/lukas.jpg",
       email: "lukas_lazarek@brown.edu",

@@ -10,8 +10,7 @@
   <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="../assets/css/main.css" />
 
-  <!-- Use Markdown-based publications parser -->
-  <script src="render_papers_md.js" defer></script>
+  <script src="render_papers.js" defer></script>
 </head>
 
 <header class="site-header">
@@ -19,7 +18,7 @@
 </header>
 
 <body>
-  <site-header></site-header>
+  <site-header data-prefix="../"></site-header>
 
   <div class="page-content">
     <div class="wrapper">
@@ -30,7 +29,7 @@
         <article 
           id="pubs" 
           class="post-content Publications clearfix"
-          data-src="./publications.md"
+          data-bibs="https://raw.githubusercontent.com/atlas-brown/bib/refs/heads/main/atlas.bib, https://deeptir.me/papers/deeptir.bib, https://akshayn.xyz/res/akshay.bib"
         >
           <!-- Render target -->
           <noscript>Please enable JavaScript to view publications.</noscript>
