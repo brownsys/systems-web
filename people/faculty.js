@@ -35,11 +35,11 @@ const faculty = [
         email: "nicholas_demarinis@brown.edu",
     },
     {
-        name: "Nikos Vasilakis",
+        name: "Vasileios P. Kemerlis",
         role: "Faculty",
-        photo: "assets/people/nikos.jpg",
-        website: "https://nikos.vasilak.is/",
-        email: "nikos@vasilak.is",
+        photo: "assets/people/vasilis.jpg",
+        website: "https://cs.brown.edu/~vpk/",
+        email: "vpk@cs.brown.edu",
     },
     {
         name: "Robert Y. Lewis",
@@ -63,11 +63,11 @@ const faculty = [
         email: "ugur_cetintemel@brown.edu",
     },
     {
-        name: "Vasileios P. Kemerlis",
+        name: "Nikos Vasilakis",
         role: "Faculty",
-        photo: "assets/people/vasilis.jpg",
-        website: "https://cs.brown.edu/~vpk/",
-        email: "vpk@cs.brown.edu",
+        photo: "assets/people/nikos.jpg",
+        website: "https://nikos.vasilak.is/",
+        email: "nikos@vasilak.is",
     },
     {
         name: "Will P.L. Crichton",

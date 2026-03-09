@@ -70,7 +70,7 @@
     const primaryLink = entry.pdf || entry.url;
     if (primaryLink) links.push(`<a href="${escapeHTML(primaryLink)}" target="_blank" rel="noopener">PDF/Link</a>`);
     if (entry.code) links.push(`<a href="${escapeHTML(entry.code)}" target="_blank" rel="noopener">Code/Artifact</a>`);
-    if (entry.doi) links.push(`<a href="https://doi.org/${encodeURIComponent(entry.doi)}" target="_blank" rel="noopener">DOI</a>`);
+    if (entry.doi) links.push(`<a href="https://doi.org/${encodeURIComponent(entry.doi)}" target="_blank" rel="noopener">Publisher</a>`);
     if (entry.bibtex) links.push(`<a class="bibtex" data-target="${id}-bib">BibTeX</a>`);
 
     const venue = entry.venue || entry.school || "";

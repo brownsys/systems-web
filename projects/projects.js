@@ -184,6 +184,10 @@ function renderProjects(containerId, projects) {
   heading.innerText = "Projects";
   container.appendChild(heading);
 
+  const intro = document.createElement("p");
+  intro.innerText = "A list of projects from Systems@Brown. Order is randomized on each page visit.";
+  container.appendChild(intro);
+
   projects.forEach(project => {
     const div = document.createElement("div");
     div.className = "mb4";

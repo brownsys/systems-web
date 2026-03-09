@@ -651,6 +651,7 @@ div.equation { margin: 0.5rem 0; }
 
 .gallery-item {
   display: block;
+  width: 150px;
 }
 
 .gallery-item .imgStuff {
@@ -669,6 +670,7 @@ div.equation { margin: 0.5rem 0; }
 .gallery-item-details strong {
   display: block;
   line-height: 1.35;
+  white-space: nowrap;
 }
 
 .person-links {

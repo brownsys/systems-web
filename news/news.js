@@ -25,7 +25,7 @@ class NewsSection extends HTMLElement {
           }
         });
   
-        const visibleCount = 12;
+        const visibleCount = 7;
   
         // Generate table rows with a class to identify hidden ones
         const tableRows = rows.map((r, idx) => {
