@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-08T15:51:12.897Z",
+  "generated_at": "2026-05-19T15:19:38.444Z",
   "sources": [
     "publications/etos.bib",
     "https://raw.githubusercontent.com/atlas-brown/bib/main/atlas.bib",
@@ -7,6 +7,29 @@
     "https://akshayn.xyz/res/akshay.bib"
   ],
   "entries": [
+    {
+      "id": "try:osdi:2026",
+      "year": 2026,
+      "type": "inproceedings",
+      "type_label": "Conference",
+      "title": "Controlling Opaque-Component Effects with Semisolates and Try",
+      "authors": "Evangelos Lamprou, Tianyu (Ezri) Zhu, Di Jin, Grigoris Ntousakis, Georgios Liargkovas, Calvin Eng, Konstantinos Kallas, Michael Greenberg, Nikos Vasilakis",
+      "venue": "20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)",
+      "abstract": "",
+      "thesis_type": "",
+      "school": "",
+      "tags": [
+        "correctness",
+        "security"
+      ],
+      "pdf": "",
+      "code": "https://github.com/binpash/try",
+      "doi": "",
+      "url": "",
+      "eprint": "",
+      "archiveprefix": "",
+      "bibtex": "@inproceedings{try:osdi:2026,\n  title = {Controlling Opaque-Component Effects with Semisolates and Try},\n  author = {Lamprou, Evangelos and Zhu, Tianyu (Ezri) and Jin, Di and Ntousakis, Grigoris and Liargkovas, Georgios and Eng, Calvin and Kallas, Konstantinos and Greenberg, Michael and Vasilakis, Nikos},\n  booktitle = {20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)},\n  year = {2026},\n  publisher = {USENIX Association},\n  artifact = {https://github.com/binpash/try},\n  tags = {correctness, security}\n}"
+    },
     {
       "id": "fractal:nsdi:2026",
       "year": 2026,
@@ -28,7 +51,73 @@
       "url": "https://www.usenix.org/conference/nsdi26/presentation/huang",
       "eprint": "",
       "archiveprefix": "",
-      "bibtex": "@inproceedings{fractal:nsdi:2026,\n  title = {Fractal: Fault-Tolerant Shell-Script Distribution},\n  author = {Zhicheng Huang and Ramiz Dundar and Yizheng Xie and Konstantinos Kallas and Nikos Vasilakis},\n  year = {2026},\n  month = {may},\n  booktitle = {23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI 26)},\n  publisher = {USENIX Association},\n  address = {Renton, WA},\n  url = {https://www.usenix.org/conference/nsdi26/presentation/huang},\n  keywords = {shell, distributed execution, fault tolerance},\n  artifact = {https://github.com/binpash/fractal},\n  tags = {correctness, performance}\n}"
+      "bibtex": "@inproceedings{fractal:nsdi:2026,\n  author = {Zhicheng Huang and Ramiz Dundar and Yizheng Xie and Konstantinos Kallas and Nikos Vasilakis},\n  title = {Fractal: Fault-Tolerant Shell-Script Distribution},\n  booktitle = {23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI 26)},\n  year = {2026},\n  month = {may},\n  publisher = {USENIX Association},\n  address = {Renton, WA},\n  pages = {2339--2354},\n  isbn = {978-1-939133-54-0},\n  url = {https://www.usenix.org/conference/nsdi26/presentation/huang},\n  keywords = {shell, distributed execution, fault tolerance},\n  artifact = {https://github.com/binpash/fractal},\n  tags = {correctness, performance}\n}"
+    },
+    {
+      "id": "hs:osdi:2026",
+      "year": 2026,
+      "type": "inproceedings",
+      "type_label": "Conference",
+      "title": "hS: Speculative Script Reordering at Subprocess Granularity",
+      "authors": "Georgios Liargkovas, Di Jin, Tianyu (Ezri) Zhu, Dan Liu, A. Bolun Thompson, Anirudh Narsipur, Seong-Heon Jung, Siddhartha Prasad, Diomidis Spinellis, Michael Greenberg, Konstantinos Kallas, Nikos Vasilakis",
+      "venue": "20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)",
+      "abstract": "",
+      "thesis_type": "",
+      "school": "",
+      "tags": [
+        "performance"
+      ],
+      "pdf": "",
+      "code": "https://github.com/binpash/hs",
+      "doi": "",
+      "url": "",
+      "eprint": "",
+      "archiveprefix": "",
+      "bibtex": "@inproceedings{hs:osdi:2026,\n  title = {hS: Speculative Script Reordering at Subprocess Granularity},\n  author = {Liargkovas, Georgios and Jin, Di and Zhu, Tianyu (Ezri) and Liu, Dan and Thompson, A. Bolun and Narsipur, Anirudh and Jung, Seong-Heon and Prasad, Siddhartha and Spinellis, Diomidis and Greenberg, Michael and Kallas, Konstantinos and Vasilakis, Nikos},\n  booktitle = {20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)},\n  year = {2026},\n  publisher = {USENIX Association},\n  artifact = {https://github.com/binpash/hs},\n  tags = {performance}\n}"
+    },
+    {
+      "id": "incr:osdi:2026",
+      "year": 2026,
+      "type": "inproceedings",
+      "type_label": "Conference",
+      "title": "Incr: Faster Re-execution via Bolt-on Incrementalization",
+      "authors": "Yizheng Xie, Evangelos Lamprou, Jerry Xia, Nikos Vasilakis",
+      "venue": "20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)",
+      "abstract": "",
+      "thesis_type": "",
+      "school": "",
+      "tags": [
+        "performance"
+      ],
+      "pdf": "",
+      "code": "https://github.com/atlas-brown/incr",
+      "doi": "",
+      "url": "",
+      "eprint": "",
+      "archiveprefix": "",
+      "bibtex": "@inproceedings{incr:osdi:2026,\n  title = {Incr: Faster Re-execution via Bolt-on Incrementalization},\n  author = {Xie, Yizheng and Lamprou, Evangelos and Xia, Jerry and Vasilakis, Nikos},\n  booktitle = {20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)},\n  year = {2026},\n  publisher = {USENIX Association},\n  artifact = {https://github.com/atlas-brown/incr},\n  tags = {performance}\n}"
+    },
+    {
+      "id": "rt:osdi:2026",
+      "year": 2026,
+      "type": "inproceedings",
+      "type_label": "Conference",
+      "title": "Rt: Regular Types for the Streaming Shell",
+      "authors": "Zekai Li, Lukas Lazarek, Evangelos Lamprou, George Kapetanakis, Konstantinos Mamouras, Nikos Vasilakis",
+      "venue": "20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)",
+      "abstract": "",
+      "thesis_type": "",
+      "school": "",
+      "tags": [
+        "correctness"
+      ],
+      "pdf": "",
+      "code": "https://github.com/atlas-brown/RT",
+      "doi": "",
+      "url": "",
+      "eprint": "",
+      "archiveprefix": "",
+      "bibtex": "@inproceedings{rt:osdi:2026,\n  title = {Rt: Regular Types for the Streaming Shell},\n  author = {Li, Zekai and Lazarek, Lukas and Lamprou, Evangelos and Kapetanakis, George and Mamouras, Konstantinos and Vasilakis, Nikos},\n  booktitle = {20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)},\n  year = {2026},\n  publisher = {USENIX Association},\n  artifact = {https://github.com/atlas-brown/RT},\n  tags = {correctness}\n}"
     },
     {
       "id": "slowpoke:nsdi:2026",
@@ -51,6 +140,48 @@
       "eprint": "",
       "archiveprefix": "",
       "bibtex": "@inproceedings{slowpoke:nsdi:2026,\n  title = {Slowpoke: End-to-end Throughput Optimization Modeling for Microservice Applications},\n  author = {Yizheng Xie and Di Jin and Oğuzhan Çölkesen and Vasiliki Kalavri and John Liagouris and Nikos Vasilakis},\n  year = {2026},\n  month = {may},\n  booktitle = {23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI 26)},\n  publisher = {USENIX Association},\n  address = {Renton, WA},\n  url = {https://www.usenix.org/conference/nsdi26/presentation/xie},\n  keywords = {microservices, performance modeling, throughput optimization},\n  artifact = {https://github.com/atlas-brown/slowpoke},\n  tags = {performance}\n}"
+    },
+    {
+      "id": "koala:tocs:2026",
+      "year": 2026,
+      "type": "article",
+      "type_label": "Article",
+      "title": "The Koala Benchmarks for the Shell: Characterization, Implications, and Extensions",
+      "authors": "Evangelos Lamprou, Ethan Williams, Georgios Kaoukis, Zhuoxuan Zhang, Michael Greenberg, Konstantinos Kallas, Lukas Lazarek, Nikos Vasilakis",
+      "venue": "ACM Transactions on Computer Systems",
+      "abstract": "",
+      "thesis_type": "",
+      "school": "",
+      "tags": [],
+      "pdf": "",
+      "code": "https://github.com/kbensh/koala",
+      "doi": "",
+      "url": "",
+      "eprint": "",
+      "archiveprefix": "",
+      "bibtex": "@article{koala:tocs:2026,\n  author = {Evangelos Lamprou and Ethan Williams and Georgios Kaoukis and Zhuoxuan Zhang and Michael Greenberg and Konstantinos Kallas and Lukas Lazarek and Nikos Vasilakis},\n  title = {The Koala Benchmarks for the Shell: Characterization, Implications, and Extensions},\n  journal = {ACM Transactions on Computer Systems},\n  year = {2026},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  artifact = {https://github.com/kbensh/koala},\n  note = {To appear}\n}"
+    },
+    {
+      "id": "haven:euromlsys:2026",
+      "year": 2026,
+      "type": "inproceedings",
+      "type_label": "Conference",
+      "title": "Towards Practically-Secure Tools for AI Agents",
+      "authors": "Justus Adam, Yuchen Lu, Deepti Raghavan, Malte Schwarzkopf, Nikos Vasilakis",
+      "venue": "The 6th Workshop on Machine Learning and Systems (EuroMLSys)",
+      "abstract": "",
+      "thesis_type": "",
+      "school": "",
+      "tags": [
+        "security"
+      ],
+      "pdf": "",
+      "code": "",
+      "doi": "",
+      "url": "https://euromlsys.eu/",
+      "eprint": "",
+      "archiveprefix": "",
+      "bibtex": "@inproceedings{haven:euromlsys:2026,\n  title = {Towards Practically-Secure Tools for AI Agents},\n  author = {Adam, Justus and Lu, Yuchen and Raghavan, Deepti and Schwarzkopf, Malte and Vasilakis, Nikos},\n  year = {2026},\n  month = {apr},\n  booktitle = {The 6th Workshop on Machine Learning and Systems (EuroMLSys)},\n  address = {Edinburgh, United Kingdom},\n  url = {https://euromlsys.eu/},\n  tags = {security}\n}"
     },
     {
       "id": "loom",
@@ -267,10 +398,30 @@
       "bibtex": "@inproceedings{klean:plos:2025,\n  title = {KLean: Extending Operating System Kernels with Lean},\n  author = {Jin, Di and Lavi, Ethan and Jia, Jinghao and Lewis, Robert Y. and Vasilakis, Nikos},\n  year = {2025},\n  booktitle = {Proceedings of the 13th Workshop on Programming Languages and Operating Systems},\n  location = {Seoul, Republic of Korea},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  series = {PLOS '25},\n  pages = {118–126},\n  doi = {10.1145/3764860.3768336},\n  isbn = {9798400722257},\n  url = {https://doi.org/10.1145/3764860.3768336},\n  numpages = {9},\n  keywords = {BPF, Formal methods, Kernel extensions, OS Kernels, Verification},\n  tags = {correctness}\n}"
     },
     {
+      "id": "cocoon:plos:2025",
+      "year": 2025,
+      "type": "inproceedings",
+      "type_label": "Conference",
+      "title": "Towards Hybrid Cooperative-Preemptive Scheduling",
+      "authors": "Yizheng Xie, Di Jin, Nikos Vasilakis",
+      "venue": "Proceedings of the 13th Workshop on Programming Languages and Operating Systems",
+      "abstract": "",
+      "thesis_type": "",
+      "school": "",
+      "tags": [],
+      "pdf": "",
+      "code": "",
+      "doi": "10.1145/3764860.3768329",
+      "url": "https://doi.org/10.1145/3764860.3768329",
+      "eprint": "",
+      "archiveprefix": "",
+      "bibtex": "@inproceedings{cocoon:plos:2025,\n  author = {Xie, Yizheng and Jin, Di and Vasilakis, Nikos},\n  title = {Towards Hybrid Cooperative-Preemptive Scheduling},\n  year = {2025},\n  isbn = {9798400722257},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  url = {https://doi.org/10.1145/3764860.3768329},\n  doi = {10.1145/3764860.3768329},\n  booktitle = {Proceedings of the 13th Workshop on Programming Languages and Operating Systems},\n  pages = {68–75},\n  numpages = {8},\n  keywords = {Concurrency, Cooperation, Event, Language Runtime, OS Thread, Preemption, Scheduling},\n  location = {Seoul, Republic of Korea},\n  series = {PLOS '25}\n}"
+    },
+    {
       "id": "caruca:arxiv:2025",
       "year": 2025,
-      "type": "article",
-      "type_label": "Article",
+      "type": "preprint",
+      "type_label": "preprint",
       "title": "Caruca: Effective and Efficient Specification Mining for Opaque Software Components",
       "authors": "Evangelos Lamprou, Seong-Heon Jung, Mayank Keoliya, Lukas Lazarek, Konstantinos Kallas, Michael Greenberg, Nikos Vasilakis",
       "venue": "arXiv preprint arXiv:2510.14279",
@@ -284,13 +435,13 @@
       "url": "https://arxiv.org/abs/2510.14279",
       "eprint": "2510.14279",
       "archiveprefix": "arXiv",
-      "bibtex": "@article{caruca:arxiv:2025,\n  title = {Caruca: Effective and Efficient Specification Mining for Opaque Software Components},\n  author = {Evangelos Lamprou and Seong-Heon Jung and Mayank Keoliya and Lukas Lazarek and Konstantinos Kallas and Michael Greenberg and Nikos Vasilakis},\n  year = {2025},\n  journal = {arXiv preprint arXiv:2510.14279},\n  booktitle = {arXiv preprint arXiv:2510.14279},\n  url = {https://arxiv.org/abs/2510.14279},\n  eprint = {2510.14279},\n  archiveprefix = {arXiv},\n  primaryclass = {cs.SE}\n}"
+      "bibtex": "@preprint{caruca:arxiv:2025,\n  title = {Caruca: Effective and Efficient Specification Mining for Opaque Software Components},\n  author = {Evangelos Lamprou and Seong-Heon Jung and Mayank Keoliya and Lukas Lazarek and Konstantinos Kallas and Michael Greenberg and Nikos Vasilakis},\n  year = {2025},\n  journal = {arXiv preprint arXiv:2510.14279},\n  booktitle = {arXiv preprint arXiv:2510.14279},\n  url = {https://arxiv.org/abs/2510.14279},\n  eprint = {2510.14279},\n  archiveprefix = {arXiv},\n  primaryclass = {cs.SE}\n}"
     },
     {
       "id": "lexo:arxiv:2025",
       "year": 2025,
-      "type": "article",
-      "type_label": "Article",
+      "type": "preprint",
+      "type_label": "preprint",
       "title": "Lexo: Eliminating Stealthy Supply-Chain Attacks via LLM-Assisted Program Regeneration",
       "authors": "Evangelos Lamprou, Julian Dai, Grigoris Ntousakis, Martin C. Rinard, Nikos Vasilakis",
       "venue": "arXiv preprint arXiv:2510.14522",
@@ -304,7 +455,7 @@
       "url": "https://arxiv.org/abs/2510.14522",
       "eprint": "2510.14522",
       "archiveprefix": "arXiv",
-      "bibtex": "@article{lexo:arxiv:2025,\n  title = {Lexo: Eliminating Stealthy Supply-Chain Attacks via LLM-Assisted Program Regeneration},\n  author = {Evangelos Lamprou and Julian Dai and Grigoris Ntousakis and Martin C. Rinard and Nikos Vasilakis},\n  year = {2025},\n  journal = {arXiv preprint arXiv:2510.14522},\n  booktitle = {arXiv preprint arXiv:2510.14522},\n  url = {https://arxiv.org/abs/2510.14522},\n  eprint = {2510.14522},\n  archiveprefix = {arXiv},\n  primaryclass = {cs.CR}\n}"
+      "bibtex": "@preprint{lexo:arxiv:2025,\n  title = {Lexo: Eliminating Stealthy Supply-Chain Attacks via LLM-Assisted Program Regeneration},\n  author = {Evangelos Lamprou and Julian Dai and Grigoris Ntousakis and Martin C. Rinard and Nikos Vasilakis},\n  year = {2025},\n  journal = {arXiv preprint arXiv:2510.14522},\n  booktitle = {arXiv preprint arXiv:2510.14522},\n  url = {https://arxiv.org/abs/2510.14522},\n  eprint = {2510.14522},\n  archiveprefix = {arXiv},\n  primaryclass = {cs.CR}\n}"
     },
     {
       "id": "aagvania-honorsthesis",
@@ -502,7 +653,7 @@
       "bibtex": "@inproceedings{gnn-in-situ,\n  author = {Song, Yuhang and Chen, Po Hao and Lu, Yuchen and Abrar, Naima and Kalavri, Vasiliki},\n  title = {In situ neighborhood sampling for large-scale {GNN} training},\n  year = {2024},\n  month = {jun},\n  isbn = {9798400706677},\n  url = {https://doi.org/10.1145/3662010.3663443},\n  doi = {10.1145/3662010.3663443},\n  booktitle = {Proceedings of the 20th International Workshop on Data Management on New Hardware (DaMoN)},\n  articleno = {11},\n  numpages = {5},\n  location = {Santiago, Chile},\n  tags = {Big Data},\n  pdf = {https://etos.cs.brown.edu/publications/papers/gnn-in-situ:damon24.pdf}\n}"
     },
     {
-      "id": "bothra-2024",
+      "id": "archie-hotnets",
       "year": 2024,
       "type": "inproceedings",
       "type_label": "Conference",
@@ -519,7 +670,7 @@
       "url": "https://doi.org/10.1145/3696348.3696865",
       "eprint": "",
       "archiveprefix": "",
-      "bibtex": "@inproceedings{bothra-2024,\n  title = {{ Lightweight Automated Reasoning for Network Architectures }},\n  author = {Rahul Bothra and Venkat Arun and Brighten Godfrey and Akshay Narayan and Ahmed Saeed},\n  year = {2024},\n  booktitle = {HotNets},\n  doi = {10.1145/3696348.3696865}\n}"
+      "bibtex": "@inproceedings{archie-hotnets,\n  title = {{ Lightweight Automated Reasoning for Network Architectures }},\n  author = {Rahul Bothra and Venkat Arun and Brighten Godfrey and Akshay Narayan and Ahmed Saeed},\n  year = {2024},\n  booktitle = {HotNets},\n  doi = {10.1145/3696348.3696865}\n}"
     },
     {
       "id": "rtang-honorsthesis",
@@ -802,12 +953,12 @@
         "performance"
       ],
       "pdf": "",
-      "code": "",
+      "code": "https://github.com/binpash/hs",
       "doi": "10.1145/3593856.3595891",
       "url": "https://doi.org/10.1145/3593856.3595891",
       "eprint": "",
       "archiveprefix": "",
-      "bibtex": "@inproceedings{hs:hotos:2023,\n  title = {Executing Shell Scripts in the Wrong Order, Correctly},\n  author = {Liargkovas, Georgios and Kallas, Konstantinos and Greenberg, Michael and Vasilakis, Nikos},\n  year = {2023},\n  booktitle = {19th Workshop on Hot Topics in Operating Systems},\n  location = {Providence, RI, USA},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  series = {HotOS '23},\n  pages = {103–109},\n  doi = {10.1145/3593856.3595891},\n  isbn = {9798400701955},\n  url = {https://doi.org/10.1145/3593856.3595891},\n  numpages = {7},\n  keywords = {shell, correctness, scheduling},\n  tags = {performance}\n}"
+      "bibtex": "@inproceedings{hs:hotos:2023,\n  title = {Executing Shell Scripts in the Wrong Order, Correctly},\n  author = {Liargkovas, Georgios and Kallas, Konstantinos and Greenberg, Michael and Vasilakis, Nikos},\n  year = {2023},\n  booktitle = {19th Workshop on Hot Topics in Operating Systems},\n  location = {Providence, RI, USA},\n  publisher = {Association for Computing Machinery},\n  address = {New York, NY, USA},\n  series = {HotOS '23},\n  pages = {103–109},\n  doi = {10.1145/3593856.3595891},\n  isbn = {9798400701955},\n  url = {https://doi.org/10.1145/3593856.3595891},\n  numpages = {7},\n  keywords = {shell, correctness, scheduling},\n  artifact = {https://github.com/binpash/hs},\n  tags = {performance}\n}"
     },
     {
       "id": "cca-contention",
@@ -1707,8 +1858,8 @@
     {
       "id": "kumquat:arxiv:2020",
       "year": 2020,
-      "type": "article",
-      "type_label": "Article",
+      "type": "preprint",
+      "type_label": "preprint",
       "title": "Automatic Synthesis of Parallel and Distributed Unix Commands with KumQuat",
       "authors": "Nikos Vasilakis, Jiasi Shen, Martin C. Rinard",
       "venue": "arXiv preprint arXiv:2012.15443",
@@ -1725,7 +1876,7 @@
       "url": "https://arxiv.org/abs/2012.15443",
       "eprint": "2012.15443",
       "archiveprefix": "arXiv",
-      "bibtex": "@article{kumquat:arxiv:2020,\n  title = {Automatic Synthesis of Parallel and Distributed Unix Commands with KumQuat},\n  author = {Nikos Vasilakis and Jiasi Shen and Martin C. Rinard},\n  year = {2020},\n  journal = {arXiv preprint arXiv:2012.15443},\n  booktitle = {arXiv preprint arXiv:2012.15443},\n  url = {https://arxiv.org/abs/2012.15443},\n  eprinttype = {arXiv},\n  eprint = {2012.15443},\n  timestamp = {Sat, 30 Sep 2023 10:08:30 +0200},\n  biburl = {https://dblp.org/rec/journals/corr/abs-2012-15443.bib},\n  bibsource = {dblp computer science bibliography, https://dblp.org},\n  keywords = {distributed computing, shell, automatic parallelization, program synthesis},\n  tags = {performance, correctness}\n}"
+      "bibtex": "@preprint{kumquat:arxiv:2020,\n  title = {Automatic Synthesis of Parallel and Distributed Unix Commands with KumQuat},\n  author = {Nikos Vasilakis and Jiasi Shen and Martin C. Rinard},\n  year = {2020},\n  journal = {arXiv preprint arXiv:2012.15443},\n  booktitle = {arXiv preprint arXiv:2012.15443},\n  url = {https://arxiv.org/abs/2012.15443},\n  eprinttype = {arXiv},\n  eprint = {2012.15443},\n  timestamp = {Sat, 30 Sep 2023 10:08:30 +0200},\n  biburl = {https://dblp.org/rec/journals/corr/abs-2012-15443.bib},\n  bibsource = {dblp computer science bibliography, https://dblp.org},\n  keywords = {distributed computing, shell, automatic parallelization, program synthesis},\n  tags = {performance, correctness}\n}"
     },
     {
       "id": "alr:splash:2019",
