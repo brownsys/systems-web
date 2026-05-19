@@ -7,8 +7,6 @@
 .DS_Store
 
 _site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-vendor/
+site/
 __release/
+node_modules

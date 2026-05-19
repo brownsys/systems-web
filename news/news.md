@@ -1,0 +1,24 @@
+## News
+
+- **Mar, 2026:** [Apply](https://brown-systems-week.github.io/) to attend the 2026 Brown Systems Week in beautiful Providence, RI!
+- **Sep, 2025:** Early ideas on [LLM guardrails](https://nikos.vasilak.is/p/exo:pacmi:2025.pdf), [hybrid scheduling](https://nikos.vasilak.is/p/cocoon:plos:2025.pdf), and [verifiable kernel extensions](https://nikos.vasilak.is/p/klean:plos:2025.pdf) at [SOSP'25 workshops](https://sigops.org/s/conferences/sosp/2025/workshops.html)!
+- **Aug, 2025:** Techniques for [capturing and optimizing high-frequency telemetry queries](https://cs.brown.edu/people/malte/pub/papers/2025-sosp-loom.pdf) will be presented at [SOSP 2025](https://sigops.org/s/conferences/sosp/2025/)!
+- **Jul, 2025:** [Deepti](https://deeptir.me), [Malte](https://cs.brown.edu/people/malte), and [Nikos](https://nikos.vasilak.is) received a [Google ML & Systems Junior Faculty award](https://blog.google/products/google-cloud/ml-systems-junior-faculty-awards/)!  
+- **Jul, 2025:** Two papers accepted at [NSDI'26](https://www.usenix.org/conference/nsdi26) on opaque distributed [optimization prediction](https://github.com/atlas-brown/slowpoke) and [fault tolerance](https://github.com/binpash/fractal)!
+- **Jul, 2025:** Our [benchmark suite for the shell](https://nikos.vasilak.is/p/koala:atc:2025.pdf) received the [Best Paper Award](https://www.usenix.org/conferences/best-papers) at [USENIX ATC'25](https://www.usenix.org/conference/atc25)!
+- **Jun, 2025:** Our paper on the [Koala benchmark for the shell](https://kben.sh/) was accepted at [USENIX ATC'25](https://www.usenix.org/conference/atc25/presentation/lamprou)—the last one, ever!
+- **May, 2025:** [Static privacy-bug detection in Rust](https://cs.brown.edu/people/malte/pub/papers/2025-osdi-paralegal.pdf) will be presented at [OSDI 2025](https://www.usenix.org/conference/osdi25).
+- **Apr, 2025:** [Apply](https://forms.gle/zL2giouQjeKyfcGR6) to attend the [Brown Systems Week 2025](https://brown-systems-week.github.io/) in beautiful Providence, RI!
+- **Mar, 2025:** [Nikos Vasilakis](https://nikos.vasilak.is) received an [Amazon Research Award (ARA)](https://www.amazon.science/research-awards/program-updates/70-amazon-research-award-recipients-announced) on Automated Reasoning for the Unix/Linux shell!
+- **Mar, 2025:** Our paper on [semantics-driven static analysis for the shell](https://nikos.vasilak.is/p/sash:hotos:2025.pdf) made it to [HotOS'25](https://sigops.org/s/conferences/hotos/2025/)!
+- **Jan, 2025:** [Nikos Vasilakis](https://nikos.vasilak.is) is organizing [EuroSec'25](https://eurosec-workshop.github.io/), co-located with [EuroSys'25](https://2025.eurosys.org/) and [ASPLOS'25](https://www.asplos-conference.org/asplos2025/).
+- **Aug, 2024:** [Privacy regions, sandboxing, and compliance checking](https://cs.brown.edu/~malte/pub/papers/2024-sosp-sesame.pdf) framework will appear at [SOSP](https://sigops.org/s/conferences/sosp/2024/).
+- **Aug, 2024:** [Efficient resource management with granular computing](https://cs.brown.edu/people/malte/pub/papers/2025-nsdi-quicksand.pdf) was accepted at [NSDI 2025](https://www.usenix.org/conference/nsdi25); joint work with MIT and VMware Research.
+- **Jul, 2024:** [Deepti Raghavan](https://deeptir.me) and [Akshay Narayan](https://akshayn.xyz/) join the group as new professors!
+- **Jul, 2023:** [Ownership- and semantics-driven storage](https://www.usenix.org/system/files/osdi23-albab.pdf) ensures GDPR-compliant web applications at the [OSDI 2023](https://www.usenix.org/conference/osdi23/presentation/albab).
+- **Jun, 2023:** Three Brown Systems groups' papers appeared at HotOS’23: [Soft Memory](https://dl.acm.org/doi/abs/10.1145/3593856.3595902), [Quicksand](https://dl.acm.org/doi/abs/10.1145/3593856.3595893), and [hs](https://dl.acm.org/doi/abs/10.1145/3593856.3595891).
+- **Jun, 2023:** Our [hybrid protection](http://nikos.vasilak.is/p/binwrap:asiaccs:2023.pdf) against binary add-ons, received the [Distinguished Paper Award](https://asiaccs2023.org/) at [AsiaCCS'23](https://asiaccs2023.org)!
+- **Jul, 2022:** [Nikos Vasilakis](https://nikos.vasilak.is) joins the group as a new professor!
+- **Jun, 2022:** [Nick DeMarinis](https://vty.sh/) joins the group as a new lecturer in Fall 2022!
+- **May, 2022:** [Malte](https://cs.brown.edu/people/malte) wins Brown’s Henry Merritt Wriston Fellowship for 2022.
+- **Mar, 2022:** [Malte](https://cs.brown.edu/people/malte)’s paper on retroactive techniques for GDPR compliance appears at [VLDB 2022](https://vldb.org/pvldb/vol15/p958-george.pdf).
