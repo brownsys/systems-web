@@ -1,9 +1,10 @@
 (function () {
   const DEFAULT_BIB_SOURCES = [
-    "./etos.bib",
-    "https://raw.githubusercontent.com/atlas-brown/bib/main/atlas.bib",
-    "https://deeptir.me/papers/deeptir.bib",
-    "https://akshayn.xyz/res/akshay.bib"
+    { url: "./etos.bib" },
+    { url: "https://raw.githubusercontent.com/atlas-brown/bib/main/atlas.bib" },
+    { url: "https://raw.githubusercontent.com/atlas-brown/bib/main/theses.bib" },
+    { url: "https://deeptir.me/papers/deeptir.bib" },
+    { url: "https://akshayn.xyz/res/akshay.bib" }
   ];
 
   const TYPE_LABELS = {
@@ -141,6 +142,11 @@
     return school.includes("brown") ? 0 : 1;
   }
 
+  function isBrownThesis(entry) {
+    if (!isThesis(entry)) return true;
+    return thesisInstitutionRank(entry) === 0;
+  }
+
   function typeInfo(rawType, rawTags) {
     const raw = clean(rawType).toLowerCase();
     if (raw) return { key: raw, label: TYPE_LABELS[raw] || raw };
@@ -188,9 +194,45 @@
   }
 
   async function fetchBibSource(source) {
-    const response = await fetch(source, { cache: "no-store" });
-    if (!response.ok) throw new Error(`${source}: HTTP ${response.status}`);
+    const response = await fetch(source.url, { cache: "no-store" });
+    if (!response.ok) throw new Error(`${source.url}: HTTP ${response.status}`);
     return response.text();
+  }
+
+  function normalizeBibSource(source) {
+    if (typeof source === "string") return { url: source };
+    if (!source || typeof source !== "object") return null;
+
+    const url = clean(source.url || source.href || source.src);
+    if (!url) return null;
+
+    const minYear = Number.parseInt(source.minYear ?? source.yearCutoff ?? source.cutoffYear, 10);
+    return {
+      url,
+      minYear: Number.isFinite(minYear) ? minYear : null
+    };
+  }
+
+  function parseBibSources(value) {
+    const raw = String(value || "").trim();
+    if (!raw) return DEFAULT_BIB_SOURCES;
+
+    try {
+      const parsed = JSON.parse(raw);
+      const items = (Array.isArray(parsed) ? parsed : [parsed])
+        .map(normalizeBibSource)
+        .filter(Boolean);
+      if (items.length) return items;
+    } catch (_) {
+      // Fall through to the legacy comma-separated format.
+    }
+
+    const items = raw
+      .split(",")
+      .map((source) => normalizeBibSource(source.trim()))
+      .filter(Boolean);
+
+    return items.length ? items : DEFAULT_BIB_SOURCES;
   }
 
   function sortEntries(entries) {
@@ -205,13 +247,17 @@
     });
   }
 
-  function parseSources(sourceTexts) {
+  function parseSources(sourcePayloads) {
     const dedup = new Map();
-    sourceTexts.flatMap(parseSource).forEach((entry) => {
-      if (!entry.year || entry.type === "misc") return;
+    sourcePayloads.forEach(({ source, text }) => {
+      parseSource(text).forEach((entry) => {
+        if (!entry.year || entry.type === "misc") return;
+        if (source.minYear && entry.year < source.minYear) return;
+        if (!isBrownThesis(entry)) return;
 
-      const key = `${entry.id}|${entry.year}`;
-      if (!dedup.has(key)) dedup.set(key, entry);
+        const key = `${entry.id}|${entry.year}`;
+        if (!dedup.has(key)) dedup.set(key, entry);
+      });
     });
 
     return sortEntries([...dedup.values()]);
@@ -441,17 +487,18 @@
     const container = document.getElementById("pubs");
     if (!container) return;
 
-    const sources = (container.dataset.bibSources || "")
-      .split(",")
-      .map((source) => source.trim())
-      .filter(Boolean);
-    const bibSources = sources.length ? sources : DEFAULT_BIB_SOURCES;
+    const bibSources = parseBibSources(container.dataset.bibSources);
 
     try {
       if (!window.bibtexParse) throw new Error("BibTeX parser is not loaded");
       container.innerHTML = "<p>Loading publications...</p>";
-      const sourceTexts = await Promise.all(bibSources.map(fetchBibSource));
-      render(parseSources(sourceTexts), container);
+      const sourcePayloads = await Promise.all(
+        bibSources.map(async (source) => ({
+          source,
+          text: await fetchBibSource(source)
+        }))
+      );
+      render(parseSources(sourcePayloads), container);
     } catch (error) {
       container.innerHTML = `<p>Failed to load publications: ${escapeHTML(error.message)}</p>`;
     }
