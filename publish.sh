@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Silly direct publishing script
+# Manual publishing script - not for regular use
 #
 # This script will publish your local build of the site to the
 # webserver.  To use it, you must have 1) access to systems-v3, 2)
@@ -29,10 +29,8 @@
 # in the webserver's directory for the site without warning.
 
 set -euo pipefail
-BUNDLE=/usr/bin/bundle
 
-${BUNDLE} exec jekyll clean
-${BUNDLE} exec jekyll build --strict_front_matter
+make
 
-rsync -avz --update --delete --chmod=D775,F774 --progress _site/* systems-v3:/vol/web/html/systems
+rsync -avz --update --delete --chmod=D775,F774 --progress site systems-v3:/vol/web/html/systems
 
