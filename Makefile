@@ -1,14 +1,19 @@
-.PHONY: serve
+OUTPUT_DIR = site
 
-BUNDLE := $(shell which bundle)
+COPY_SRC = assets index.html papers people projects publications sysread sysread-archive news
+
+.PHONY: build serve
 
 all: build
 
-build:
-	${BUNDLE} exec jekyll build
+build: static
+
+static:
+	mkdir -pv $(OUTPUT_DIR)
+	cp -pRv $(COPY_SRC) $(OUTPUT_DIR)/
 
 serve:
-	${BUNDLE} exec jekyll serve
+	./serve-local.sh
 
 clean:
-	${BUNDLE} exec jekyll clean
+	rm -rf $(OUTPUT_DIR)
