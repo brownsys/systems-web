@@ -1,4 +1,20 @@
 (function () {
+  const DEFAULT_BIB_SOURCES = [
+    "./etos.bib",
+    "https://raw.githubusercontent.com/atlas-brown/bib/main/atlas.bib",
+    "https://deeptir.me/papers/deeptir.bib",
+    "https://akshayn.xyz/res/akshay.bib"
+  ];
+
+  const TYPE_LABELS = {
+    article: "Article",
+    inproceedings: "Conference",
+    inbook: "Book Chapter",
+    book: "Book",
+    phdthesis: "PhD Thesis",
+    mastersthesis: "Masters Thesis"
+  };
+
   const escapeHTML = (s) =>
     String(s)
       .replace(/&/g, "&amp;")
@@ -6,6 +22,200 @@
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#39;");
+
+  const clean = (value) =>
+    String(value || "")
+      .replace(/[{}]/g, "")
+      .replace(/\s+/g, " ")
+      .trim();
+
+  function parseAuthors(value) {
+    return clean(value)
+      .split(/\s+and\s+/i)
+      .map((author) => {
+        const parts = author.split(",").map(clean).filter(Boolean);
+        if (parts.length >= 2) return `${parts.slice(1).join(" ")} ${parts[0]}`.trim();
+        return clean(author);
+      })
+      .filter(Boolean)
+      .join(", ");
+  }
+
+  function parseTags(rawValue) {
+    const text = clean(rawValue);
+    if (!text) return [];
+
+    const seen = new Set();
+    const out = [];
+    for (const keyword of text.split(/\s*[;,]\s*/).map(clean).filter(Boolean)) {
+      const key = keyword.toLowerCase();
+      if (!seen.has(key)) {
+        seen.add(key);
+        out.push(keyword);
+      }
+    }
+
+    return out;
+  }
+
+  function sanitizeBibText(text) {
+    return String(text || "")
+      .replace(/@(\w+)\s*(\S)/gi, (_, type, next) => (next === "{" ? `@${type}{` : `@${type}{${next}`))
+      .replace(/@(\w+)\s*\{\s*([^,\n]+)\s*,?/g, (_, type, key) => `@${type}{${String(key).trim()},`)
+      .replace(/([}"])\s*\n(\s*[A-Za-z][\w-]*\s*=)/g, "$1,\n$2");
+  }
+
+  function toBibtex(rawEntry, fallbackId) {
+    const entryType = clean(rawEntry.entryType || "misc").toLowerCase() || "misc";
+    const citationKey = clean(rawEntry.citationKey || fallbackId || "entry");
+    const tags = rawEntry.entryTags || {};
+
+    const lines = Object.entries(tags)
+      .filter(([, value]) => String(value || "").trim() !== "")
+      .map(([key, value]) => `  ${key} = {${String(value).trim()}}`);
+
+    if (lines.length === 0) return `@${entryType}{${citationKey}\n}`;
+    return `@${entryType}{${citationKey},\n${lines.join(",\n")}\n}`;
+  }
+
+  function isPreprint(entry) {
+    const venue = clean(entry.venue).toLowerCase();
+    const archivePrefix = clean(entry.archiveprefix).toLowerCase();
+    const url = clean(entry.url).toLowerCase();
+
+    return Boolean(
+      clean(entry.eprint) ||
+      archivePrefix === "arxiv" ||
+      venue.includes("arxiv") ||
+      venue === "corr" ||
+      url.includes("arxiv.org")
+    );
+  }
+
+  function isThesis(entry) {
+    const type = clean(entry.type).toLowerCase();
+    const thesisType = clean(entry.thesis_type).toLowerCase();
+    return type.includes("thesis") || thesisType.includes("thesis");
+  }
+
+  function isWorkshop(entry) {
+    if (isPreprint(entry) || isThesis(entry)) return false;
+
+    const venue = clean(entry.venue).toLowerCase();
+    const workshopHints = [
+      "workshop",
+      "hotos",
+      "hotnets",
+      "apsys",
+      "edgesys",
+      "plos",
+      "damon",
+      "ebpf"
+    ];
+
+    return workshopHints.some((hint) => venue.includes(hint));
+  }
+
+  function publicationBucket(entry) {
+    if (isThesis(entry)) return 3;
+    if (isPreprint(entry)) return 2;
+    if (isWorkshop(entry)) return 1;
+    return 0;
+  }
+
+  function peerReviewedRank(entry) {
+    const type = clean(entry.type).toLowerCase();
+    if (type === "inproceedings") return 0;
+    if (type === "article") return 1;
+    if (type === "inbook" || type === "book") return 2;
+    if (type === "techreport") return 3;
+    return 4;
+  }
+
+  function thesisInstitutionRank(entry) {
+    if (entry.type !== "phdthesis" && entry.type !== "mastersthesis") {
+      return 0;
+    }
+
+    const school = clean(entry.school || entry.venue).toLowerCase();
+    return school.includes("brown") ? 0 : 1;
+  }
+
+  function typeInfo(rawType, rawTags) {
+    const raw = clean(rawType).toLowerCase();
+    if (raw) return { key: raw, label: TYPE_LABELS[raw] || raw };
+
+    const thesisType = clean(rawTags.type || rawTags.document_type || rawTags.genre).toLowerCase();
+    if (thesisType.includes("phd")) return { key: "phdthesis", label: TYPE_LABELS.phdthesis };
+    if (thesisType.includes("thesis")) return { key: "mastersthesis", label: TYPE_LABELS.mastersthesis };
+
+    return { key: "misc", label: "Misc" };
+  }
+
+  function parseSource(bibText) {
+    const sanitized = sanitizeBibText(bibText);
+    const rawItems = window.bibtexParse.toJSON(sanitized);
+
+    return rawItems.map((raw, index) => {
+      const id = clean(raw.citationKey || `entry-${index}`);
+      const rawTags = raw.entryTags || {};
+      const info = typeInfo(raw.entryType, rawTags);
+      const doi = clean(rawTags.doi).replace(/^https?:\/\/(?:dx\.)?doi\.org\//i, "");
+      const url = clean(rawTags.url) || (doi ? `https://doi.org/${doi}` : "");
+      const year = Number.parseInt(clean(rawTags.year), 10) || 0;
+
+      return {
+        id,
+        year,
+        type: info.key,
+        type_label: info.label,
+        title: clean(rawTags.title) || "Untitled",
+        authors: parseAuthors(rawTags.author),
+        venue: clean(rawTags.booktitle || rawTags.journal || rawTags.school || rawTags.publisher),
+        abstract: clean(rawTags.abstract),
+        thesis_type: clean(rawTags.type),
+        school: clean(rawTags.school || rawTags.institution),
+        tags: parseTags(rawTags.tags),
+        pdf: clean(rawTags.pdf),
+        code: clean(rawTags.code || rawTags.artifact),
+        doi,
+        url,
+        eprint: clean(rawTags.eprint),
+        archiveprefix: clean(rawTags.archiveprefix || rawTags.eprinttype),
+        bibtex: toBibtex(raw, id)
+      };
+    });
+  }
+
+  async function fetchBibSource(source) {
+    const response = await fetch(source, { cache: "no-store" });
+    if (!response.ok) throw new Error(`${source}: HTTP ${response.status}`);
+    return response.text();
+  }
+
+  function sortEntries(entries) {
+    return entries.sort((a, b) => {
+      if (a.year !== b.year) return b.year - a.year;
+      if (publicationBucket(a) !== publicationBucket(b)) return publicationBucket(a) - publicationBucket(b);
+      if (publicationBucket(a) === 0 && peerReviewedRank(a) !== peerReviewedRank(b)) {
+        return peerReviewedRank(a) - peerReviewedRank(b);
+      }
+      if (thesisInstitutionRank(a) !== thesisInstitutionRank(b)) return thesisInstitutionRank(a) - thesisInstitutionRank(b);
+      return a.title.localeCompare(b.title);
+    });
+  }
+
+  function parseSources(sourceTexts) {
+    const dedup = new Map();
+    sourceTexts.flatMap(parseSource).forEach((entry) => {
+      if (!entry.year || entry.type === "misc") return;
+
+      const key = `${entry.id}|${entry.year}`;
+      if (!dedup.has(key)) dedup.set(key, entry);
+    });
+
+    return sortEntries([...dedup.values()]);
+  }
 
   function uniqueYears(entries) {
     return [...new Set(entries.map((entry) => Number.parseInt(entry.year, 10)).filter(Boolean))].sort((a, b) => b - a);
@@ -179,8 +389,7 @@
     });
   }
 
-  function render(data, container) {
-    const entries = Array.isArray(data.entries) ? data.entries : [];
+  function render(entries, container) {
     if (!entries.length) {
       container.innerHTML = "<p>No entries found.</p>";
       return;
@@ -232,13 +441,17 @@
     const container = document.getElementById("pubs");
     if (!container) return;
 
-    const jsonFile = container.dataset.json || "./publications_generated.json";
+    const sources = (container.dataset.bibSources || "")
+      .split(",")
+      .map((source) => source.trim())
+      .filter(Boolean);
+    const bibSources = sources.length ? sources : DEFAULT_BIB_SOURCES;
 
     try {
-      const response = await fetch(jsonFile, { cache: "no-store" });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      const data = await response.json();
-      render(data, container);
+      if (!window.bibtexParse) throw new Error("BibTeX parser is not loaded");
+      container.innerHTML = "<p>Loading publications...</p>";
+      const sourceTexts = await Promise.all(bibSources.map(fetchBibSource));
+      render(parseSources(sourceTexts), container);
     } catch (error) {
       container.innerHTML = `<p>Failed to load publications: ${escapeHTML(error.message)}</p>`;
     }

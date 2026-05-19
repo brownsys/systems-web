@@ -10,7 +10,8 @@
   <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="../assets/css/main.css" />
 
-  <script src="render_papers.js" defer></script>
+  <script src="../assets/js/vendor/bibtexParse.js?v=front-bib-1" defer></script>
+  <script src="render_papers.js?v=front-bib-1" defer></script>
 </head>
 
 <header class="site-header">
@@ -29,7 +30,7 @@
         <article 
           id="pubs" 
           class="post-content Publications clearfix"
-          data-json="./publications_generated.json"
+          data-bib-sources="./etos.bib,https://raw.githubusercontent.com/atlas-brown/bib/main/atlas.bib,https://deeptir.me/papers/deeptir.bib,https://akshayn.xyz/res/akshay.bib"
         >
           <!-- Render target -->
           <noscript>Please enable JavaScript to view publications.</noscript>
