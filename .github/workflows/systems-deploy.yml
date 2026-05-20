@@ -2,7 +2,7 @@ name: Deploy to systems webserver
 
 on:
   status:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   deploy:
