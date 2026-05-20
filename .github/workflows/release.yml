@@ -1,0 +1,43 @@
+name: Site build CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Copy site materials into export directory
+      run: |
+        make
+    - shell: bash
+      name: Create site tarball
+      run: |
+        tar -czvf /tmp/build.tar.gz -C ${{github.workspace}} site
+    - name: Create site as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: site-archive
+        path: /tmp/build.tar.gz
+    - name: Get short commit string
+      id: vars
+      run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+    - name: Create release
+      uses: softprops/action-gh-release@v1
+      with:
+        token: "${{ secrets.API_TOKEN }}"
+        draft: false
+        prerelease: false
+        tag_name: "auto-${{ steps.vars.outputs.sha_short }}"
+        files: /tmp/build.tar.gz
+    - name: Update status
+      if: always()
+      uses: ouzi-dev/commit-status-updater@v2
+      with:
+        status: "${{ job.status }}"

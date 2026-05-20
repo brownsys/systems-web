@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Systems@Brown | Publications</title>
+  <meta name="description" content="Brown University Systems Group" />
+  <link rel="icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../assets/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+  <script src="../assets/js/vendor/bibtexParse.js?v=front-bib-2" defer></script>
+  <script src="render_papers.js?v=front-bib-2" defer></script>
+</head>
+
+<header class="site-header">
+  <script type="module" src="../assets/components/navbar.js"></script>
+</header>
+
+<body>
+  <site-header data-prefix="../"></site-header>
+
+  <div class="page-content">
+    <div class="wrapper publications-wrapper">
+      <div class="post">
+        <header class="post-header">
+          A list of the Systems Group's publications. More recent first.
+        </header>
+        <article 
+          id="pubs" 
+          class="post-content Publications clearfix"
+          data-bib-sources='[
+            { "url": "./etos.bib", "minYear": 2019 },
+            { "url": "https://raw.githubusercontent.com/atlas-brown/bib/main/atlas.bib", "minYear": 2022 },
+            { "url": "https://raw.githubusercontent.com/atlas-brown/bib/main/theses.bib", "minYear": 2022 },
+            { "url": "https://deeptir.me/papers/deeptir.bib", "minYear": 2024 },
+            { "url": "https://akshayn.xyz/res/akshay.bib", "minYear": 2024 }
+          ]'
+        >
+          <!-- Render target -->
+          <noscript>Please enable JavaScript to view publications.</noscript>
+        </article>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
