@@ -6,13 +6,17 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: write
+  statuses: write
+
 jobs:
   build:
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
     - name: Copy site materials into export directory
       run: |
         make
@@ -21,7 +25,7 @@ jobs:
       run: |
         tar -czvf /tmp/build.tar.gz -C ${{github.workspace}} site
     - name: Create site as artifact
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: site-archive
         path: /tmp/build.tar.gz
@@ -29,9 +33,10 @@ jobs:
       id: vars
       run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
     - name: Create release
-      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'push'
+      uses: softprops/action-gh-release@v3
       with:
-        token: "${{ secrets.API_TOKEN }}"
+        token: "${{ github.token }}"
         draft: false
         prerelease: false
         tag_name: "auto-${{ steps.vars.outputs.sha_short }}"
