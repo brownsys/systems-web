@@ -67,7 +67,7 @@ const projects = [
   {
     title: "Improving the Robustness of Modern Software Systems",
     image: "../assets/projects/automating_correctness.png",
-    description: `Modern software systems fail in a variety of ways. We are developing systems for improving the reliability and robustness of these systems, including checks and guarantees before, during, and after their execution.`,
+    description: `Programming correctness in modern software systems is hard to maintain as applications scale across dependencies, languages, and distributed environments. We build systems that automatically enforce, validate, and preserve correctness properties while remaining practical for real workloads.`,
     links: [
       { label: "HotOS'25", url: "https://doi.org/10.1145/3713082.3730395" },
       { label: "ICFP'21", url: "https://doi.org/10.1145/3473570" }
