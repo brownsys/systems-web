@@ -69,6 +69,8 @@ const projects = [
     image: "../assets/projects/automating_correctness.png",
     description: `Programming correctness in modern software systems is hard to maintain as applications scale across dependencies, languages, and distributed environments. We build systems that automatically enforce, validate, and preserve correctness properties while remaining practical for real workloads.`,
     links: [
+      { label: "SOSP'26", url: "https://atlas.cs.brown.edu/pdf/sash:sosp:2026.pdf" },
+      { label: "OSDI'26", url: "https://atlas.cs.brown.edu/pdf/rt:osdi:2026.pdf" },
       { label: "HotOS'25", url: "https://doi.org/10.1145/3713082.3730395" },
       { label: "ICFP'21", url: "https://doi.org/10.1145/3473570" }
     ],
